@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="idSvginicio" class="classSvgPrincipal boton-svg" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255.22 73.52">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_21);
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+        cursor: pointer;
+      }
+
+
+      .cls-2 {
+        width: 10px;
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .pintar1{
+        fill: url(#Degradado_sin_nombre_21);
+      }
+
+      .pintar2{
+				fill: url(#Degradado_sin_nombre_22);
+      }
+
+
+      .classText{
+        fill: white;
+        font-size: 21px;
+        font-family: ; /*fira sans medium italic*/
+        cursor: pointer;
+      }
+
+      g:hover>path, g:focus>path{
+				fill: url(#Degradado_sin_nombre_22);
+			}
+
+      g:active>path, g:focus>path{
+				fill: url(#Degradado_sin_nombre_22);
+			}
+
+
+    </style>  
+    <clipPath id="clippath">
+      <rect class="cls-3" x="-15.64" y="-31.09" width="278.91" height="124.8"/>
+    </clipPath>
+    <linearGradient id="Degradado_sin_nombre_21" data-name="Degradado sin nombre 21" x1="-99.65" y1="37.68" x2="312.31" y2="37.68" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#634595"/>
+      <stop offset=".02" stop-color="#634897"/>
+      <stop offset=".25" stop-color="#6876b2"/>
+      <stop class="classStop47" offset=".47" stop-color="#6c9ac8"/>
+      <stop offset=".67" stop-color="#6fb3d8"/>
+      <stop offset=".85" stop-color="#71c3e1"/>
+      <stop offset="1" stop-color="#72c9e5"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_22" data-name="Degradado sin nombre 21" x1="-99.65" y1="37.68" x2="312.31" y2="37.68" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c204af"/>
+      <stop offset=".02" stop-color="#c103af"/>
+      <stop offset=".25" stop-color="#9d02c0"/>
+      <stop offset=".47" stop-color="#8e1bea"/>
+      <stop offset=".67" stop-color="#8401cc"/>
+      <stop offset=".85" stop-color="#7400d3"/>
+      <stop offset="1" stop-color="#6f00d6"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-2">
+    <path id="idPathSvg"  class="cls-1 elemento-svg elementoPintar" d="m225.62,72.73H29.9c-7.48,0-14.13-4.77-16.53-11.86L1.45,25.67C-2.37,14.35,6.04,2.62,17.99,2.62h219.54c11.95,0,20.36,11.73,16.53,23.05l-11.91,35.2c-2.4,7.09-9.05,11.86-16.53,11.86Z"/>
+    <text  x="100" y="45" class="classText elemento-svg">
+      Inicio
+    </text>
+  </g>
+</svg>

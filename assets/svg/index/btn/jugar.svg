@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 315.16 87.28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_4);
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-3" x="-1641.98" y="-482.15" width="1611.28" height="914.02"/>
+    </clipPath>
+    <linearGradient id="Degradado_sin_nombre_4" data-name="Degradado sin nombre 4" x1="5257.87" y1="13529.49" x2="5726.33" y2="13529.49" gradientTransform="translate(5549.61 13601.76) rotate(-179.7)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c204af"/>
+      <stop offset="0" stop-color="#c103af"/>
+      <stop offset=".29" stop-color="#9d02c0"/>
+      <stop offset=".56" stop-color="#8401cc"/>
+      <stop offset=".81" stop-color="#7400d3"/>
+      <stop offset="1" stop-color="#6f00d6"/>
+    </linearGradient>
+  </defs>
+  <g id="Juego">
+    <g class="cls-2">
+      <image width="18921" height="9000" transform="translate(-1794.01 -662.06) scale(.12)" xlink:href="../../../5. Audiolibro/1. Portada/Inicio Juego.jpg"/>
+    </g>
+  </g>
+  <g id="Capa_3" data-name="Capa 3">
+    <path class="cls-1" d="m37.34.88l240.82.06c9.2.05,17.35,5.96,20.26,14.69l14.42,42.15c4.64,13.94-5.79,28.31-20.48,28.24l-270.04.18c-14.69-.08-24.97-14.56-20.18-28.45L16.94,13.69C19.93,4.99,28.13.83,37.34.88Z"/>
+  </g>
+</svg>
