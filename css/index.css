@@ -7,7 +7,6 @@ html{
 
 .classBodyIndex {
     background-image: url("../assets/imagenes/Index/Fondos/fondo.jpg");
-    background-size: cover; /* Ajusta el tamaño del fondo */
     background-repeat: no-repeat; /* Evita la repetición del fondo */
     background-attachment: fixed;
     background-position: center;
@@ -68,5 +67,4 @@ main{
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
-
 
