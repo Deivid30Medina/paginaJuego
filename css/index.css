@@ -1,5 +1,5 @@
 html{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .classBodyIndex {
@@ -10,6 +10,13 @@ html{
     width: 100vw;
     height: 100vh;
     margin: 0;
+}
+
+.classfullScreen{
+    width: 100px;
+    height: 50px;
+    background-color: rebeccapurple;
+    cursor: pointer;
 }
 
 main{
