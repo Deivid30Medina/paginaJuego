@@ -20,10 +20,11 @@ html{
 }
 
 .classfullScreen{
-    width: 100px;
-    height: 50px;
+    width: 5px;
+    height: 5px;
     background-color: rebeccapurple;
     cursor: pointer;
+    opacity: 0;
 }
 
 main{
