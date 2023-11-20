@@ -3,6 +3,7 @@ document.addEventListener('click', function(event) {
   requestFullScreen();
 });
 
+
 document.addEventListener('DOMContentLoaded', function() {
   // Verificar el ancho de la pantalla al cargar la página
   checkScreenWidth();
@@ -10,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Agregar un listener para el evento de cambio de tamaño de la pantalla
   window.addEventListener('resize', checkScreenWidth);
 
-  
 });
 
 function checkScreenWidth() {

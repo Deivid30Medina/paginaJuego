@@ -1,0 +1,24 @@
+html{
+    overflow: hidden;
+}
+
+.classBodyAntesdeJugar{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/svg/index/fondos/Fondo2.svg);
+
+    background-attachment: fixed;
+    background-position: center;
+    max-width: 100vw;
+    height: 100vh;
+    border: 1px solid red;
+    padding: 0;
+    margin: 0;
+}
+
+#svgObjectInicio{
+    width: 40%;
+}
