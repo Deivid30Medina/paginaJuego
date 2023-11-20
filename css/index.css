@@ -15,6 +15,12 @@ body{
     background-color: #002f70;
 }
 
+main{
+    border: 1px solid red;
+    width: 100vw;
+    height: 100vh;
+}
+
 #svgObjectIndex{
     position: absolute;
     top: 0;
@@ -37,7 +43,7 @@ body{
 .classObject{
     width: 100vw;
     height: 100vh;
-    border: 1px solid rgb(0, 17, 255);
     overflow: hidden !important;
     display: none;
+    border: 1px solid rgb(55, 0, 255);
 }
