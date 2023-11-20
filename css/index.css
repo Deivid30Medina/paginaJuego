@@ -1,8 +1,9 @@
 html{
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 body{
+    overflow: hidden !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,4 +37,5 @@ body{
     width: 100vw;
     height: 100vh;
     border: 1px solid rgb(0, 17, 255);
+    overflow: hidden !important;
 }
