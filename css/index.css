@@ -12,6 +12,7 @@ body{
     margin: 0;
     padding: 0;
     position: relative;
+    background-color: #002f70;
 }
 
 #svgObjectIndex{
@@ -38,4 +39,5 @@ body{
     height: 100vh;
     border: 1px solid rgb(0, 17, 255);
     overflow: hidden !important;
+    display: none;
 }

@@ -65,6 +65,8 @@ function cargarContenidoDesdeSVG(archivo) {
             btnInicialSVg.style.display = "none";
             let btnAgrandar = document.getElementById('svgObjectAgrandar');
             btnAgrandar.style.opacity = 1;
+            let objectCargarhtmls = document.getElementById('idObjeto');
+            objectCargarhtmls.style.display = "block";
           }
         };
       });
