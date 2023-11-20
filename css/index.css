@@ -26,9 +26,9 @@ body{
 #svgObjectAgrandar{
     position: absolute;
     width: 100vw;
-    top: 0;
-    right: -49vw;
-    height: 3%;
+    top: 3%;
+    right: -45vw;
+    height: 8%;
     opacity: 0;
 }
 
