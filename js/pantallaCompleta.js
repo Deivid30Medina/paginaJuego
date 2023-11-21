@@ -1,7 +1,7 @@
 document.addEventListener('click', function(event) {
   event.preventDefault(); // Evita que el formulario se envíe
   requestFullScreen();
-  alert("La resolución de tu pantalla es: " + screen.width + " x " + screen.height)
+  //alert("La resolución de tu pantalla es: " + screen.width + " x " + screen.height)
 });
 
 
