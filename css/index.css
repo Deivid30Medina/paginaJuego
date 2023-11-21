@@ -72,3 +72,32 @@ main{
     display: none;
     border: 1px solid rgb(55, 0, 255);
 }
+
+
+
+
+/* Dispositivos pequeños, como teléfonos orientacion vertical */
+@media screen and (min-width:480px) and (max-width: 770px) and (orientation: portrait){
+    .classPIndex{
+        text-align: center;
+    }
+}
+
+
+/* Dispositivos pequeños, como teléfonos  orientacion horizontal */
+@media screen and (min-width:480px) and (max-width: 770px) and (orientation: landscape){
+    .classPIndex{
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width:375px) and (max-width: 480px){
+
+}
+
+@media screen and (max-width: 374px){
+
+}
+  
+  
