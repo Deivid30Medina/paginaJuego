@@ -74,6 +74,39 @@ main{
 }
 
 
+/* Dispositivos medianos, como tabletas en orientación vertical */
+@media only screen and (min-width: 880px) and (max-width: 1023px) and (orientation: portrait){
+    .classPIndex{
+        
+        font-size: 19px;
+        top: -4em;
+    }
+
+    #svgObjectIndex{
+        width: 40%;
+        
+    }
+
+    .classImgLogoDNDA{
+        margin-top: 3%;
+    }
+  }
+  
+/* Dispositivos medianos, como tabletas en orientación Horizontal */
+@media only screen and (min-width: 880px) and (max-width: 1023px) and (orientation: landscape){
+    .classPIndex{
+        font-size: 19px;
+        top: -3em;
+    }
+
+    #svgObjectIndex{
+        width: 20%;
+    }
+
+    .classImgLogoDNDA{
+        margin-top: 3%;
+    }
+  }
 
 
 /* Dispositivos pequeños, como teléfonos orientacion vertical */
