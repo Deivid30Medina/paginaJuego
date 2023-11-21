@@ -105,13 +105,24 @@ main{
 @media screen and (min-width:375px) and (max-width: 480px) and (orientation: portrait){
     .classPIndex{
         text-align: center;
+        font-size: 19px;
+    }
+
+    #svgObjectIndex{
+        width: 40%;
     }
 }
 
 
 @media screen and (min-width:375px) and (max-width: 480px) and (orientation: landscape){
     .classPIndex{
-        text-align: left;
+        text-align: center;
+        font-size: 19px;
+    }
+
+    #svgObjectIndex{
+        width: 20%;
+        top: -3em;
     }
 }
 
