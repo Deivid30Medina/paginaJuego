@@ -52,7 +52,7 @@ main{
     color: white;
     align-items: center;
     margin: 0;
-    top: -2em;
+    top: -5em;
     text-align: center;
 }
 
@@ -77,11 +77,11 @@ main{
 
 
 /* Dispositivos pequeños, como teléfonos orientacion vertical */
-@media screen and (min-width:480px) and (max-width: 770px) and (orientation: portrait){
+@media screen and (min-width:480px) and (max-width: 880px) and (orientation: portrait){
     .classPIndex{
         
         font-size: 19px;
-        top: -2em;
+        top: -4em;
     }
 
     #svgObjectIndex{
@@ -96,12 +96,10 @@ main{
 
 
 /* Dispositivos pequeños, como teléfonos  orientacion horizontal */
-@media screen and (min-width:480px) and (max-width: 770px) and (orientation: landscape){
+@media screen and (min-width:480px) and (max-width: 880px) and (orientation: landscape){
     .classPIndex{
-        
         font-size: 19px;
-        top: 0;
-
+        top: -3em;
     }
 
     #svgObjectIndex{
@@ -118,7 +116,7 @@ main{
     .classPIndex{
         
         font-size: 19px;
-        top: -3em;
+        top: -4em;
 
     }
 
@@ -173,7 +171,7 @@ main{
     .classPIndex{
         
         font-size: 19px;
-        top: -2em;
+        top: -3em;
 
     }
 
