@@ -142,8 +142,35 @@ main{
     }
 }
 
-@media screen and (max-width: 374px){
+@media screen and (max-width: 374px) and (orientation: landscape){
+    .classPIndex{
+        text-align: center;
+        font-size: 19px;
+    }
 
+    #svgObjectIndex{
+        width: 20%;
+        top: -1em;
+    }
+
+    .classImgLogoDNDA{
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-width: 374px) and (orientation: portrait){
+    .classPIndex{
+        text-align: center;
+        font-size: 19px;
+    }
+
+    #svgObjectIndex{
+        width: 40%;
+    }
+
+    .classImgLogoDNDA{
+        margin-top: 3%;
+    }
 }
   
   
