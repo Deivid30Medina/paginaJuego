@@ -150,12 +150,12 @@ main{
     }
 }
 
-/* orientacion vertical */
+/* orientacion Horizontal */
 @media screen and (max-width: 374px) and (orientation: landscape){
     .classPIndex{
         text-align: center;
         font-size: 19px;
-        top: -2em;
+        top: 0;
 
     }
 
@@ -168,7 +168,7 @@ main{
     }
 }
 
-/* orientacion Horizontal */
+/* orientacion vertical */
 @media screen and (max-width: 374px) and (orientation: portrait){
     .classPIndex{
         text-align: center;
