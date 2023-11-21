@@ -48,12 +48,12 @@ main{
     width: 100%;
     font-size: 25px;
     display: flex;
-    align-items: center;
     justify-content: center;
     color: white;
     align-items: center;
     margin: 0;
-    top: -5em;
+    top: -2em;
+    text-align: center;
 }
 
 #svgObjectAgrandar{
@@ -79,7 +79,7 @@ main{
 /* Dispositivos pequeños, como teléfonos orientacion vertical */
 @media screen and (min-width:480px) and (max-width: 770px) and (orientation: portrait){
     .classPIndex{
-        text-align: center;
+        
         font-size: 19px;
         top: -2em;
     }
@@ -98,7 +98,7 @@ main{
 /* Dispositivos pequeños, como teléfonos  orientacion horizontal */
 @media screen and (min-width:480px) and (max-width: 770px) and (orientation: landscape){
     .classPIndex{
-        text-align: center;
+        
         font-size: 19px;
         top: 0;
 
@@ -116,7 +116,7 @@ main{
 /* orientacion vertical */
 @media screen and (min-width:375px) and (max-width: 480px) and (orientation: portrait){
     .classPIndex{
-        text-align: center;
+        
         font-size: 19px;
         top: -3em;
 
@@ -135,7 +135,7 @@ main{
 /* orientacion Horizontal */
 @media screen and (min-width:375px) and (max-width: 480px) and (orientation: landscape){
     .classPIndex{
-        text-align: center;
+        
         font-size: 19px;
         top: 0;
 
@@ -153,7 +153,7 @@ main{
 /* orientacion Horizontal */
 @media screen and (max-width: 374px) and (orientation: landscape){
     .classPIndex{
-        text-align: center;
+        
         font-size: 19px;
         top: 0;
 
@@ -171,7 +171,7 @@ main{
 /* orientacion vertical */
 @media screen and (max-width: 374px) and (orientation: portrait){
     .classPIndex{
-        text-align: center;
+        
         font-size: 19px;
         top: -2em;
 
