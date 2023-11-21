@@ -91,9 +91,17 @@ main{
     }
 }
 
+@media screen and (min-width:375px) and (max-width: 480px) and (orientation: portrait){
+    .classPIndex{
+        text-align: center;
+    }
+}
 
-@media screen and (min-width:375px) and (max-width: 480px){
 
+@media screen and (min-width:375px) and (max-width: 480px) and (orientation: landscape){
+    .classPIndex{
+        text-align: left;
+    }
 }
 
 @media screen and (max-width: 374px){
