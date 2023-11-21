@@ -86,6 +86,10 @@ main{
     #svgObjectIndex{
         width: 40%;
     }
+
+    .classImgLogoDNDA{
+        margin-top: 3%;
+    }
 }
 
 
@@ -100,6 +104,10 @@ main{
         width: 20%;
         top: -3em;
     }
+
+    .classImgLogoDNDA{
+        margin-top: 3%;
+    }
 }
 
 @media screen and (min-width:375px) and (max-width: 480px) and (orientation: portrait){
@@ -110,6 +118,10 @@ main{
 
     #svgObjectIndex{
         width: 40%;
+    }
+
+    .classImgLogoDNDA{
+        margin-top: 3%;
     }
 }
 
@@ -123,6 +135,10 @@ main{
     #svgObjectIndex{
         width: 20%;
         top: -1em;
+    }
+
+    .classImgLogoDNDA{
+        margin-top: 3%;
     }
 }
 
