@@ -85,6 +85,7 @@ main{
 
     #svgObjectIndex{
         width: 40%;
+        top: -3em;
     }
 
     .classImgLogoDNDA{
@@ -110,6 +111,7 @@ main{
     }
 }
 
+/* orientacion vertical */
 @media screen and (min-width:375px) and (max-width: 480px) and (orientation: portrait){
     .classPIndex{
         text-align: center;
@@ -118,6 +120,7 @@ main{
 
     #svgObjectIndex{
         width: 40%;
+        top: -2em;
     }
 
     .classImgLogoDNDA{
@@ -126,6 +129,7 @@ main{
 }
 
 
+/* orientacion Horizontal */
 @media screen and (min-width:375px) and (max-width: 480px) and (orientation: landscape){
     .classPIndex{
         text-align: center;
@@ -142,6 +146,7 @@ main{
     }
 }
 
+/* orientacion vertical */
 @media screen and (max-width: 374px) and (orientation: landscape){
     .classPIndex{
         text-align: center;
@@ -158,6 +163,7 @@ main{
     }
 }
 
+/* orientacion Horizontal */
 @media screen and (max-width: 374px) and (orientation: portrait){
     .classPIndex{
         text-align: center;
@@ -166,6 +172,7 @@ main{
 
     #svgObjectIndex{
         width: 40%;
+        top: -2em;
     }
 
     .classImgLogoDNDA{
