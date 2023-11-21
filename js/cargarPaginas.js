@@ -63,6 +63,8 @@ function cargarContenidoDesdeSVG(archivo) {
           }else{
             let btnInicialSVg = document.getElementById('svgObjectIndex');
             btnInicialSVg.style.display = "none";
+            let headerImg = document.getElementById('idHeader');
+            headerImg.style.display = "none";
             let btnAgrandar = document.getElementById('svgObjectAgrandar');
             btnAgrandar.style.opacity = 1;
             let objectCargarhtmls = document.getElementById('idObjeto');

@@ -6,7 +6,7 @@ html{
 }
 
 .classBodyIndex {
-    background-image: url("../assets/imagenes/Index/Fondos/fondo.jpg");
+    background-image: url("../assets/imagenes/Inicio/Fondos/fondo.jpg");
     background-repeat: no-repeat; /* Evita la repetición del fondo */
     background-attachment: fixed;
     background-position: center;
