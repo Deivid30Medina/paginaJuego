@@ -57,14 +57,17 @@ function requestFullScreen() {
     elem.requestFullscreen();
   } else if (elem.mozRequestFullScreen) { /* Firefox */
     elem.mozRequestFullScreen();
-  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari y Opera */
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Opera */
     elem.webkitRequestFullscreen();
   } else if (elem.msRequestFullscreen) { /* IE/Edge */
     elem.msRequestFullscreen();
+  } else if (elem.webkitEnterFullscreen) { /* Safari */
+    elem.webkitEnterFullscreen();
   }
 
   isFullScreen = true; // Actualizar el estado a pantalla completa
 }
+
 
 function exitFullScreen() {
   if (document.exitFullscreen) {
