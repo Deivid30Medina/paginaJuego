@@ -1,3 +1,9 @@
+document.getElementById('idImgJugar').addEventListener('click', function(event) {
+  event.preventDefault(); // Evita que el formulario se envíe
+  validarEventoClic();
+  mostarrOcultarElementos();
+});
+
 
 /**
  * Función que me carga los html cuando se le da clic algun btn svg del sitio
@@ -34,13 +40,11 @@ function cargarContenidoDesdeSVG(archivo) {
    * @param {*} data - Nombre dek html que se desea cargar dinamicamente
    */
   function mostrarContenido(data) {
-    console.log(data);
-    window.location.href = data;
-
+    window.location.href = data;  
   }
 
   function mostarrOcultarElementos(){
-    let btnInicialSVg = document.getElementById('svgObjectIndex');
+    let btnInicialSVg = document.getElementById('idImgJugar');
     btnInicialSVg.style.display = "none";
     let headerImg = document.getElementById('idHeader');
     headerImg.style.display = "none";
@@ -68,7 +72,7 @@ function cargarContenidoDesdeSVG(archivo) {
         elementoSVG.onclick = function () {
           // Obtiene el atributo 'data-src' del objeto <object> que contiene el SVG
         var archivoHTML = svgObject.getAttribute("data-src");
-          validarEventoClic(); //Funcion de pantalla completa en patnallacompleta.js
+        validarEventoClic(); //Funcion de pantalla completa en patnallacompleta.js
           if(archivoHTML != null){
             cargarContenidoDesdeSVG(archivoHTML);// Llama a la función cargarContenido con el archivo HTML como argumento 
           }else{
