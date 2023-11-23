@@ -62,8 +62,8 @@ header{
 
 .classNombreLabel{
     color: white;
-    font-size: 30px;
-    margin-bottom: 2%;
+    font-size: 25px;
+    margin-bottom: 0%;
     margin-top: 65vh;
 }
 
@@ -77,8 +77,8 @@ header{
     margin: 0;
     padding: 0;
     border: 0;
-    width: 35vw;
-    font-size: 50px;
+    width: 300px;
+    font-size: 35px;
     padding-left: 20px;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -93,6 +93,7 @@ header{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    margin-top: 2%;
 }
 
 .classBtnInicio{
