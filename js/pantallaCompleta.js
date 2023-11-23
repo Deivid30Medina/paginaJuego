@@ -19,12 +19,11 @@ function validarEventoClic(){
   } else {
     requestFullScreen();
   }
-  validarObejectHtml();
 }
 
 function checkScreenWidth() {
   var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
+  
   // Si el ancho de la pantalla es menor que 890px, aplicar bloqueo y pantalla completa
   if (screenWidth < 890) {
     lockOrientation();
@@ -65,7 +64,7 @@ function requestFullScreen() {
   } else if (elem.webkitEnterFullscreen) { /* Safari */
     elem.webkitEnterFullscreen();
   }
-
+  
   isFullScreen = true; // Actualizar el estado a pantalla completa
 }
 
@@ -80,6 +79,6 @@ function exitFullScreen() {
   } else if (document.msExitFullscreen) { /* IE/Edge */
     document.msExitFullscreen();
   }
-
+  
   isFullScreen = false; // Actualizar el estado a no estar en pantalla completa
 }

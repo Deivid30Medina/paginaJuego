@@ -41,7 +41,7 @@ function validarObejectHtml(){
       // Obtener la altura del contenido
       var alturaContenido = contenidoBody.clientHeight;
       // Asignar la altura del contenido al objeto
-      miObjeto.style.height = (alturaContenido) + 'px';
+      //miBodyIndex.style.height = (alturaContenido) + 'px';
     };
     
 }
@@ -54,7 +54,6 @@ function validarObejectHtml(){
     let mayusculaTitulo = ubicacion[0].toUpperCase();
     let titulonuevo = tituloSinExtencion+"-"+mayusculaTitulo;
     document.title = titulonuevo;
-    validarObejectHtml();
   }
   
   /**
@@ -77,8 +76,6 @@ function validarObejectHtml(){
     btnAgrandar.style.display = "block";
     let objectCargarhtmls = document.getElementById('idObjeto');
     objectCargarhtmls.style.display = "block";
-    validarObejectHtml();
-    console.log("Entro");
   }
   
   
