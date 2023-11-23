@@ -84,7 +84,7 @@ main{
     .classPIndex{
         
         font-size: 20px;
-        margin-top: 8%;
+        margin-top: 10%;
     }
 
     #idImgJugar{
@@ -97,6 +97,7 @@ main{
 @media only screen and (min-width: 880px) and (max-width: 1023px) and (orientation: landscape){
     .classPIndex{
         font-size: 20px;
+        margin-top: 10%;
     }
 
     #idImgJugar{
