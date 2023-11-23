@@ -100,10 +100,34 @@ header{
     width: 20%;
 }
 
+.classCOntainerBtnsAyuda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 6%;
+    position: absolute;
+    right: 3%;
+    top: 15%;
+}
+
+.classBtnMusica{
+    width: 100%;
+}
+
+.classBtnPregunta{
+    width: 100%;
+}
+
 /* Dispositivos medianos, como tabletas en orientación Horizontal */
 @media only screen and (min-width: 880px) and (max-width: 1023px) and (orientation: landscape){
-    
+    .classImgTitle{
+        width: 35%;
+    }
 
+    .classNombreLabel{
+        margin-top: 48vh;
+    }
 }
 
 /* Dispositivos pequeños, como teléfonos  orientacion horizontal */
