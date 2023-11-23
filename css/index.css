@@ -124,7 +124,6 @@ main{
 @media screen and (min-width:480px) and (max-width: 880px) and (orientation: landscape){
     .classPIndex{
         font-size: 20px;
-        margin-top: 8%;
     }
 
     #idImgJugar{
@@ -149,7 +148,6 @@ main{
 @media screen and (min-width:375px) and (max-width: 480px) and (orientation: landscape){
     .classPIndex{
         font-size: 20px;
-        margin-top: 8%;
     }
 
     #idImgJugar{
@@ -161,7 +159,6 @@ main{
 @media screen and (max-width: 374px) and (orientation: landscape){
     .classPIndex{
         font-size: 20px;
-        margin-top: 8%;
     }
 
     #idImgJugar{
