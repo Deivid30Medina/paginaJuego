@@ -83,16 +83,12 @@ main{
 @media only screen and (min-width: 880px) and (max-width: 1023px) and (orientation: portrait){
     .classPIndex{
         
-        font-size: 19px;
-        top: -4em;
+        font-size: 20px;
+        margin-top: 8%;
     }
 
     #idImgJugar{
         width: 60%;
-        
-    }
-
-    .classImgLogoDNDA{
         
     }
   }
@@ -100,11 +96,11 @@ main{
 /* Dispositivos medianos, como tabletas en orientación Horizontal */
 @media only screen and (min-width: 880px) and (max-width: 1023px) and (orientation: landscape){
     .classPIndex{
-        font-size: 19px;
+        font-size: 20px;
     }
 
     #idImgJugar{
-        width: 60%;
+        width: 25%;
     }
 
   }
@@ -113,15 +109,12 @@ main{
 /* Dispositivos pequeños, como teléfonos orientacion vertical */
 @media screen and (min-width:480px) and (max-width: 880px) and (orientation: portrait){
     .classPIndex{
-        font-size: 19px;
+        font-size: 20px;
+        margin-top: 8%;
     }
 
     #idImgJugar{
         width: 60%;
-        
-    }
-
-    .classImgLogoDNDA{
         
     }
 }
@@ -130,30 +123,22 @@ main{
 /* Dispositivos pequeños, como teléfonos  orientacion horizontal */
 @media screen and (min-width:480px) and (max-width: 880px) and (orientation: landscape){
     .classPIndex{
-        font-size: 19px;
+        font-size: 20px;
     }
 
     #idImgJugar{
-        width: 60%;
-    }
-
-    .classImgLogoDNDA{
-        
+        width: 25%;
     }
 }
 
 /* orientacion vertical */
 @media screen and (min-width:375px) and (max-width: 480px) and (orientation: portrait){
     .classPIndex{
-        font-size: 19px;
+        font-size: 20px;
     }
 
     #idImgJugar{
         width: 60%;
-    }
-
-    .classImgLogoDNDA{
-        
     }
 }
 
@@ -161,45 +146,33 @@ main{
 /* orientacion Horizontal */
 @media screen and (min-width:375px) and (max-width: 480px) and (orientation: landscape){
     .classPIndex{
-        font-size: 19px;
+        font-size: 20px;
     }
 
     #idImgJugar{
-        width: 60%;
-    }
-
-    .classImgLogoDNDA{
-        
+        width: 25%;
     }
 }
 
 /* orientacion Horizontal */
 @media screen and (max-width: 374px) and (orientation: landscape){
     .classPIndex{
-        font-size: 19px;
+        font-size: 20px;
     }
 
     #idImgJugar{
-        width: 60%;
-    }
-
-    .classImgLogoDNDA{
-        
+        width: 25%;
     }
 }
 
 /* orientacion vertical */
 @media screen and (max-width: 374px) and (orientation: portrait){
     .classPIndex{
-        font-size: 19px;
+        font-size: 20px;
     }
 
     #idImgJugar{
         width: 60%;
-    }
-
-    .classImgLogoDNDA{
-        
     }
 }
   
