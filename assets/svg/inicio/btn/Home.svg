@@ -40,11 +40,6 @@
       <stop offset="1" stop-color="#6f00d6"/>
     </linearGradient>
   </defs>
-  <g id="Juego">
-    <g class="cls-3">
-      <image width="18921" height="9000" transform="translate(-1792.12 -528.29) scale(.12)" xlink:href="../../../5. Audiolibro/1. Portada/Inicio Juego.jpg"/>
-    </g>
-  </g>
   <g id="Capa_3" data-name="Capa 3">
     <g>
       <path class="cls-2" d="m277.77,117.78l-240.82-.06c-9.2-.05-17.35-5.96-20.26-14.69L2.27,59.66c-4.64-13.94,5.79-28.31,20.48-28.24l270.11,1.87c14.69.08,24.97,14.56,20.18,28.45l-14.88,43.22c-3,8.7-11.2,12.86-20.4,12.81Z"/>

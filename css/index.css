@@ -63,7 +63,7 @@ main{
     top: 3%;
     right: -43vw;
     height: 8%;
-    opacity: 0;
+    display: none;
 }
 
 .classObject{
@@ -104,9 +104,6 @@ main{
         width: 20%;
     }
 
-    .classImgLogoDNDA{
-        
-    }
   }
 
 

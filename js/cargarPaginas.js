@@ -38,6 +38,17 @@ function cargarContenidoDesdeSVG(archivo) {
     window.location.href = data;
 
   }
+
+  function mostarrOcultarElementos(){
+    let btnInicialSVg = document.getElementById('svgObjectIndex');
+    btnInicialSVg.style.display = "none";
+    let headerImg = document.getElementById('idHeader');
+    headerImg.style.display = "none";
+    let btnAgrandar = document.getElementById('svgObjectAgrandar');
+    btnAgrandar.style.display = "block";
+    let objectCargarhtmls = document.getElementById('idObjeto');
+    objectCargarhtmls.style.display = "block";
+  }
   
   
   //Metodo por  AXIOS   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -57,18 +68,11 @@ function cargarContenidoDesdeSVG(archivo) {
         elementoSVG.onclick = function () {
           // Obtiene el atributo 'data-src' del objeto <object> que contiene el SVG
         var archivoHTML = svgObject.getAttribute("data-src");
-          requestFullScreen(); //Funcion de pantalla completa en patnallacompleta.js
+          validarEventoClic(); //Funcion de pantalla completa en patnallacompleta.js
           if(archivoHTML != null){
             cargarContenidoDesdeSVG(archivoHTML);// Llama a la función cargarContenido con el archivo HTML como argumento 
           }else{
-            let btnInicialSVg = document.getElementById('svgObjectIndex');
-            btnInicialSVg.style.display = "none";
-            let headerImg = document.getElementById('idHeader');
-            headerImg.style.display = "none";
-            let btnAgrandar = document.getElementById('svgObjectAgrandar');
-            btnAgrandar.style.opacity = 1;
-            let objectCargarhtmls = document.getElementById('idObjeto');
-            objectCargarhtmls.style.display = "block";
+            mostarrOcultarElementos();
           }
         };
       });
