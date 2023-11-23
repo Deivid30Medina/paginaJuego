@@ -19,6 +19,7 @@ function validarEventoClic(){
   } else {
     requestFullScreen();
   }
+  validarObejectHtml();
 }
 
 function checkScreenWidth() {

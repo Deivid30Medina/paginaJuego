@@ -71,11 +71,14 @@ function validarObejectHtml(){
     btnInicialSVg.style.display = "none";
     let headerImg = document.getElementById('idHeader');
     headerImg.style.display = "none";
+    let indexElments = document.getElementById('idIndexObjects');
+    indexElments.style.display = "none";
     let btnAgrandar = document.getElementById('svgObjectAgrandar');
     btnAgrandar.style.display = "block";
     let objectCargarhtmls = document.getElementById('idObjeto');
     objectCargarhtmls.style.display = "block";
     validarObejectHtml();
+    console.log("Entro");
   }
   
   
