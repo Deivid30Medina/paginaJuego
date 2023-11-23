@@ -8,7 +8,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     margin: 0;
     padding: 0;
     position: relative;
@@ -17,8 +17,8 @@ body{
 
 main{
     border: 1px solid red;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 .classCOntainerMain{
@@ -71,8 +71,8 @@ main{
 }
 
 .classObject{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: none;
     border: 1px solid rgb(55, 0, 255);
 }
