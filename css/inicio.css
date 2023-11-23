@@ -98,3 +98,20 @@ header{
 .classBtnInicio{
     width: 20%;
 }
+
+/* Dispositivos medianos, como tabletas en orientación Horizontal */
+@media only screen and (min-width: 880px) and (max-width: 1023px) and (orientation: landscape){
+    
+
+}
+
+/* Dispositivos pequeños, como teléfonos  orientacion horizontal */
+@media screen and (min-width:480px) and (max-width: 880px) and (orientation: landscape){
+    .classImgTitle{
+        width: 35%;
+    }
+
+    .classNombreLabel{
+        margin-top: 55vh;
+    }
+}
