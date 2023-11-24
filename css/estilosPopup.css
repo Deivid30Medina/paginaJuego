@@ -109,13 +109,23 @@
 
 /* Dispositivos medianos, como tabletas en orientación Horizontal */
 @media only screen and (min-width: 880px) and (max-width: 1023px) and (orientation: landscape){
-
+    .classPPopPup{
+        font-size: 1.9vw;
+        padding: 0 10px
+    }
 }
 
 /* Dispositivos medianos, como tabletas en orientación Horizontal */
 @media screen and (min-width:480px) and (max-width: 880px) and (orientation: landscape){
+    .classPPopPup{
+        font-size: 1.9vw;
+        padding: 0 10px
+    }
 }
 
 @media screen and (min-width:375px) and (max-width: 480px) and (orientation: landscape){
-
+    .classPPopPup{
+        font-size: 1.9vw;
+        padding: 0 10px
+    }
 }
