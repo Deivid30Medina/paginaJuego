@@ -10,20 +10,28 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    z-index: -1;
+    opacity: 1;
+    z-index: 5;
     transition: opacity 0.8s ease;
 }
 
 .classContenedorBlanco{
     background-color: white;
-    width: 50%;
+    width: 70%;
+    height: 70vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     border-radius: 10px;
     padding-bottom: 2%;
+    border: 4px solid rgb(216, 19, 255);
+    position: relative;
+}
+
+.classImgPopPup{
+    object-fit: scale-down;
+    width: 25%;
 }
 
 .classEncabezadoPopup{
@@ -37,21 +45,35 @@
 .classTituloPoppup{
     text-align: center;
     width: 50%;
-    color: #2767C9;
+    color: rgb(83, 83, 83);
     font-family: Arial;
+    font-weight: bolder;
+    position: absolute;
+    top: 0;
 }
 
+.classContenidoTexto{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.classPPopPup{
+    font-size: 18px;
+    color: gray;
+    font-family: Arial;
+    text-align: center;
+    width: 70%;
+}
 
 .classBtnAtrasPoppup{
-    background-color: #2767C9;
     border-radius: 5px;
-    width: 30%;
     height: 40px;
+    position: absolute;
+    bottom: 2%;
     cursor: pointer;
     border: none;
-    font-family: fuenteParrafo;
-    color: white;
-    font-size: medium;
 }
 
 .show{

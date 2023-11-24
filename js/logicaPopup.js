@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    validarPopup();
+    validarPopupAbrir();
+    validarPopupCierre();
 });
 
 function cargarDocumentoSVG(idSvg) {
@@ -25,7 +26,7 @@ function ocultarPopup(){
     popup1.classList.remove('show');
 }
 
-async function validarPopup(){
+async function validarPopupAbrir(){
     try {
         let documentSvg = await cargarDocumentoSVG('idSvgPegunta');
         // Selecciona todos los elementos con la clase '.classsSonido' dentro del documento SVG
@@ -41,12 +42,24 @@ async function validarPopup(){
     }
 }
 
+async function validarPopupCierre(){
+    try {
+        let documentSvg = await cargarDocumentoSVG('idPopupClose');
+        // Selecciona todos los elementos con la clase '.classsSonido' dentro del documento SVG
+        let elementsSonido = documentSvg.querySelectorAll(".classVovlerPoppup");
+        // Para cada elemento con la clase '.classsSonido', agrega un evento de clic
+        elementsSonido.forEach(function (elementoSVG) {
+            elementoSVG.onclick = function () {
+                ocultarPopup();
+            };
+        });
+    } catch (error) {
+        console.error(error.message);
+    }
+}
+
 //Boton de vovler en el popup
 let volver = document.getElementById('idPopupClose');
 
 //Venta PopUp que se mostrara.
 let popup1 = document.getElementById('idPopupVentana');
-
-volver.addEventListener('click', () => {
-    popup1.classList.remove('show');
-});
