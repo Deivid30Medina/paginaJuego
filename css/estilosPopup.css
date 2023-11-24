@@ -87,8 +87,20 @@
 
 /* Dispositivos medianos, como tabletas en orientación Horizontal */
 @media only screen and (min-width: 880px) and (max-width: 1023px) and (orientation: landscape){
-    .classTituloPoppup{
-        width: 100%;
+    .classPPopPup{
+        font-size: 12px;
     }
+}
 
+/* Dispositivos medianos, como tabletas en orientación Horizontal */
+@media screen and (min-width:480px) and (max-width: 880px) and (orientation: landscape){
+    .classPPopPup{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width: 480px) and (orientation: landscape){
+    .classPPopPup{
+        font-size: 12px;
+    }
 }
