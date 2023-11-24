@@ -20,7 +20,7 @@
     }
 
   function validarFuncionesAdicionales(archivo){
-    if(archivo === "retos.html"){
+    if(archivo === "mision1.html"){
       return guardarNombreUsuario();
     }
   }
@@ -91,7 +91,6 @@
     
         // Selecciona todos los elementos con la clase '.elemento-svg' dentro del documento SVG
         var elementsSVG = svgDocument.querySelectorAll(".elemento-svg");
-    
         // Para cada elemento con la clase '.elemento-svg', agrega un evento de clic
         elementsSVG.forEach(function (elementoSVG) {
           elementoSVG.onclick = function () {
