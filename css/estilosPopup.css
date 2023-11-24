@@ -1,0 +1,64 @@
+/*================Estilos Popup Inicio==============*/
+
+.classContenedorPrincipalPopup{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.8s ease;
+}
+
+.classContenedorBlanco{
+    background-color: white;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    padding-bottom: 2%;
+}
+
+.classEncabezadoPopup{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+.classTituloPoppup{
+    text-align: center;
+    width: 50%;
+    font-family: fuenteTitulo;
+    color: #2767C9;
+    font-family: Arial;
+}
+
+
+.classBtnAtrasPoppup{
+    background-color: #2767C9;
+    border-radius: 5px;
+    width: 10%;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    font-family: fuenteParrafo;
+    color: white;
+    font-size: medium;
+}
+
+.show{
+    pointer-events: auto;
+    opacity: 1;
+    z-index: 2 !important;
+}
+
+/*================Estilos Popup Final==============*/
