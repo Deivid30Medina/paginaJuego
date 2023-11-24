@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
   // Obtén el elemento de audio
   var miAudio = document.getElementById("idAudiopExplicacion");
 
@@ -40,6 +40,7 @@ function cargarDocumentoSVG(idSvg) {
 async function validarBtnSonido(miAudio){
     try {
         let documentSvg = await cargarDocumentoSVG('idSvgMusica');
+        console.log(documentSvg);
         // Selecciona todos los elementos con la clase '.classsSonido' dentro del documento SVG
         let elementsSonido = documentSvg.querySelectorAll(".classsSonido");
         // Para cada elemento con la clase '.classsSonido', agrega un evento de clic
