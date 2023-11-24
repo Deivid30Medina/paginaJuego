@@ -44,7 +44,7 @@
 
 .classTituloPoppup{
     text-align: center;
-    width: 50%;
+    width: 100%;
     color: rgb(83, 83, 83);
     font-family: Arial;
     font-weight: bolder;
@@ -83,3 +83,12 @@
 }
 
 /*================Estilos Popup Final==============*/
+
+
+/* Dispositivos medianos, como tabletas en orientación Horizontal */
+@media only screen and (min-width: 880px) and (max-width: 1023px) and (orientation: landscape){
+    .classTituloPoppup{
+        width: 100%;
+    }
+
+}
