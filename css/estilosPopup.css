@@ -37,7 +37,6 @@
 .classTituloPoppup{
     text-align: center;
     width: 50%;
-    font-family: fuenteTitulo;
     color: #2767C9;
     font-family: Arial;
 }
@@ -46,7 +45,7 @@
 .classBtnAtrasPoppup{
     background-color: #2767C9;
     border-radius: 5px;
-    width: 10%;
+    width: 30%;
     height: 40px;
     cursor: pointer;
     border: none;
