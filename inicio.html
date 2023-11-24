@@ -13,8 +13,13 @@
         </h1>
     </header>
     <main>
-        <audio id="miAudio" autoplay>
-            <source src="ruta/al/archivo/de/audio.mp3" type="audio/mp3">
+        <!-- Agrega la etiqueta de audio con el atributo "autoplay" y "data-src" -->
+        <audio id="idAudiopExplicacion" autoplay >
+            <!-- Fuentes de audio en diferentes formatos -->
+            <source src="/assets/audios/explicacion/inicio/inicio.mp3" type="audio/mp3">
+            <source src="ruta/al/archivo/de/audio1.ogg" type="audio/ogg">
+            <source src="ruta/al/archivo/de/audio1.wav" type="audio/wav">
+            <!-- Mensaje en caso de que el navegador no soporte ninguno de los formatos -->
             Tu navegador no soporta el elemento de audio.
         </audio>
         <div class="classCOntainerBtnsAyuda">
@@ -31,6 +36,7 @@
         </form>
     </main>
     <footer></footer>
+    <script src="js/sonidoExplicacion.js"></script>
     <script src="js/mayusculas.js"></script>
     <script src="js/cargarOtrasPaginas.js" ></script>
     <script src="js/capturarNombre.js" ></script>
