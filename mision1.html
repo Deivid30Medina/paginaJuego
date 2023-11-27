@@ -18,6 +18,14 @@
         </div>
     </header>
     <main>
+        <audio id="idAudiopExplicacion">
+            <!-- Fuentes de audio en diferentes formatos -->
+            <source src="assets/audios/explicacion/mision1/mision1.mp3" type="audio/mp3">
+            <source src="ruta/al/archivo/de/audio1.ogg" type="audio/ogg">
+            <source src="ruta/al/archivo/de/audio1.wav" type="audio/wav">
+            <!-- Mensaje en caso de que el navegador no soporte ninguno de los formatos -->
+            Tu navegador no soporta el elemento de audio.
+        </audio>
         <object id="idHola" class="classHola" data="assets/svg/Universales/titulos-Hola.svg" type="image/svg+xml" width="100%" height="100%" ></object>
         <div class="classContaineNombreySvg">
             <div class="classContenedorInformacion">
@@ -41,5 +49,6 @@
         </div>
     </main>
     <script src="js/asignarNombre.js"></script>
+    <script src="js/sonidoExplicacion.js"></script>
 </body>
 </html>
