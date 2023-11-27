@@ -36,7 +36,23 @@ body {
 
 .classMarcador{
     width: 30%;
-    border: 1px solid red;
+}
+
+.classMarcador::before{
+    z-index: -1;
+    width: 31%;
+    height: 100%;
+    background: linear-gradient(        45 deg,        red,blue,green,black,pink,white    );
+    background-size: 800%;
+    border-radius: 800%;
+    -webkit-border-radius: 800%;
+    -moz-border-radius: 800%;
+    -ms-border-radius: 800%;
+    -o-border-radius: 800%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    -webkit-animation: glowing 20s linear infinite;
 }
 
 .classTitle{
@@ -182,6 +198,18 @@ main{
     margin-right: 5%;
 }
 
+@keyframes glowing{
+    0%{
+        background-position: 0 0;
+    }
+
+    50%{
+        background-position: 400%;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
 
 
 @keyframes anime{
