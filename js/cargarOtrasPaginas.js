@@ -11,7 +11,7 @@
           .then((data) => {
             //Actualizar el contenido del div con el nuevo html
             console.log(archivo);
-            if(archivo !== "misio1.html"){
+            if(archivo !== "mision1.html"){
               mostrarContenido(archivo);
               cambiarTituloPagina(archivo);
             }else{
