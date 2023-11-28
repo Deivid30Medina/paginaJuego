@@ -1,0 +1,92 @@
+html{
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../../../assets/Fondos/img/FondoAzul.jpg");
+    background-repeat: no-repeat; /* Evita la repetición del fondo */
+    background-attachment: fixed;
+    background-position: center;
+    max-width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-size: 100% 100%; /* Ajusta al 100% de ancho y alto */
+}
+
+header{
+    width: 100%;
+}
+
+.classContainerHeader{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.classSvgPregunta{
+    width: 10%;
+    margin-left: 15vw;
+    margin-top: 2vh;
+}
+
+.classMarcador{
+    position: absolute;
+    width: 30%;
+    right: 0;
+    top: 10vh;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.classContainerAudioQuestion{
+    width: 10%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.classSvgAudio{
+    width: 70%;
+}
+
+.classContainerMain{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+    background-color: white;
+}
+
+.classContainerQuetion{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.classBtnCorrecto{
+    background-color: rgb(36, 214, 36);
+}
+
+.classBtnIncorrecto{
+    background-color: rgb(223, 22, 22)
+}
+

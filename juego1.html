@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="juegos/OpcionMultiple/css/App.css">
+    <link rel="stylesheet" href="juegos/OpcionMultiple/css/temporizador.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <div class="classContainerHeader">
+            <object id="idSvgPegunta" class="classSvgPregunta" data="assets/svg/Universales/BotonesAyuda/Pregunta/1-pregunta_verde.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            <object id="idSvgMarcador" class="classMarcador" data="assets/svg/retos/apoyo/marcador-1.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+        </div>
+    </header>
+    <main>
+        <div class="classContainerAudioQuestion">
+            <object id="idSvgAudio1" class="classSvgAudio" data="assets/svg/Universales/BotonesAyuda/Pregunta/1-pregunta_verde.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            <object id="idSvgAudio2" class="classSvgAudio" data="assets/svg/Universales/BotonesAyuda/Pregunta/1-pregunta_verde.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            <object id="idSvgAudio3" class="classSvgAudio" data="assets/svg/Universales/BotonesAyuda/Pregunta/1-pregunta_verde.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+        </div>
+        <div class="classContainerMain">
+            <div class="classContainerQuetion">
+                <img src="" alt="">
+                <button class="classBtnQuestion" data-text-number="0">A</button>
+                <P class="classTextQuestion" data-text-number="0">A</P>
+            </div>
+            <div class="classContainerQuetion">
+                <img src="" alt="">
+                <button class="classBtnQuestion" data-text-number="1">B</button>
+                <P class="classTextQuestion" data-text-number="1">B</P>
+            </div>
+            <div class="classContainerQuetion">
+                <img src="" alt="">
+                <button class="classBtnQuestion" data-text-number="2">C</button>
+                <P class="classTextQuestion" data-text-number="2">C</P>
+            </div>
+        </div>
+        <div id="idContainerTemporizador" class="classTemporizadorPrincipal">
+            <div id="idTemproizador" class="">
+                <div id="idWrapper" class="wrapper">
+                    <div id="idSpinner" class="pie spinner"></div>
+                    <div id="idFiller" class="pie filler"></div>
+                    <div id="idMask" class="mask"></div>
+                </div>
+                <p class="classPTemporizador" id="timer">00:00</p>
+            </div>
+            <!--<object id="svgObjectIconTemporizador" class="classSvgIconReloj" data="assets/svg/Cronometro-21.svg" type="image/svg+xml" width="100%" height="100%"></object>-->
+        </div>
+    </main>
+    <footer></footer>
+    <script src="juegos/OpcionMultiple/js/App.js" type="module"></script>
 </body>
 </html>
