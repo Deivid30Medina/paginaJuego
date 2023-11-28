@@ -1,19 +1,45 @@
-const opcionRespuestaCorrecta = "Esta es correcta";
+const opcionRespuestaCorrecta = `
+La facultad exclusiva y el derecho que tienen los AuArts o quien sea
+el dueño de los derechos patrimoniales (económicos), de sus obras o
+prestaciones, para autorizar o no, la creación de ejemplares.
+`;
 let opcionIncorrecta = [];
 
 function inicializarVariables(){
     opcionIncorrecta = [
-        "Esta no es 0"
-        ,"Esta no es 1"
-        ,"Esta no es 2"
-        ,"Esta no es 3"
-        ,"Esta no es 4"
-        ,"Esta no es 5"
-        ,"Esta no es 6"
-        ,"Esta no es 7"
-        ,"Esta no es 8"
-        ,"Esta no es 9"
-        ,"Esta no es 10"
+        `La posibilidad exclusiva y el derecho que tienen los artistas
+        de que sus obras queden fijadas en un medio digital o físico,
+        para ser disfrutadas por el público`
+        ,`La posibilidad exclusiva y el derecho que tienen los artistas
+        de que sus obras queden fijadas en un medio digital o físico,
+        para ser disfrutadas por el público`
+        ,`La posibilidad exclusiva y el derecho que tienen los artistas
+        de que sus obras queden fijadas en un medio digital o físico,
+        para ser disfrutadas por el público`
+        ,`La posibilidad exclusiva y el derecho que tienen los artistas
+        de que sus obras queden fijadas en un medio digital o físico,
+        para ser disfrutadas por el público`
+        ,`La posibilidad exclusiva y el derecho que tienen los artistas
+        de que sus obras queden fijadas en un medio digital o físico,
+        para ser disfrutadas por el público`
+        ,`La posibilidad exclusiva y el derecho que tienen los artistas
+        de que sus obras queden fijadas en un medio digital o físico,
+        para ser disfrutadas por el público`
+        ,`La posibilidad exclusiva y el derecho que tienen los artistas
+        de que sus obras queden fijadas en un medio digital o físico,
+        para ser disfrutadas por el público`
+        ,`La posibilidad exclusiva y el derecho que tienen los artistas
+        de que sus obras queden fijadas en un medio digital o físico,
+        para ser disfrutadas por el público`
+        ,`La posibilidad exclusiva y el derecho que tienen los artistas
+        de que sus obras queden fijadas en un medio digital o físico,
+        para ser disfrutadas por el público`
+        ,`La posibilidad exclusiva y el derecho que tienen los artistas
+        de que sus obras queden fijadas en un medio digital o físico,
+        para ser disfrutadas por el público`
+        ,`La posibilidad exclusiva y el derecho que tienen los artistas
+        de que sus obras queden fijadas en un medio digital o físico,
+        para ser disfrutadas por el público`
     ];
 }
 
