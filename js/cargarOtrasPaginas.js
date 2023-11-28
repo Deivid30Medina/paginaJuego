@@ -10,9 +10,16 @@
           .then((response) => response.text())
           .then((data) => {
             //Actualizar el contenido del div con el nuevo html
-            if(validarFuncionesAdicionales(archivo)){
+            console.log(archivo);
+            if(archivo !== "misio1.html"){
               mostrarContenido(archivo);
               cambiarTituloPagina(archivo);
+            }else{
+              if(validarFuncionesAdicionales(archivo)){
+                console.log("archivo");
+                mostrarContenido(archivo);
+                cambiarTituloPagina(archivo);
+              }
             }
           });
       }, 500); // Ajustar el tiempo de carga HTML
