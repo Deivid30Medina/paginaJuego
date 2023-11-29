@@ -7,22 +7,22 @@ let opcionIncorrecta = [];
 
 function inicializarVariables(){
     opcionIncorrecta = [
-        `La posibilidad exclusiva y el derecho que tienen los artistas
+        `1La posibilidad exclusiva y el derecho que tienen los artistas
         de que sus obras queden fijadas en un medio digital o físico,
         para ser disfrutadas por el público`
-        ,`La posibilidad exclusiva y el derecho que tienen los artistas
+        ,`2La posibilidad exclusiva y el derecho que tienen los artistas
         de que sus obras queden fijadas en un medio digital o físico,
         para ser disfrutadas por el público`
-        ,`La posibilidad exclusiva y el derecho que tienen los artistas
+        ,`3La posibilidad exclusiva y el derecho que tienen los artistas
         de que sus obras queden fijadas en un medio digital o físico,
         para ser disfrutadas por el público`
-        ,`La posibilidad exclusiva y el derecho que tienen los artistas
+        ,`4La posibilidad exclusiva y el derecho que tienen los artistas
         de que sus obras queden fijadas en un medio digital o físico,
         para ser disfrutadas por el público`
-        ,`La posibilidad exclusiva y el derecho que tienen los artistas
+        ,`5La posibilidad exclusiva y el derecho que tienen los artistas
         de que sus obras queden fijadas en un medio digital o físico,
         para ser disfrutadas por el público`
-        ,`La posibilidad exclusiva y el derecho que tienen los artistas
+        ,`6La posibilidad exclusiva y el derecho que tienen los artistas
         de que sus obras queden fijadas en un medio digital o físico,
         para ser disfrutadas por el público`
     ];
