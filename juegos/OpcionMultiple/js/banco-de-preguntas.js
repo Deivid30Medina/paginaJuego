@@ -25,21 +25,6 @@ function inicializarVariables(){
         ,`La posibilidad exclusiva y el derecho que tienen los artistas
         de que sus obras queden fijadas en un medio digital o físico,
         para ser disfrutadas por el público`
-        ,`La posibilidad exclusiva y el derecho que tienen los artistas
-        de que sus obras queden fijadas en un medio digital o físico,
-        para ser disfrutadas por el público`
-        ,`La posibilidad exclusiva y el derecho que tienen los artistas
-        de que sus obras queden fijadas en un medio digital o físico,
-        para ser disfrutadas por el público`
-        ,`La posibilidad exclusiva y el derecho que tienen los artistas
-        de que sus obras queden fijadas en un medio digital o físico,
-        para ser disfrutadas por el público`
-        ,`La posibilidad exclusiva y el derecho que tienen los artistas
-        de que sus obras queden fijadas en un medio digital o físico,
-        para ser disfrutadas por el público`
-        ,`La posibilidad exclusiva y el derecho que tienen los artistas
-        de que sus obras queden fijadas en un medio digital o físico,
-        para ser disfrutadas por el público`
     ];
 }
 
