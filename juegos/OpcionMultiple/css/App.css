@@ -173,11 +173,12 @@ main{
 
 
 .classBtnCorrecto{
-    background-color: rgb(36, 214, 36);
+    background-color: rgba(255, 255, 255, 0.685);
+    
 }
 
 .classBtnIncorrecto{
-    background-color: rgb(223, 22, 22)
+    background-color: rgba(255, 255, 255, 0.685);
 }
 
 .classPersonaje{
