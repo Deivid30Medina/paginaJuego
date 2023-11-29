@@ -10,13 +10,13 @@
           .then((response) => response.text())
           .then((data) => {
             //Actualizar el contenido del div con el nuevo html
-            console.log(archivo);
-            if(archivo !== "mision1.html"){
+            var entro = localStorage.getItem('entro');
+            console.log(entro);
+            if(archivo !== "mision1.html" || entro === "true"){
               mostrarContenido(archivo);
               cambiarTituloPagina(archivo);
             }else{
               if(validarFuncionesAdicionales(archivo)){
-                console.log("archivo");
                 mostrarContenido(archivo);
                 cambiarTituloPagina(archivo);
               }

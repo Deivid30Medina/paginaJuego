@@ -29,7 +29,16 @@ function esperarTiempoCrearNuevoJuego(btn){
 }
 
 function mensajeMostrar(mensaje){
-    alert(mensaje);
+    setTimeout(function() {
+        console.log(mensaje);
+        if(mensaje === "Ganaste"){
+            console.log("mensaje");
+            window.location.href = "ganaste1.html";  
+        }else{
+            window.location.href = "perdiste1.html"; 
+        }
+    }, 1000);
+
     
 }
 

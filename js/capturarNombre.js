@@ -28,7 +28,11 @@ function guardarNombreUsuario() {
         let respuesta = validarGroseria(nombreUsuario);
         // Guardar el valor en localStorage
         if(respuesta){
-            localStorage.setItem('nombreUsuario', nombreUsuario);
+            if(nombreUsuario === ""){
+                localStorage.setItem('nombreUsuario', "Anonimo");
+            }else{
+                localStorage.setItem('nombreUsuario', nombreUsuario);
+            }
         }
         inputNombre.value = "";
         return respuesta;

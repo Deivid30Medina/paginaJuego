@@ -32,7 +32,8 @@ function eliminarTemporizadorHtml(){
 }
 
 function eliminarAnimacionCss(){
-  console.log("Entro")
+  console.log("Entro");
+  window.location.href = "perdiste1.html";  
   let divWrapper = document.getElementById('idWrapper');
   let divSpinner = document.getElementById('idSpinner');
   let divFiller = document.getElementById('idFiller');
