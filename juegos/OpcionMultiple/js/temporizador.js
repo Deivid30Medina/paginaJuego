@@ -1,4 +1,4 @@
-let tiempoTotal = 10;
+let tiempoTotal = 120;
 let tiempoRestante = tiempoTotal;
 let temporizadorElemento ;
 let temporizadorId; // Almacena el ID del temporizador actual
