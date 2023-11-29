@@ -33,14 +33,16 @@ header{
 
 .classSvgPregunta{
     width: 8%;
-    margin-left: 10vw;
+    margin-left: 5vw;
     margin-top: 2vh;
+    border: 1px solid green;
+    z-index: 5;
 }
 
 .classMarcador{
     position: absolute;
     width: 30%;
-    right: 8%;
+    right: 4%;
     top: 10vh;
     z-index: 2;
 }
@@ -53,6 +55,8 @@ main{
     justify-content: space-evenly;
 }
 
+
+
 .classTitulo{
     position: absolute;
     top: -22%;
@@ -62,7 +66,7 @@ main{
 }
 
 .classContainerAudioQuestion{
-    width: 13%;
+    width: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,13 +76,12 @@ main{
 }
 
 .classSvgAudio{
-    width: 55%;
-    height: auto;
-    margin-bottom: 5%;
+    width: 70%;
+    height: 26%;
 }
 
 .audio1{
-    margin-top: 50%;
+    margin-top: 28vh;
 }
 
 .classContainerMain{
@@ -87,7 +90,7 @@ main{
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    width: 65%;
+    width: 78%;
     height: 73%;
     background-color: white;
     border-radius: 25px;
@@ -97,9 +100,18 @@ main{
     -o-border-radius: 25px;
 }
 
+.classTituloPregunta{
+    position: absolute;
+    left: 2%;
+    top: 23%;
+    margin: 0;
+    font-size: 1.8vw;
+    font-family: Arial;
+}
+
 .classContainerQuetion{
-    height: 100vh;
-    width: 75%;
+    height: 24vh;
+    width: 70%;
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
@@ -110,19 +122,20 @@ main{
 
 
 .question1{
-    margin-top: 15%;
+    margin-top: 28vh;
 }
 
 .classLapiz{
     position: absolute;
-    height: auto;
+    height: 100%;
     width: 100%;
+    left: 0;
 }
 
 .classCOntenidoPregunta{
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     z-index: 2;
     width: 100%;
@@ -134,10 +147,20 @@ main{
     height: 100%;
     width: 11%;
     border: 1px solid red;
+    cursor: pointer;
 }
 
 .classTextQuestion{
-    width: 86%;
+    width: 73%;
+    height: 100%;
+    border: 1px solid rgb(0, 47, 255);
+    margin: 0;
+    margin-left: 1.2vw;
+    font-family: Arial;
+    text-align: left;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -149,3 +172,10 @@ main{
     background-color: rgb(223, 22, 22)
 }
 
+.classPersonaje{
+    position: absolute;
+    width: 20%;
+    height: auto;
+    bottom: 0;
+    right: 2%;
+}

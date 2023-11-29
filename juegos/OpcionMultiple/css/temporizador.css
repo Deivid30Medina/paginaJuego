@@ -91,9 +91,10 @@
 
   .classTemporizadorPrincipal{
     width: 10%;
+    height: 73%;
     position: relative;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
   }
 
