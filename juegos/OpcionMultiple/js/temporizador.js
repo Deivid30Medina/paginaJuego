@@ -56,7 +56,7 @@ function crearTemporizadorHtml(){
       <div id="idFiller" class="pie filler"></div>
       <div id="idMask" class="mask"></div>
     </div>
-    <p class="classPTemporizador" id="timer">00:00</p>
+    <p class="classPTemporizador" id="timer"></p>
   `;
 
   // Adjunta el nuevo temporizador al contenedor
