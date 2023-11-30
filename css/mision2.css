@@ -111,9 +111,9 @@ main{
     margin-top: 3%;
 }
 
-.classHola{
+.clasFelicidades{
     color: aqua;
-    width: 10%;
+    width: 15%;
     margin-bottom: 1%;
     margin-left: 20%;
 }
@@ -157,23 +157,6 @@ main{
     text-overflow: ellipsis;
 }
 
-.mision1{
-    transition: transform 0.5s ease;
-    -webkit-transition: transform 0.5s ease;
-    -moz-transition: transform 0.5s ease;
-    -ms-transition: transform 0.5s ease;
-    -o-transition: transform 0.5s ease;
-    animation: jello-horizontal 2.8s 2.2s 3 both;
-    -webkit-animation: jello-horizontal 2.8s 2.2s 3 both;
-}
-
-.mision1:hover{
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-}
 .classTexto{
     font-family: Arial;
     color: gray;
@@ -204,6 +187,11 @@ main{
     -webkit-animation: anime 1.8s infinite ease-in-out alternate;
 }
 
+.mision1{
+    animation: anime 1.8s infinite ease-in-out alternate;
+
+}
+
 .classMisionesBtns{
     width: 100%;
     display: flex;
@@ -220,6 +208,7 @@ main{
     width: 15%;
     margin-right: 5%;
 }
+
 
 @keyframes glowing{
     0%{

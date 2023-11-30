@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="juegos/sopaLetrasGame/css/sopaLetras.css">
+    <link rel="stylesheet" href="css/estilosPopup.css">
+    <link rel="stylesheet" href="css/temporizador.css">
+    <title>Sopa de letras</title>
+</head>
+<body> 
+    <header>
+        <div class="classContainerHeader">
+            <object id="idSvgPegunta" class="classSvgPregunta" data="assets/svg/Universales/BotonesAyuda/Pregunta/1-pregunta_verde.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            <object id="idSvgMarcador" class="classMarcador" data="assets/svg/retos/mision1/Apoyo/marcador.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+        </div>
+    </header>
+    <main class="classMainSopaLetras">
+        
+        <!--============Inicio Popup============-->
+        <div class="classContenedorPrincipalPopup" id="idPopupVentana">
+            <div class="classContenedorBlanco">
+                <div class="classColumnaImagen">
+                    <img class="classImgPopPup" src="assets/imagenes/Poppup/popupInicio.png" alt="Imagen Popup">
+                </div>
+                <div class="classColumnaInformacion">
+                    <div class="classEncabezadoPopup">
+                        <h1 class="classTituloPoppup">¡Bienvenidos a la aventura!</h1>
+                    </div>
+                    <div class="classContenidoTexto">
+                        <p class="classPPopPup">
+                            Ha llegado el último cataclismo de la villana 
+                            Piratería quien ha robado las 4 gemas del bordón 
+                            de los derechos patrimoniales, atacando a los 
+                            AuArts de las diversas regiones de Colombia 
+                            con sus 4 lacayos. Su objetivo es infringir el 
+                            derecho de autor de las obras artísticas, literarias, 
+                            musicales, audiovisuales y el software.
+                            <br>
+                            ¡No lo debemos permitir!
+                        </p>
+                    </div>
+                </div>
+                <object id="idPopupClose" class="classBtnAtrasPoppup" data="assets/svg/inicio/btn/volver.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            </div>
+        </div>
+         <!--============Fin Popup============-->
+        
+
+        <div class="classContainerMain">
+            <p class="classTituloPregunta">
+                Encuentra las 6 palabras relacionadas con los derechos de distribucción.
+            </p>
+            <object id="idSvgTitulo" class="classTitulo" data="assets/svg/retos/mision2/titulos/1-titulo.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+
+            <!-- NO borrar, hace aprte d ela logica dle juego -->
+            <div class="classPalabraFormada" id="palabra-formada"></div>
+
+            <!-- NO borrar, hace aprte d ela logica dle juego -->
+            <div class="classPuzzleContainer">
+                <!--Contenedor que va a contener todos los btn's de la sopa de letras-->
+                <div class="classPuzzle">
+                </div>
+            </div>
+
+            <!-- NO borrar, hace aprte d ela logica dle juego -->
+            <div class="classPalabrasBuscar">
+                <p id="idPRESTAMO" class = "classPalabra">PRESTAMO</p>
+                <p id="idPLATAFORMAS" class = "classPalabra">PLATAFORMAS</p>
+                <p id="idDISTRIBUCIÓN" class = "classPalabra">DISTRIBUCIÓN</p>
+                <p id="idVENTA" class = "classPalabra">VENTA</p>
+                <p id="idALQUILER" class = "classPalabra">ALQUILER</p>
+                <p id="idAUTOR" class = "classPalabra">AUTOR</p>
+                <button id="idNewGame" class="classNewGame">Nuevo Juego</button>
+            </div>
+            <label id="idLabelUbicaciones"  for=""></label> <!-- NO borrar, hace aprte d ela logica dle juego -->
+            <div class="classPersonaje">
+                <object id="idSvgPerro" class="classSvgPerro" data="assets/svg/retos/mision2/personajes/perrito.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            </div>    
+        </div>
+        <div id="idContainerTemporizador" class="classTemporizadorPrincipal">
+            <object id="idSvgTemporizadosvg" class="classTemporizadorsvg" data="assets/svg/Universales/temporizdor.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            <p class="classPTemporizador" id="timer"></p>
+            <div id="idTemproizador" class="classTemporizador">
+                <div id="idWrapper" class="wrapper">
+                    <div id="idSpinner" class="pie spinner"></div>
+                    <div id="idFiller" class="pie filler"></div>
+                    <div id="idMask" class="mask"></div>
+                </div>
+            </div>
+        </div>    
+    </main>
+    <!-- Js relacionando con logica juego -->
+    <script src="juegos/sopaLetrasGame/js/crearEstructuraSopaLetras.js"></script>
+    <script src="juegos/sopaLetrasGame/js/AcomodarLetrasSopa.js"></script>
+    <script src="juegos/sopaLetrasGame/js/pintarPalabraSopaLetras.js"></script>
+    <script src="juegos/sopaLetrasGame/js/guardarPalabraPintada.js"></script>
+    <script src="juegos/sopaLetrasGame/js/validarEstadoGanar.js"></script>
+    <!-- Js relacionando con logica juego -->
+<!--     <script src="juegos/sopaLetrasGame/js/temporizador.js" type="module"></script>
+ -->
+ <!-- <script>
+alert("La resolución de tu pantalla es: " + screen.width + " x " + screen.height) 
+ </script> -->
+    <script src="js/logicaPopup.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 import {randomQuestion, opcionRespuestaCorrecta} from '../js/banco-de-preguntas.js'
 import {estadoJuego} from '../js/logicaJuego.js'
-import {startTemporizador} from '../js/temporizador.js'
+import {startTemporizador} from '../../../js/temporizador.js'
 
 
 let posicionPalabras = ["0","1","2"];

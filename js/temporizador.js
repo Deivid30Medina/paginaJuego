@@ -16,6 +16,7 @@ function actualizarTemporizador() {
 
 function startTemporizador() {
   // Cancelar el temporizador existente antes de iniciar uno nuevo
+  console.log("entro");
   clearTimeout(temporizadorId);
   eliminarTemporizadorHtml();
   crearTemporizadorHtml();
