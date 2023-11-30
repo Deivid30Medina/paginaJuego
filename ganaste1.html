@@ -38,7 +38,7 @@
         </div>
          <!--============Fin Popup============-->
 
-         <audio id="idAudiopExplicacion">
+         <audio id="idAudiopExplicacion" autoplay>
             <!-- Fuentes de audio en diferentes formatos -->
             <source src="assets/audios/explicacion/mision1/mision1.mp3" type="audio/mp3">
             <source src="ruta/al/archivo/de/audio1.ogg" type="audio/ogg">
@@ -48,7 +48,7 @@
         </audio>
 
         <div class="classContainerMain">
-            <div class="classCOntainerMarcador">
+            <div class="classCOntainerMarcador ">
                 <object id="idSvgMarcador" class="classMarcador" data="assets/svg/retos/mision1/Gano/marcador_ganador.svg" type="image/svg+xml" width="100%" height="100%" ></object>
             </div>
             <div class="classCOntainerBtnsAyuda">
@@ -57,7 +57,7 @@
             </div>
             <img class="classMiguel" src="assets/imagenes/retos/Mision1/Gano/miguel.png" alt="Personaje Miguel">
             <div class="classContainerGema">
-                <object id="idSvgGema" class="classSvgGema" data="assets/svg/retos/mision1/Gano/gema_ganada.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+                <object id="idSvgGema" class="classSvgGema bounce-in-fwd" data="assets/svg/retos/mision1/Gano/gema_ganada.svg" type="image/svg+xml" width="100%" height="100%" ></object>
             </div>
             <div class="classContainerTexto">
                 <object id="idSvgTexto" class="classSvgTexto" data="assets/svg/retos/mision1/Gano/explicacion_derecho-66.svg" type="image/svg+xml" width="100%" height="100%" ></object>
@@ -70,5 +70,6 @@
     </main>
     <script src="js/logicaPopup.js"></script>
     <script src="js/cargarOtrasPaginas.js"></script>
+    <script src="js/sonidoExplicacion.js"></script>
 </body>
 </html>

@@ -1,3 +1,19 @@
+document.addEventListener('keydown', function(event) {
+  // Verifica si la tecla presionada es 'Enter'
+  if (event.key === 'Enter') {
+    // Realiza la acción que desees cuando se presiona 'Enter'
+    cargarContenidoDesdeSVG("mision1.html");
+  }
+});
+
+document.addEventListener('keyup', function(event) {
+  // Verifica si la tecla liberada es 'Enter'
+  if (event.key === 'Enter') {
+    // Realiza la acción que desees cuando se libera 'Enter'
+    cargarContenidoDesdeSVG("mision1.html");
+  }
+});
+
   /**
    * Función que me carga los html cuando se le da clic algun btn svg del sitio
    * @param {*} archivo contiene el nombre del html que se desea cargar en la pagina
@@ -11,7 +27,6 @@
           .then((data) => {
             //Actualizar el contenido del div con el nuevo html
             var entro = localStorage.getItem('entro');
-            console.log(entro);
             if(archivo !== "mision1.html" || entro === "true"){
               mostrarContenido(archivo);
               cambiarTituloPagina(archivo);
@@ -32,28 +47,6 @@
     }
   }
   
-    /**
-   * Función que me permite obtener el alto del html que se esta cargando en el object, co el fin de ajusatr el alto del object
-   * @param {bienvenidos.html, creandoConLira_y_Bongo.html,registraTuObra.html,universo.html} archivo archivo html que se esta llamando, no todos los html tiene html sino solo los de la lista.
-   */
-  function validarObejectHtml(){
-      var miObjeto = document.getElementById('idObjeto');
-  
-      // Esperar a que el contenido se cargue completamente
-      miObjeto.onload = function() {
-        // Obtener el documento dentro del objeto
-        var contenidoDoc = miObjeto.contentDocument;
-        
-        // Obtener el elemento raíz dentro del documento del objeto
-        var contenidoBody = contenidoDoc.body;
-        // Obtener la altura del contenido
-        var alturaContenido = contenidoBody.clientHeight;
-        // Asignar la altura del contenido al objeto
-        //miBodyIndex.style.height = (alturaContenido) + 'px';
-      };
-      
-  }
-    
     
     function cambiarTituloPagina(archivo){
       let ubicacion = archivo.split(".html");

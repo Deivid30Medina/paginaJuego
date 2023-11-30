@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg class="classSvg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 503.7 452.6" style="enable-background:new 0 0 503.7 452.6;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
@@ -15,6 +15,18 @@
 	.st9{fill:url(#SVGID_00000178902404096016054830000011785454928448368043_);}
 	.st10{fill:url(#SVGID_00000111887887471344859030000006854228654877805472_);}
 	.st11{fill:url(#SVGID_00000081622089572556433530000008106875723242969502_);}
+	.classSvg{
+		animation: anime 2s ease-in-out alternate infinite 1.2s;
+	}
+	@keyframes anime{
+    100%{
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -o-transform: translateY(20px);
+    }
+	}
 </style>
 <g>
 	<g id="Juego">
