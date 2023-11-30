@@ -114,7 +114,7 @@ function inicializarPinturaPC(botones) {
 
 function valdiarCelular_o_PC(resolucionPantalla, botones){
     console.log(resolucionPantalla);
-    if(resolucionPantalla <= 709){
+    if(resolucionPantalla <= 1000){
         inicializarPinturaCelular(botones);
     }else{
         inicializarPinturaPC(botones);
