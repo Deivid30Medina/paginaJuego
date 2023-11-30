@@ -140,6 +140,7 @@ main{
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    z-index: 1;
 }
 
 .classPuzzle{
@@ -179,6 +180,7 @@ main{
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    z-index: 0;
 }
 
 .classSvgPerro{
