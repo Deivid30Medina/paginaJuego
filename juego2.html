@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="juegos/sopaLetrasGame/css/sopaLetras.css">
     <link rel="stylesheet" href="css/estilosPopup.css">
-    <link rel="stylesheet" href="css/temporizador.css">
     <title>Sopa de letras</title>
 </head>
 <body> 
@@ -90,6 +89,33 @@
             </div>
         </div>    
     </main>
+    <label style="display: none;" for="Labeltiempo">300</label>
+    <label style="display: none;" for="LabelPaginaPerdio">perdiste2.html</label>
+    <script>
+        window.addEventListener('load', function() {
+          console.log('El documento HTML se ha cargado completamente.');
+      
+          // Agregar un retraso de 3 segundos antes de ejecutar más código
+          setTimeout(function() {
+            console.log('Han pasado 3 segundos css.');
+      
+            // Coloca aquí el resto de tu código que quieres ejecutar después del retraso.
+            // Estilos relacionados con la lógica del juego
+            var styles = [
+              'css/temporizador-mision2.css'
+            ];
+      
+            styles.forEach(function(styleSrc) {
+              var link = document.createElement('link');
+              link.rel = 'stylesheet';
+              link.href = styleSrc;
+              document.head.appendChild(link);
+            });
+          }, 2000);
+        });
+    </script>
+      
+
     <!-- Js relacionando con logica juego -->
     <script src="juegos/sopaLetrasGame/js/crearEstructuraSopaLetras.js"></script>
     <script src="juegos/sopaLetrasGame/js/AcomodarLetrasSopa.js"></script>
@@ -97,11 +123,13 @@
     <script src="juegos/sopaLetrasGame/js/guardarPalabraPintada.js"></script>
     <script src="juegos/sopaLetrasGame/js/validarEstadoGanar.js"></script>
     <!-- Js relacionando con logica juego -->
-<!--     <script src="juegos/sopaLetrasGame/js/temporizador.js" type="module"></script>
- -->
+    <script src="juegos/sopaLetrasGame/js/temporizador.js" type="module"></script>
+ 
+
  <!-- <script>
 alert("La resolución de tu pantalla es: " + screen.width + " x " + screen.height) 
  </script> -->
+ 
     <script src="js/logicaPopup.js"></script>
 </body>
 </html>

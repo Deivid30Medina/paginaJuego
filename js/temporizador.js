@@ -1,4 +1,5 @@
 let tiempoTotal = 120;
+let paginaPerdio = "";
 let tiempoRestante = tiempoTotal;
 let temporizadorElemento ;
 let temporizadorId; // Almacena el ID del temporizador actual
@@ -14,9 +15,10 @@ function actualizarTemporizador() {
   temporizadorElemento.textContent = minutos + ':' + segundos;
 }
 
-function startTemporizador() {
+function startTemporizador(tiempo, paginaMostrar) {
+  tiempoTotal = tiempo;
+  paginaPerdio = paginaMostrar;
   // Cancelar el temporizador existente antes de iniciar uno nuevo
-  console.log("entro");
   clearTimeout(temporizadorId);
   eliminarTemporizadorHtml();
   crearTemporizadorHtml();
@@ -33,8 +35,7 @@ function eliminarTemporizadorHtml(){
 }
 
 function eliminarAnimacionCss(){
-  console.log("Entro");
-  window.location.href = "perdiste1.html";  
+  window.location.href = paginaPerdio;  
   let divWrapper = document.getElementById('idWrapper');
   let divSpinner = document.getElementById('idSpinner');
   let divFiller = document.getElementById('idFiller');

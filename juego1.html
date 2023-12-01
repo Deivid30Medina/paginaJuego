@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="juegos/OpcionMultiple/css/App.css">
-    <link rel="stylesheet" href="css/temporizador.css">
     <link rel="stylesheet" href="css/estilosPopup.css">
     <title>Document</title>
 </head>
@@ -104,7 +103,32 @@
             </div>
         </div>
     </main>
-    <footer></footer>
+    <label style="display: none;" for="Labeltiempo">120</label>
+    <label style="display: none;" for="LabelPaginaPerdio">perdiste1.html</label>
+    <script>
+        window.addEventListener('load', function() {
+          console.log('El documento HTML se ha cargado completamente.');
+      
+          // Agregar un retraso de 3 segundos antes de ejecutar más código
+          setTimeout(function() {
+            console.log('Han pasado 2 segundos css.');
+      
+            // Coloca aquí el resto de tu código que quieres ejecutar después del retraso.
+            // Estilos relacionados con la lógica del juego
+            var styles = [
+              'css/temporizador-mision1.css'
+            ];
+      
+            styles.forEach(function(styleSrc) {
+              var link = document.createElement('link');
+              link.rel = 'stylesheet';
+              link.href = styleSrc;
+              document.head.appendChild(link);
+            });
+          }, 2000);
+        });
+    </script>
+      
     <script src="juegos/OpcionMultiple/js/App.js" type="module"></script>
     <script src="js/logicaPopup.js"></script>
     <script src="js/sonidoExplicacion.js"></script>
