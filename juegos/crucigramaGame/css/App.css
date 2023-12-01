@@ -215,6 +215,10 @@ main{
         margin-bottom: 10vh;
     }
 
+    .classTitulo{
+        top: -13%;
+    }
+
     .classTituloPregunta{
         top: 20%;
     }
