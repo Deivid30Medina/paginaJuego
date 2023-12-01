@@ -1,0 +1,87 @@
+
+body{
+    background-color: rgb(245, 208, 60);
+    width: 100%;
+}
+
+.classCointainerPrincipal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.classPreguntas{
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.classInputs{
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.classForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.classText{
+    width: 15px;
+    text-align: center;
+    height: 15px;
+    border: 2px solid #7676767c;
+}
+
+.classText2{
+    width: 16px;
+    text-align: center;
+    height: 15px;
+    pointer-events: none;
+}
+
+.classNumero{
+    pointer-events: none;
+}
+
+.classIncorrecta{
+    background-color: #FF9369;
+}
+
+.classCorrecta{
+    background-color: #69D1FF;
+}
+
+.classDespintar{
+    background-color: white;
+    border: 2px solid #7676767c;
+}
+
+.classSalario{
+    background-color: #D0F2FE;
+    border: 2px solid black;
+}
+
+.columnBajar{
+    margin-top: 63px; /*Se debe bajar de 21, para que quede debajo de un cuadro*/
+}
+
+
+.classText:focus{
+    background-color: aquamarine;
+}
+
+.classFormaRara{
+    background-color: antiquewhite;
+    /**border-radius: 10% 10% 50% 50% / 10% 10% 100% 100% ;
+    */border-radius: 10% 100% 100% 10% / 10% 50% 50% 10% ;
+
+}
