@@ -98,7 +98,6 @@ function validarObejectHtml(){
         var archivoHTML = svgObject.getAttribute("data-src");
         validarEventoClic(); //Funcion de pantalla completa en patnallacompleta.js
           if(archivoHTML != null){
-            console.log(archivoHTML);
             cargarContenidoDesdeSVG(archivoHTML);// Llama a la función cargarContenido con el archivo HTML como argumento 
           }else{
             mostarrOcultarElementos();

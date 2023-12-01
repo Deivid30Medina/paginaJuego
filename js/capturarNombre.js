@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function validarGroseria(nombreUsuario){
     if (palabrasProhibidas.some(palabra => nombreUsuario.includes(palabra))) {
-        console.log("nombreUsuario");
         alert('El nombre de usuario contiene palabras prohibidas. Por favor, elige otro nombre.');
         return false;
     } else {

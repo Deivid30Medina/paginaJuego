@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function validarEventoClic(){
-  console.log(isFullScreen);
   if (isFullScreen) {
     exitFullScreen();
   } else {
