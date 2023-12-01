@@ -11,7 +11,6 @@ let labelPerdio = document.querySelector('label[for="LabelPaginaPerdio"]');
 let paginaPerdio = labelPerdio.innerText || label.textContent;
 
 setTimeout(function() {
-    console.log('Han pasado 2 segundos js.');
     startTemporizador(tiempo, paginaPerdio);
 }, 2000);
 

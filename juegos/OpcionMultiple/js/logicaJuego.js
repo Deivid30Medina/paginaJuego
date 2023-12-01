@@ -37,7 +37,7 @@ function mensajeMostrar(mensaje){
         }else{
             window.location.href = "perdiste1.html"; 
         }
-    }, 1000);
+    }, 2000);
 
     
 }

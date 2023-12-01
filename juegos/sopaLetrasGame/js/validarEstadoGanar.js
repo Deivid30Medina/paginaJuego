@@ -7,6 +7,8 @@ function palabrasEncontrada(){
 function validarOpcionGanar(){
     palabrasEncontrada();
     if (estadoGanar == 0){
-        alert("ganaste");
+        setTimeout(function() {
+            window.location.href = "ganaste2.html";  
+          }, 2000);
     }
 }
