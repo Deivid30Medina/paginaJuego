@@ -108,24 +108,32 @@ main{
 .classCointainerPrincipal{
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .classPreguntas{
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
 }
 
+.classLabelPregunta{
+    width: auto;
+    padding-left: 5%;
+    font-size: 1.6vw;
+}
+
 .classInputs{
-    width: 60%;
+    width: 50%;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .classForm{
@@ -185,4 +193,29 @@ main{
     /**border-radius: 10% 10% 50% 50% / 10% 10% 100% 100% ;
     */border-radius: 10% 100% 100% 10% / 10% 50% 50% 10% ;
 
+}
+
+
+@media (width > 1600px) { 
+    .classCointainerPrincipal{
+        margin-bottom: 15vh;
+    }
+
+    .classTitulo{
+        top: -15%;
+    }
+
+    .classTituloPregunta{
+        top: 25%;
+    }
+}
+
+@media (width < 1600px) { 
+    .classCointainerPrincipal{
+        margin-bottom: 10vh;
+    }
+
+    .classTituloPregunta{
+        top: 20%;
+    }
 }

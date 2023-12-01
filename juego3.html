@@ -57,25 +57,25 @@
 
                 <div class="classPreguntas">
                     <label for="" class="classLabelPregunta">
-                        1. Para entrar yo debo tener
+                        1. Para entrar yo debo tener:
                     </label>
                     <label for="" class="classLabelPregunta">
-                        2. Este derecho comienza por la palabra
+                        2. Este derecho comienza por la palabra:
                     </label>
                     <label for="" class="classLabelPregunta">
-                        3. Antónimo de ocultar
+                        3. Antónimo de ocultar:
                     </label>
                     <label for="" class="classLabelPregunta">
-                        4. Cuando presto dinero y no me pagan debo
+                        4. Cuando presto dinero y no me pagan debo:
                     </label>
                     <label for="" class="classLabelPregunta">
-                        5. Para divulgar la música, el autor me debe
+                        5. Para divulgar la música, el autor me debe:
                     </label>
                     <label for="" class="classLabelPregunta">
-                        6. De forma colectiva o individual, sus obras deberán
+                        6. De forma colectiva o individual, sus obras deberán:
                     </label>
                     <label for="" class="classLabelPregunta">
-                        7. A través de que medio se difundió la canción de Rafa
+                        7. A través de que medio se difundió la canción de Rafa:
                     </label>
                 </div>
         
@@ -162,8 +162,41 @@
                 </div>
             </div>
          </div>
+         <!-- ==== INICIO Temporizador ==== -->
+        <div id="idContainerTemporizador" class="classTemporizadorPrincipal">
+            <object id="idSvgTemporizadosvg" class="classTemporizadorsvg" data="assets/svg/Universales/temporizdor.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            <p class="classPTemporizador" id="timer"></p>
+            <div id="idTemproizador" class="classTemporizador">
+                <div id="idWrapper" class="wrapper">
+                    <div id="idSpinner" class="pie spinner"></div>
+                    <div id="idFiller" class="pie filler"></div>
+                    <div id="idMask" class="mask"></div>
+                </div>
+            </div>
+        </div>  
+        <!-- ==== FIN Temporizador ==== --> 
     </main>
-    
+    <label style="display: none;" for="Labeltiempo">600</label>
+    <label style="display: none;" for="LabelPaginaPerdio">perdiste3.html</label>
+    <script>
+        window.addEventListener('load', function() {      
+          // Agregar un retraso de 3 segundos antes de ejecutar más código
+          setTimeout(function() {      
+            // Coloca aquí el resto de tu código que quieres ejecutar después del retraso.
+            // Estilos relacionados con la lógica del juego
+            var styles = [
+              'css/temporizador-mision3.css'
+            ];
+      
+            styles.forEach(function(styleSrc) {
+              var link = document.createElement('link');
+              link.rel = 'stylesheet';
+              link.href = styleSrc;
+              document.head.appendChild(link);
+            });
+          }, 2000);
+        });
+    </script>
     <script src="juegos/crucigramaGame/js/tabularAutomaticamente.js"></script>
     <script src="juegos/crucigramaGame/js/App.js" type="module"></script>
     <script src="js/logicaPopup.js"></script>
