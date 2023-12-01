@@ -4,119 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="juegos/crucigramaGame/css/App.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/estilosPopup.css">
+    <title>crucigramaGame</title>
 </head>
 <body>
-    <div class="classCointainerPrincipal">
+    <header>
+        <div class="classContainerHeader">
+            <object id="idSvgPegunta" class="classSvgPregunta" data="assets/svg/Universales/BotonesAyuda/Pregunta/1-pregunta_verde.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            <object id="idSvgMarcador" class="classMarcador" data="assets/svg/retos/mision3/apoyo/marcador.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+        </div>
+    </header>
+    <main>
+        <!--============Inicio Popup============-->
+        <div class="classContenedorPrincipalPopup" id="idPopupVentana">
+            <div class="classContenedorBlanco">
+                <div class="classColumnaImagen">
+                    <img class="classImgPopPup" src="assets/imagenes/Poppup/popupInicio.png" alt="Imagen Popup">
+                </div>
+                <div class="classColumnaInformacion">
+                    <div class="classEncabezadoPopup">
+                        <h1 class="classTituloPoppup">¡Bienvenidos a la aventura!</h1>
+                    </div>
+                    <div class="classContenidoTexto">
+                        <p class="classPPopPup">
+                            Ha llegado el último cataclismo de la villana 
+                            Piratería quien ha robado las 4 gemas del bordón 
+                            de los derechos patrimoniales, atacando a los 
+                            AuArts de las diversas regiones de Colombia 
+                            con sus 4 lacayos. Su objetivo es infringir el 
+                            derecho de autor de las obras artísticas, literarias, 
+                            musicales, audiovisuales y el software.
+                            <br>
+                            ¡No lo debemos permitir!
+                        </p>
+                    </div>
+                </div>
+                <object id="idPopupClose" class="classBtnAtrasPoppup" data="assets/svg/inicio/btn/volver.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            </div>
+        </div>
+         <!--============Fin Popup============-->
 
+         <div class="classContainerMain">
+
+            <p class="classTituloPregunta">
+                Encuentra las 7 palabras que describen el Derecho de Comunicación Pública.
+            </p>
+            <object id="idSvgTitulo" class="classTitulo" data="assets/svg/retos/mision3/titulos/titulo.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+
+
+            <!-- No borrar Contiene todo lo relacionado al juego -->
+            <div class="classCointainerPrincipal">
+
+                <div class="classPreguntas">
+                    <label for="" class="classLabelPregunta">
+                        1. Para entrar yo debo tener
+                    </label>
+                    <label for="" class="classLabelPregunta">
+                        2. Este derecho comienza por la palabra
+                    </label>
+                    <label for="" class="classLabelPregunta">
+                        3. Antónimo de ocultar
+                    </label>
+                    <label for="" class="classLabelPregunta">
+                        4. Cuando presto dinero y no me pagan debo
+                    </label>
+                    <label for="" class="classLabelPregunta">
+                        5. Para divulgar la música, el autor me debe
+                    </label>
+                    <label for="" class="classLabelPregunta">
+                        6. De forma colectiva o individual, sus obras deberán
+                    </label>
+                    <label for="" class="classLabelPregunta">
+                        7. A través de que medio se difundió la canción de Rafa
+                    </label>
+                </div>
         
-        <div class="classPreguntas">
-            <label for="" class="classLabelPregunta">
-                1. Para entrar yo debo tener ________
-            </label>
-            <label for="" class="classLabelPregunta">
-                2. Este derecho comienza por la palabra ________
-            </label>
-            <label for="" class="classLabelPregunta">
-                3. Antónimo de ocultar ________
-            </label>
-            <label for="" class="classLabelPregunta">
-                4. Cuando presto dinero y no me pagan debo ________
-            </label>
-            <label for="" class="classLabelPregunta">
-                5. Para divulgar la música, el autor me debe ________
-            </label>
-            <label for="" class="classLabelPregunta">
-                6. De forma colectiva o individual, sus obras deberán ________
-            </label>
-            <label for="" class="classLabelPregunta">
-                7. A través de que medio se difundió la canción de Rafa _______
-            </label>
-        </div>
-
-        <div class="classInputs">
-            
-            <form class="classForm columnBajar columna1" autocomplete="off" action="">
-                <label class="classLetra classNumero" for="">1</label>
-                <input id="idElemento1" class="classText classLetra" type="text" maxlength="1" autofocus oninput="handleInput(this, 1)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 2)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 3)">
-                <input class="classText2 classLetra" type="text" maxlength="1" value="E" readonly>
-                <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="S" readonly>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 6)">
-            </form>
-            <form class="classForm columna2" autocomplete="off" action="">
-                <label class="classLetra classNumero" for="">2</label>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 7)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 8)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 9)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 10)">
-                <input class="classText2 classLetra" type="text" maxlength="1" value="N" readonly>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 12)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 13)">
-                <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="A" readonly>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 15)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 16)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 17)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 18)">
-            </form>
-            <form class="classForm columnBajar columna3" autocomplete="off" action="">
-                <label class="classLetra classNumero" for="">3</label>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 19)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 20)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 21)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 22)">
-                <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="L" readonly>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 24)">
-                <input class="classText2 classLetra" type="text" maxlength="1" value="A" readonly>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 26)">
-            </form>
-            <form class="classForm columnBajar columna4" autocomplete="off" action="">
-                <label class="classLetra classNumero" for="">4</label>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 27)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 28)">
-                <input class="classText2 classLetra" type="text" maxlength="1" value="B" readonly>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 30)">
-                <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="A" readonly>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 32)">
-            </form>
-            <form class="classForm columnBajar columna5" autocomplete="off" action="">
-                <label class="classLetra classNumero" for="">5</label>
-                <input class="classText2 classLetra" type="text" maxlength="1" value="A" readonly>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 34)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 35)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 36)">
-                <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="R" readonly>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 38)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 39)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 40)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 41)">
-            </form>
-            <form class="classForm columnBajar columna6" autocomplete="off" action="">
-                <label class="classLetra classNumero" for="">6</label>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 42)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 43)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 44)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 45)">
-                <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="I" readonly>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 47)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 48)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 49)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 50)">
-            </form>
-            <form class="classForm columnBajar columna7" autocomplete="off" action="">
-                <label class="classLetra classNumero" for="">7</label>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 51)">
-                <input class="classText2 classLetra" type="text" maxlength="1" value="M" readonly>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 53)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 54)">
-                <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="O" readonly>
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 56)">
-                <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 57)">
-            </form>
-        </div>
-    </div>
+                <div class="classInputs">
+                    
+                    <form class="classForm columnBajar columna1" autocomplete="off" action="">
+                        <label class="classLetra classNumero" for="">1</label>
+                        <input id="idElemento1" class="classText classLetra" type="text" maxlength="1" autofocus oninput="handleInput(this, 1)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 2)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 3)">
+                        <input class="classText2 classLetra" type="text" maxlength="1" value="E" readonly>
+                        <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="S" readonly>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 6)">
+                    </form>
+                    <form class="classForm columna2" autocomplete="off" action="">
+                        <label class="classLetra classNumero" for="">2</label>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 7)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 8)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 9)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 10)">
+                        <input class="classText2 classLetra" type="text" maxlength="1" value="N" readonly>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 12)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 13)">
+                        <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="A" readonly>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 15)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 16)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 17)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 18)">
+                    </form>
+                    <form class="classForm columnBajar columna3" autocomplete="off" action="">
+                        <label class="classLetra classNumero" for="">3</label>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 19)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 20)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 21)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 22)">
+                        <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="L" readonly>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 24)">
+                        <input class="classText2 classLetra" type="text" maxlength="1" value="A" readonly>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 26)">
+                    </form>
+                    <form class="classForm columnBajar columna4" autocomplete="off" action="">
+                        <label class="classLetra classNumero" for="">4</label>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 27)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 28)">
+                        <input class="classText2 classLetra" type="text" maxlength="1" value="B" readonly>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 30)">
+                        <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="A" readonly>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 32)">
+                    </form>
+                    <form class="classForm columnBajar columna5" autocomplete="off" action="">
+                        <label class="classLetra classNumero" for="">5</label>
+                        <input class="classText2 classLetra" type="text" maxlength="1" value="A" readonly>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 34)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 35)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 36)">
+                        <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="R" readonly>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 38)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 39)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 40)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 41)">
+                    </form>
+                    <form class="classForm columnBajar columna6" autocomplete="off" action="">
+                        <label class="classLetra classNumero" for="">6</label>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 42)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 43)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 44)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 45)">
+                        <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="I" readonly>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 47)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 48)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 49)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 50)">
+                    </form>
+                    <form class="classForm columnBajar columna7" autocomplete="off" action="">
+                        <label class="classLetra classNumero" for="">7</label>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 51)">
+                        <input class="classText2 classLetra" type="text" maxlength="1" value="M" readonly>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 53)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 54)">
+                        <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="O" readonly>
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 56)">
+                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 57)">
+                    </form>
+                </div>
+            </div>
+         </div>
+    </main>
+    
     <script src="juegos/crucigramaGame/js/tabularAutomaticamente.js"></script>
     <script src="juegos/crucigramaGame/js/App.js" type="module"></script>
+    <script src="js/logicaPopup.js"></script>
 </body>
 </html>
