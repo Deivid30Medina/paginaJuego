@@ -41,7 +41,9 @@ function validarCondicionGanar(condicionValidar, indice){
     if(condicionValidar == "restar"){
         restarGanaste(indice);
         if(!ganaste.includes(false)){
-            alert("Ganaste, felicidades")
+            setTimeout(function() {
+                window.location.href = "ganaste3.html";  
+            }, 2000);
         }
     }else{
         sumarGanaste(indice);

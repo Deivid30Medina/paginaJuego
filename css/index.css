@@ -63,10 +63,10 @@ main{
 
 #svgObjectAgrandar{
     position: absolute;
-    width: 100vw;
+    width: 5vw;
     top: 3%;
-    right: -44vw;
-    height: 8%;
+    right: 3vw;
+    height: auto;
     display: none;
 }
 
