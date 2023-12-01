@@ -18,6 +18,20 @@
 	.st12{fill:url(#SVGID_00000096766962711359566130000016228048811533365689_);}
 	.st13{fill:url(#SVGID_00000109718505617153247180000016984733805717771910_);}
 	.st14{fill:url(#SVGID_00000175290901463385526150000007316889660194814634_);}
+	.svg-shadow{
+        animation: svg-shadow 1.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes svg-shadow {
+        from {
+          filter: drop-shadow( 0 0 5px #fff) drop-shadow( 0 0 5px #ff9a74) drop-shadow( 0 0 5px #ff9a74);
+        }
+
+        to {
+          
+          filter: drop-shadow( 0 0 8px #fff) drop-shadow( 0 0 8px #ff9a74) drop-shadow( 0 0 8px #ff9a74);
+        }
+      }
 </style>
 <g>
 	<g id="Capa_3">
@@ -305,7 +319,7 @@
 						c-1-1.1-2-1-3,0c-1.1,1-2.1,2-3.1,3c0,0,0,0,0,0c-1.2,1.1-2.4,2.3-3.5,3.4c-0.5,0.5-0.7,1-0.5,1.7C57.8,53.8,58.4,53.9,59,54
 						L59,54z"/>
 				</g>
-				<g>
+				<g class="svg-shadow">
 					
 						<radialGradient id="SVGID_00000140731535300547766990000010512630979258231476_" cx="-23.3729" cy="-61.2837" r="65.63" gradientTransform="matrix(0.9965 -8.350392e-02 -8.350392e-02 -0.9965 42.6413 57.1643)" gradientUnits="userSpaceOnUse">
 						<stop  offset="9.000000e-02" style="stop-color:#FFB472"/>
