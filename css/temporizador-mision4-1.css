@@ -1,6 +1,6 @@
 
 :root {
-    --timer-duration: 300s;
+    --timer-duration: 60s;
     --timer-size: 80px;
     --ColorFondo: rgb(255, 255, 255);
     --timer-color: rgb(255, 0, 43);
