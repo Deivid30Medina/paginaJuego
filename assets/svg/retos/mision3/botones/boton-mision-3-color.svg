@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Capa_3" data-name="Capa 3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 314.98 117.27">
+  <style type="text/css">
+  .svg-shadow{
+        animation: svg-shadow 1.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes svg-shadow {
+        from {
+          filter: drop-shadow( 0 0 5px #fff) drop-shadow( 0 0 5px #228ceb) drop-shadow( 0 0 5px #228ceb);
+        }
+
+        to {
+          
+          filter: drop-shadow( 0 0 8px #fff) drop-shadow( 0 0 8px #228ceb) drop-shadow( 0 0 8px #228ceb);
+        }
+      }
+  </style>
   <defs>
     <linearGradient id="Degradado_sin_nombre_105" data-name="Degradado sin nombre 105" x1="2946.35" y1="10459.58" x2="3414.77" y2="10459.58" gradientTransform="translate(3307.21 10532.74) rotate(-180)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#7f21ea"/>
@@ -104,7 +120,7 @@
   </g>
   <g>
     <g style="filter: url(#outer-glow-11);">
-      <g>
+      <g class="svg-shadow">
         <polygon points="119.83 63.96 104.24 24.39 99.35 31.14 106.96 60.69 119.83 63.96" style="fill: url(#linear-gradient-3);"/>
         <polygon points="89.03 89.36 92.55 105.04 119.84 66.45 106.48 63.06 89.03 89.36" style="fill: url(#Degradado_sin_nombre_55);"/>
         <polygon points="53.46 82.03 38.13 97.45 90.4 106.41 86.76 90.15 53.46 82.03" style="fill: url(#linear-gradient-4);"/>
