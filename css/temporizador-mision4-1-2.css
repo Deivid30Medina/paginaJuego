@@ -1,0 +1,173 @@
+
+:root {
+    --timer-duration: 120s;
+    --timer-size: 80px;
+    --ColorFondo: rgb(255, 255, 255);
+    --timer-color: rgb(255, 0, 43);
+    --timer-border: 5px solid rgba(255, 0, 0, 0.8);
+  }
+
+  
+  
+  .wrapper,
+  .wrapper * {
+    box-sizing: border-box;
+  }
+  
+  .wrapper {
+    position: relative;
+    background: var(--ColorFondo);
+    width: var(--timer-size);
+    height: var(--timer-size);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+  
+  .wrapper .pie {
+    width: 50%;
+    height: 100%;
+    transform-origin: 100% 50%;
+    position: absolute;
+    background: var(--timer-color);
+    border: var(--timer-border);
+  }
+  
+  .wrapper .spinner {
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    z-index: 200;
+    border-right: none;
+
+    -webkit-animation: rota var(--timer-duration) linear infinite;
+}
+  
+  .wrapper:hover .spinner,
+  .wrapper:hover .filler,
+  .wrapper:hover .mask {
+    animation-play-state: paused;
+  }
+  
+  .wrapper .filler {
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+    left: 50%;
+    opacity: 0;
+    z-index: 100;
+    animation: opa var(--timer-duration) steps(1, end) infinite reverse;
+    border-left: none;
+    -webkit-animation: opa var(--timer-duration) steps(1, end) infinite reverse;
+}
+
+  .mask{
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+}
+
+  .wrapper .mask {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    opacity: 1;
+    z-index: 300;
+    animation: opa var(--timer-duration) steps(1, end) infinite;
+    -webkit-animation: opa var(--timer-duration) steps(1, end) infinite;
+}
+
+  .classTemporizador{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .classSvgIconReloj{
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .classTemporizadorPrincipal{
+    width: 10%;
+    height: 73%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+  }
+
+  .wrapper{
+    z-index: 0;
+    border: 5px solid white;
+  }
+
+
+  .classContainerTiempo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+  .classPTemporizador{
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 2.5vw;
+    font-style: italic;
+    z-index: 1;
+    margin-bottom: 5%;
+  }
+
+  .classTemporizadorsvg{
+    width: 70%;
+    height: auto;
+    z-index: 1;
+  }
+
+  .classTemporizadorsvg2{
+    position: absolute;
+    width: 70%;
+    height: auto;
+  }
+
+
+
+  
+  @keyframes animate {
+		0%{
+			filter: hue-rotate(0deg);
+		}
+		50% {
+			filter: hue-rotate(360deg);
+			-webkit-filter: hue-rotate(360deg);
+}
+		100%{
+			filter: hue-rotate(0deg);
+		}
+	}
+  
+  @keyframes rota {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes opa {
+    0% {
+      opacity: 1;
+    }
+    50%, 100% {
+      opacity: 0;
+    }
+  }
+
+  

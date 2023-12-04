@@ -1,8 +1,10 @@
+
 function rand(max) {
   return Math.floor(Math.random() * max);
 }
 
 function shuffle(a) {
+  console.log("Ento8");
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [a[i], a[j]] = [a[j], a[i]];
@@ -11,6 +13,7 @@ function shuffle(a) {
 }
 
 function changeBrightness(factor, sprite) {
+  console.log("Ento9");
   let virtCanvas = document.createElement("canvas");
   virtCanvas.width = 500;
   virtCanvas.height = 500;
@@ -33,11 +36,13 @@ function changeBrightness(factor, sprite) {
 }
 
 function displayVictoryMess(moves) {
+  console.log("Ento7");
   document.getElementById("moves").innerHTML = "You Moved " + moves + " Steps.";
   toggleVisablity("Message-Container");
 }
 
 function toggleVisablity(id) {
+  console.log("Ento10");
   if (document.getElementById(id).style.visibility == "visible") {
     document.getElementById(id).style.visibility = "hidden";
   } else {
@@ -46,6 +51,7 @@ function toggleVisablity(id) {
 }
 
 function Maze(Width, Height) {
+  console.log("entro4");
   let mazeMap;
   let width = Width;
   let height = Height;
@@ -85,6 +91,7 @@ function Maze(Width, Height) {
   };
 
   function genMap() {
+    console.log("entro55");
     mazeMap = new Array(height);
     for (y = 0; y < height; y++) {
       mazeMap[y] = new Array(width);
@@ -102,6 +109,7 @@ function Maze(Width, Height) {
   }
 
   function defineMaze() {
+    console.log("entro52");
     let isComp = false;
     let move = false;
     let cellsVisited = 1;
@@ -161,6 +169,7 @@ function Maze(Width, Height) {
   }
 
   function defineStartEnd() {
+    console.log("entro55");
     switch (rand(4)) {
       case 0:
         startCoord = {
@@ -211,6 +220,7 @@ function Maze(Width, Height) {
 }
 
 function DrawMaze(Maze, ctx, cellsize, endSprite = null) {
+  console.log("entro3");
   let map = Maze.map();
   let cellSize = cellsize;
   let drawEndMethod;
@@ -224,6 +234,7 @@ function DrawMaze(Maze, ctx, cellsize, endSprite = null) {
   };
 
   function drawCell(xCord, yCord, cell) {
+    console.log("entro56");
     let x = xCord * cellSize;
     let y = yCord * cellSize;
     ctx.lineWidth =3;
@@ -254,6 +265,7 @@ function DrawMaze(Maze, ctx, cellsize, endSprite = null) {
   }
 
   function drawMap() {
+    console.log("entro57");
     for (x = 0; x < map.length; x++) {
       for (y = 0; y < map[x].length; y++) {
         drawCell(x, y, map[x][y]);
@@ -262,6 +274,7 @@ function DrawMaze(Maze, ctx, cellsize, endSprite = null) {
   }
 
   function drawEndFlag() {
+    console.log("entro58");
     let coord = Maze.endCoord();
     let gridSize = 4;
     let fraction = cellSize / gridSize - 2;
@@ -290,6 +303,7 @@ function DrawMaze(Maze, ctx, cellsize, endSprite = null) {
   }
 
   function drawEndSprite() {
+    console.log("entro59");
     let offsetLeft = cellSize / 50;
     let offsetRight = cellSize / 25;
     let coord = Maze.endCoord();
@@ -307,6 +321,7 @@ function DrawMaze(Maze, ctx, cellsize, endSprite = null) {
   }
 
   function clear() {
+    console.log("entro60");
     let canvasSize = cellSize * map.length;
     ctx.clearRect(0, 0, canvasSize, canvasSize);
   }
@@ -322,6 +337,7 @@ function DrawMaze(Maze, ctx, cellsize, endSprite = null) {
 }
 
 function Player(maze, c, _cellsize, onComplete, sprite = null) {
+  console.log("entro2");
   let ctx = c.getContext("2d");
   let drawSprite;
   let moves = 0;
@@ -344,6 +360,7 @@ function Player(maze, c, _cellsize, onComplete, sprite = null) {
   };
 
   function drawSpriteCircle(coord) {
+    console.log("entro62");
     ctx.beginPath();
     ctx.fillStyle = "yellow";
     ctx.arc(
@@ -361,6 +378,8 @@ function Player(maze, c, _cellsize, onComplete, sprite = null) {
   }
 
   function drawSpriteImg(coord) {
+    console.log("entro63");
+    console.log(coord);
     let offsetLeft = cellSize / 50;
     let offsetRight = cellSize / 25;
     ctx.drawImage(
@@ -381,6 +400,7 @@ function Player(maze, c, _cellsize, onComplete, sprite = null) {
   }
 
   function removeSprite(coord) {
+    console.log("entro64");
     let offsetLeft = cellSize / 50;
     let offsetRight = cellSize / 25;
     ctx.clearRect(
@@ -391,7 +411,10 @@ function Player(maze, c, _cellsize, onComplete, sprite = null) {
     );
   }
 
+  
+
   function check(e) {
+    console.log("entro65");
     let cell = map[cellCoords.x][cellCoords.y];
     moves++;
     switch (e.keyCode) {
@@ -442,9 +465,17 @@ function Player(maze, c, _cellsize, onComplete, sprite = null) {
     }
   }
 
-  this.bindKeyDown = function () {
-    window.addEventListener("keydown", check, false);
+  function simularClicBoton(keyCode) {
+    check({
+      keyCode: keyCode,
+    });
+  }
+  
 
+  this.bindKeyDown = function () {
+    console.log("entro68");
+    window.addEventListener("keydown", check, false);
+    console.log("entro");
     $("#view").swipe({
       swipe: function (
         event,
@@ -479,6 +510,7 @@ function Player(maze, c, _cellsize, onComplete, sprite = null) {
       },
       threshold: 0,
     });
+        
   };
 
   this.unbindKeyDown = function () {
@@ -501,6 +533,7 @@ let difficulty;
 // sprite.src = 'media/sprite.png';
 
 window.onload = function () {
+  console.log("entro70");
   let viewWidth = $("#view").width();
   let viewHeight = $("#view").height();
   if (viewHeight < viewWidth) {
@@ -522,7 +555,7 @@ window.onload = function () {
     }
   };
   sprite = new Image();
-  sprite.src = "./key.png" + "?" + new Date().getTime();
+  sprite.src = "juegos/LaberintoGame/laberinto1/key.png" + "?" + new Date().getTime();
   sprite.setAttribute("crossOrigin", " ");
   sprite.onload = function () {
     sprite = changeBrightness(1.2, sprite);
@@ -531,7 +564,7 @@ window.onload = function () {
   };
 
   finishSprite = new Image();
-  finishSprite.src = "./home.png" + "?" + new Date().getTime();
+  finishSprite.src = "juegos/LaberintoGame/laberinto1/home.png" + "?" + new Date().getTime();
   finishSprite.setAttribute("crossOrigin", " ");
   finishSprite.onload = function () {
     finishSprite = changeBrightness(1.1, finishSprite);
@@ -541,6 +574,7 @@ window.onload = function () {
 };
 
 window.onresize = function () {
+  console.log("entro71");
   let viewWidth = $("#view").width();
   let viewHeight = $("#view").height();
   if (viewHeight < viewWidth) {
@@ -558,9 +592,11 @@ window.onresize = function () {
 };
 
 function makeMaze() {
+  console.log("entro5");
   if (player != undefined) {
     player.unbindKeyDown();
     player = null;
+    console.log("entro");
   }
   let e = document.getElementById("diffSelect");
   difficulty = e.options[e.selectedIndex].value;
@@ -568,7 +604,46 @@ function makeMaze() {
   maze = new Maze(difficulty, difficulty); //facil:10, medio:15, dificil:25 y extremo: 38
   draw = new DrawMaze(maze, ctx, cellSize, finishSprite);
   player = new Player(maze, mazeCanvas, cellSize, displayVictoryMess, sprite);
+
+
+ 
   if (document.getElementById("mazeContainer").style.opacity < "100") {
     document.getElementById("mazeContainer").style.opacity = "100";
   }
 }
+
+// Llama a la función simularClicBoton(codigoTecla) desde cualquier parte de tu código
+function simularClicBotonDesdeCualquierParte(codigoTecla) {
+  if (player) {
+    player.simularClicBoton(codigoTecla);
+  } else {
+    console.error("Player no está definido");
+  }
+}
+
+// Agrega eventos de clic a los botones
+let svgObjects = document.querySelectorAll(".classSvgContainer");
+console.log(svgObjects);
+// Para cada elemento SVG seleccionado, agrega un evento de carga
+svgObjects.forEach(function (svgObject) {
+  svgObject.addEventListener("load", function () {
+    // Obtiene el documento SVG cargado dentro del objeto <object>
+    let svgDocument = svgObject.contentDocument;
+
+    // Selecciona todos los elementos con la clase '.elemento-svg' dentro del documento SVG
+    let elementsSVG = svgDocument.querySelectorAll(".movimiento");
+    // Para cada elemento con la clase '.elemento-svg', agrega un evento de clic
+    elementsSVG.forEach(function (elementoSVG) {
+      elementoSVG.onclick = function () {
+        console.log(elementoSVG);
+        // Obtiene el atributo 'data-src' del objeto <object> que contiene el SVG
+        let codigoTecla = svgObject.getAttribute("data-src");
+        console.log(codigoTecla);
+        if (codigoTecla != null) {
+          simularClicBotonDesdeCualquierParte(codigoTecla);
+        } else {
+        }
+      };
+    });
+  });
+});

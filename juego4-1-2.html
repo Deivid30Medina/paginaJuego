@@ -1,191 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="juegos/crucigramaGame/css/App.css">
-    <link rel="stylesheet" href="css/estilosPopup.css">
-    <title>crucigramaGame</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maze</title>
+  <link rel="stylesheet" href="juegos/LaberintoGame/laberinto1/style.css">
 </head>
 <body>
-    <header>
-        <div class="classContainerHeader">
-            <object id="idSvgPegunta" class="classSvgPregunta" data="assets/svg/Universales/BotonesAyuda/Pregunta/1-pregunta_verde.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            <object id="idSvgMarcador" class="classMarcador" data="assets/svg/retos/mision3/apoyo/marcador.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+
+  <main>
+    <div class="classContainerMain">
+      <div class="classBtnsMovimeinto">
+        <object id="idSvgIzquierda" data-src="37" class="classBtns classIzquierda classSvgContainer" data="assets/svg/retos/mision4/btns-flecha/izquierda.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+        <div class="classContainerArribaAbajo">
+          <object id="idSvgArriba" data-src="38"  class="classBtns classArriba classSvgContainer" data="assets/svg/retos/mision4/btns-flecha/arriba.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+          <object id="idSvgAbajo" data-src="40" class="classBtns classAbajo classSvgContainer" data="assets/svg/retos/mision4/btns-flecha/abajo.svg" type="image/svg+xml" width="100%" height="100%" ></object>
         </div>
-    </header>
-    <main>
-        <!--============Inicio Popup============-->
-        <div class="classContenedorPrincipalPopup" id="idPopupVentana">
-            <div class="classContenedorBlanco">
-                <div class="classColumnaImagen">
-                    <img class="classImgPopPup" src="assets/imagenes/Poppup/popupInicio.png" alt="Imagen Popup">
-                </div>
-                <div class="classColumnaInformacion">
-                    <div class="classEncabezadoPopup">
-                        <h1 class="classTituloPoppup">¡Bienvenidos a la aventura!</h1>
-                    </div>
-                    <div class="classContenidoTexto">
-                        <p class="classPPopPup">
-                            Ha llegado el último cataclismo de la villana 
-                            Piratería quien ha robado las 4 gemas del bordón 
-                            de los derechos patrimoniales, atacando a los 
-                            AuArts de las diversas regiones de Colombia 
-                            con sus 4 lacayos. Su objetivo es infringir el 
-                            derecho de autor de las obras artísticas, literarias, 
-                            musicales, audiovisuales y el software.
-                            <br>
-                            ¡No lo debemos permitir!
-                        </p>
-                    </div>
-                </div>
-                <object id="idPopupClose" class="classBtnAtrasPoppup" data="assets/svg/inicio/btn/volver.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            </div>
-        </div>
-         <!--============Fin Popup============-->
+        <object id="idSvgDerecha" data-src="39" class="classBtns classDerecha classSvgContainer" data="assets/svg/retos/mision4/btns-flecha/derecha.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+      </div>
+      <p id="idTexto" class="classTexto">
+        Ayúdanos a armar la gema del derecho de reproducción completando el laberinto. 
+      </p>
 
-         <div class="classContainerMain">
-
-            <p class="classTituloPregunta">
-                Encuentra las 7 palabras que describen el Derecho de Comunicación Pública.
-            </p>
-            <object id="idSvgTitulo" class="classTitulo" data="assets/svg/retos/mision3/titulos/titulo.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-
-
-            <!-- No borrar Contiene todo lo relacionado al juego -->
-            <div class="classCointainerPrincipal">
-
-                <div class="classPreguntas">
-                    <label for="" class="classLabelPregunta">
-                        1. Para entrar yo debo tener:
-                    </label>
-                    <label for="" class="classLabelPregunta">
-                        2. Este derecho comienza por la palabra:
-                    </label>
-                    <label for="" class="classLabelPregunta">
-                        3. Antónimo de ocultar:
-                    </label>
-                    <label for="" class="classLabelPregunta">
-                        4. Cuando presto dinero y no me pagan debo:
-                    </label>
-                    <label for="" class="classLabelPregunta">
-                        5. Para divulgar la música, el autor me debe:
-                    </label>
-                    <label for="" class="classLabelPregunta">
-                        6. De forma colectiva o individual, sus obras deberán:
-                    </label>
-                    <label for="" class="classLabelPregunta">
-                        7. A través de que medio se difundió la canción de Rafa:
-                    </label>
-                </div>
+      <div id="page">
         
-                <div class="classInputs">
-                    
-                    <form class="classForm columnBajar columna1" autocomplete="off" action="">
-                        <label class="classLetra classNumero" for="">1</label>
-                        <input id="idElemento1" class="classText classLetra" type="text" maxlength="1" autofocus oninput="handleInput(this, 1)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 2)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 3)">
-                        <input class="classText2 classLetra" type="text" maxlength="1" value="E" readonly>
-                        <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="S" readonly>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 6)">
-                    </form>
-                    <form class="classForm columna2" autocomplete="off" action="">
-                        <label class="classLetra classNumero" for="">2</label>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 7)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 8)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 9)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 10)">
-                        <input class="classText2 classLetra" type="text" maxlength="1" value="N" readonly>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 12)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 13)">
-                        <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="A" readonly>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 15)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 16)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 17)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 18)">
-                    </form>
-                    <form class="classForm columnBajar columna3" autocomplete="off" action="">
-                        <label class="classLetra classNumero" for="">3</label>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 19)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 20)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 21)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 22)">
-                        <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="L" readonly>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 24)">
-                        <input class="classText2 classLetra" type="text" maxlength="1" value="A" readonly>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 26)">
-                    </form>
-                    <form class="classForm columnBajar columna4" autocomplete="off" action="">
-                        <label class="classLetra classNumero" for="">4</label>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 27)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 28)">
-                        <input class="classText2 classLetra" type="text" maxlength="1" value="B" readonly>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 30)">
-                        <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="A" readonly>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 32)">
-                    </form>
-                    <form class="classForm columnBajar columna5" autocomplete="off" action="">
-                        <label class="classLetra classNumero" for="">5</label>
-                        <input class="classText2 classLetra" type="text" maxlength="1" value="A" readonly>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 34)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 35)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 36)">
-                        <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="R" readonly>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 38)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 39)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 40)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 41)">
-                    </form>
-                    <form class="classForm columnBajar columna6" autocomplete="off" action="">
-                        <label class="classLetra classNumero" for="">6</label>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 42)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 43)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 44)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 45)">
-                        <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="I" readonly>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 47)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 48)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 49)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 50)">
-                    </form>
-                    <form class="classForm columnBajar columna7" autocomplete="off" action="">
-                        <label class="classLetra classNumero" for="">7</label>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 51)">
-                        <input class="classText2 classLetra" type="text" maxlength="1" value="M" readonly>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 53)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 54)">
-                        <input class="classText2 classLetra classSalario" type="text" maxlength="1" value="O" readonly>
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 56)">
-                        <input class="classText classLetra" type="text" maxlength="1" oninput="handleInput(this, 57)">
-                    </form>
-                </div>
-            </div>
-         </div>
-         <!-- ==== INICIO Temporizador ==== -->
-        <div id="idContainerTemporizador" class="classTemporizadorPrincipal">
-            <object id="idSvgTemporizadosvg" class="classTemporizadorsvg" data="assets/svg/Universales/temporizdor.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            <p class="classPTemporizador" id="timer"></p>
-            <div id="idTemproizador" class="classTemporizador">
-                <div id="idWrapper" class="wrapper">
-                    <div id="idSpinner" class="pie spinner"></div>
-                    <div id="idFiller" class="pie filler"></div>
-                    <div id="idMask" class="mask"></div>
-                </div>
-            </div>
-        </div>  
-        <!-- ==== FIN Temporizador ==== --> 
-    </main>
-    <label style="display: none;" for="Labeltiempo">600</label>
-    <label style="display: none;" for="LabelPaginaPerdio">perdiste3.html</label>
+        <div id="Message-Container">
+          <div id="message">
+            <h1>Congratulations!</h1>
+            <p>You are done.</p>
+            <p id="moves"></p>
+            <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container')" value="Cool!" />
+          </div>
+        </div>
+    
+        <br>
+        <div id="menu">
+          <div class="custom-select">
+            <select id="diffSelect" style="display: none;">
+                      <option value="10">Easy</option>                                    
+            </select>
+          </div>
+         <!--  <input id="startMazeBtn" type="button" onclick="makeMaze()" value="Start" /> -->
+        </div>
+    
+        <div id="view">
+          <div id="mazeContainer">
+            <canvas id="mazeCanvas" class="border" height="1100" width="1100"></canvas>
+          </div>
+        </div>
+    
+      </div>
+
+      <object id="idSvgPersonaje" class="classPersonaje" data="assets/svg/retos/mision4/btns-flecha/derecha.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+
+    </div>
+
+    <!-- ==== INICIO Temporizador ==== -->
+    <div id="idContainerTemporizador" class="classTemporizadorPrincipal">
+      <object id="idSvgTemporizadosvg" class="classTemporizadorsvg" data="assets/svg/Universales/temporizdor.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+      <p class="classPTemporizador" id="timer"></p>
+      <div id="idTemproizador" class="classTemporizador">
+          <div id="idWrapper" class="wrapper">
+              <div id="idSpinner" class="pie spinner"></div>
+              <div id="idFiller" class="pie filler"></div>
+              <div id="idMask" class="mask"></div>
+          </div>
+      </div>
+  </div>  
+  <!-- ==== FIN Temporizador ==== --> 
+
+  </main>
+    <label style="display: none;" for="Labeltiempo">120</label>
+    <label style="display: none;" for="LabelPaginaPerdio">juego4-1-1.html</label>
+
     <script>
         window.addEventListener('load', function() {      
-          // Agregar un retraso de 3 segundos antes de ejecutar más código
+           // Agregar un retraso de 3 segundos antes de ejecutar más código
           setTimeout(function() {      
             // Coloca aquí el resto de tu código que quieres ejecutar después del retraso.
             // Estilos relacionados con la lógica del juego
             var styles = [
-              'css/temporizador-mision3.css'
+              'css/temporizador-mision4-1-2.css'
             ];
       
             styles.forEach(function(styleSrc) {
@@ -194,11 +90,16 @@
               link.href = styleSrc;
               document.head.appendChild(link);
             });
+
           }, 2000);
         });
     </script>
-    <script src="juegos/crucigramaGame/js/tabularAutomaticamente.js"></script>
-    <script src="juegos/crucigramaGame/js/App.js" type="module"></script>
-    <script src="js/logicaPopup.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+  
+  <script src="juegos/LaberintoGame/laberinto1/script.js"></script>
+  <!-- <script type="module" src="js/agregarTiempoTemporizador.js"></script> -->
+
 </body>
 </html>

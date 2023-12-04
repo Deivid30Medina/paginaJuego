@@ -1,21 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-html, body {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    padding: 0;
+html{
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
     margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../../../assets/Fondos/img/FondoAzul.jpg");
+    background-repeat: no-repeat; /* Evita la repetición del fondo */
+    background-attachment: fixed;
+    background-position: center;
+    max-width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-size: 100% 100%; /* Ajusta al 100% de ancho y alto */
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.classContainerMain{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    width: 78%;
+    height: 85%;
+    background-color: white;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.classTexto{
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: Arial;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5vw;
+}
+
+.classBtnsMovimeinto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
-    background-color: #fff;
-    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    border: 1px solid red;
+    display: flex;
+    z-index: 5;
 }
 
+.classContainerArribaAbajo{
+    width: 5%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.classBtns{
+    width: 5%;
+    height: 100%;
+    margin: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.classIzquierda{
+    margin-left: 5%;
+}
+
+.classDerecha{
+
+}
+
+.classArriba{
+    width: 100%;
+    height: auto;
+    margin-bottom: 80%;
+}
+
+.classAbajo{
+    width: 100%;
+    height: auto;
+}
+
+.classPersonaje{
+    position: absolute;
+    width: 10%;
+    top: 0;
+    right: 10%;
+    bottom: 0;
+    margin: auto;
+}
+
+
 #view {
-    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #mazeContainer {
@@ -24,6 +129,13 @@ html, body {
     display: inline-block;
     margin: auto;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
 }
 #mazeContainer #mazeCanvas {
     margin: 0;
@@ -90,9 +202,12 @@ input:focus, select:focus {
 }
 #page {
 	text-align: center;
-	height: auto;
-	width: auto;
+	height: 100%;
+	width: 100%;
 	margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #page #menu {
     margin: auto;
