@@ -26,7 +26,7 @@ document.addEventListener('keyup', function(event) {
           .then((response) => response.text())
           .then((data) => {
             //Actualizar el contenido del div con el nuevo html
-            var entro = localStorage.getItem('entro');
+            let entro = localStorage.getItem('entro');
             if(archivo !== "mision1.html" || entro === "true"){
               mostrarContenido(archivo);
               cambiarTituloPagina(archivo);
@@ -81,21 +81,21 @@ document.addEventListener('keyup', function(event) {
     
     
     //Metodo por  AXIOS   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    var svgObjects = document.querySelectorAll(".classSvgContainer");
+    let svgObjects = document.querySelectorAll(".classSvgContainer");
     
     // Para cada elemento SVG seleccionado, agrega un evento de carga
     svgObjects.forEach(function (svgObject) {
       svgObject.addEventListener("load", function () {
         // Obtiene el documento SVG cargado dentro del objeto <object>
-        var svgDocument = svgObject.contentDocument;
+        let svgDocument = svgObject.contentDocument;
     
         // Selecciona todos los elementos con la clase '.elemento-svg' dentro del documento SVG
-        var elementsSVG = svgDocument.querySelectorAll(".elemento-svg");
+        let elementsSVG = svgDocument.querySelectorAll(".elemento-svg");
         // Para cada elemento con la clase '.elemento-svg', agrega un evento de clic
         elementsSVG.forEach(function (elementoSVG) {
           elementoSVG.onclick = function () {
             // Obtiene el atributo 'data-src' del objeto <object> que contiene el SVG
-          var archivoHTML = svgObject.getAttribute("data-src");
+          let archivoHTML = svgObject.getAttribute("data-src");
             if(archivoHTML != null){
               cargarContenidoDesdeSVG(archivoHTML);// Llama a la función cargarContenido con el archivo HTML como argumento 
             }else{

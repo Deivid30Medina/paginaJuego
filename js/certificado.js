@@ -11,7 +11,7 @@ function configurarHtml2Pdf() {
         // Configuración para la generación de imágenes a partir del HTML
         html2canvas: {
             scale: 3, // Escala del lienzo HTML2Canvas (mayor escala para mejores gráficos, pero más peso)
-            letterRendering: true, // Activar renderizado de texto mejorado (puede afectar el rendimiento)
+            letterRendering: true, // Actilet renderizado de texto mejorado (puede afectar el rendimiento)
         },
         // Configuración específica de jsPDF (la biblioteca subyacente utilizada por html2pdf)
         jsPDF: {
@@ -30,18 +30,25 @@ function generarYDescargarPDF(elementoParaConvertir) {
         .catch(err => console.log(err));
 }
 
-// Función principal para inicializar el proceso cuando se carga el DOM
-function iniciarProcesoDescargaPDF() {
-    document.addEventListener("DOMContentLoaded", () => {
-        // Escuchamos el clic del botón
-        const botonDescargar = document.querySelector("#idCertificadoDescargar");
 
-        botonDescargar.addEventListener("click", () => {
-            const elementoParaConvertir = document.body; // Puedes elegir cualquier elemento del DOM
-            generarYDescargarPDF(elementoParaConvertir);
-        });
+let svgObjects = document.querySelectorAll(".classDescargar");
+    
+// Para cada elemento SVG seleccionado, agrega un evento de carga
+svgObjects.forEach(function (svgObject) {
+  svgObject.addEventListener("load", function () {
+    // Obtiene el documento SVG cargado dentro del objeto <object>
+    let svgDocument = svgObject.contentDocument;
+
+    // Selecciona todos los elementos con la clase '.elemento-svg' dentro del documento SVG
+    let elementsSVG = svgDocument.querySelectorAll(".elemento-svg");
+    // Para cada elemento con la clase '.elemento-svg', agrega un evento de clic
+    elementsSVG.forEach(function (elementoSVG) {
+      elementoSVG.onclick = function () {
+        const elementoParaConvertir = document.body; // Puedes elegir cualquier elemento del DOM
+        console.log(elementoParaConvertir);
+        generarYDescargarPDF(elementoParaConvertir);
+      };
     });
-}
+  });
+});
 
-// Llama a la función principal para iniciar el proceso
-iniciarProcesoDescargaPDF();
