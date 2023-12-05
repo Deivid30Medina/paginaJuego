@@ -1,0 +1,175 @@
+html{
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../../../assets/Fondos/img/FondoAzul.jpg");
+    background-repeat: no-repeat; /* Evita la repetición del fondo */
+    background-attachment: fixed;
+    background-position: center;
+    max-width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-size: 100% 100%; /* Ajusta al 100% de ancho y alto */
+}
+
+
+
+/* ======================================== Inicio Estilos HEADER ======================================== */
+
+
+header{
+    width: 100%;
+}
+
+.classContainerHeader{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
+    
+}
+
+.classSvgPregunta{
+    width: 8%;
+    margin-left: 0vw;
+    margin-top: 2vh;
+    border: 1px solid green;
+    z-index: 5;
+}
+
+.classMarcador{
+    position: absolute;
+    width: 30%;
+    right: 4%;
+    top: 10vh;
+    z-index: 2;
+}
+
+/* ======================================== fIN Estilos HEADER ======================================== */
+
+
+/*======================================== Inicio Main ========================================= */
+
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.classContainerMain{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    width: 78%;
+    height: 73%;
+    background-color: white;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+
+
+.classTitulo{
+    position: absolute;
+    top: -22%;
+    left: -3.2%;
+    width: 60%;
+    height: auto;
+}
+
+
+/* ======================================== Fin Main ============================================= */
+
+/* ==================Inicio  Laberinto ============ */
+
+.clasContainerLaberinto{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.classContainerTituloPregunta{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.classTituloPregunta{
+    margin: 0;
+    font-size: 1.5vw;
+    z-index: 1;
+    font-family: Arial;
+    text-align: center;
+    font-weight: bolder;
+    
+}
+
+.classNumeroPregunta{
+    width: 5%;
+    height: auto;
+    margin-right: 2%;
+}
+
+.classContainerPregunta{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.classLetraPregunta{
+    width: 1vw;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin-right: 2%;
+}
+
+.ClassFiguraGema{
+    width: 8%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 5%;
+    margin: auto;
+}
+
+.classConfirmarQuestion{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    right: 5%;   
+    bottom: 5%;
+    margin: auto;
+}
+/* ==================Fin  Laberinto ============ */
+
+
+#text5{
+    margin-right: 4%;
+}

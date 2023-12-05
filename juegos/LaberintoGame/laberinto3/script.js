@@ -37,7 +37,7 @@ function displayVictoryMess(moves) {
   //toggleVisablity("Message-Container");  
   setTimeout(function() {      
     
-    window.location.href = "juego4-2-1.html";
+    window.location.href = "juego4-3-1.html";
 
   }, 2000);
 }
@@ -632,7 +632,7 @@ function makeMaze() {
     player = null;
   }
   let e = document.getElementById("diffSelect");
-  difficulty = e.options[e.selectedIndex].value;
+  difficulty = e.options[e.selectedIndex].value; //facil:10, medio:15, dificil:25 y extremo: 38
   cellSize = mazeCanvas.width / difficulty;
   maze = new Maze(difficulty, difficulty);
   draw = new DrawMaze(maze, ctx, cellSize, finishSprite);
