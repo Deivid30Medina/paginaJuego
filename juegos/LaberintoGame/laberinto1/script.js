@@ -33,12 +33,19 @@ function changeBrightness(factor, sprite) {
 }
 
 function displayVictoryMess(moves) {
-  window.location.href = "juego4-2-1.html";
+  //document.getElementById("moves").innerHTML = "You Moved " + moves + " Steps.";
+  //toggleVisablity("Message-Container");  
+  setTimeout(function() {      
+    
+    window.location.href = "juego4-2-1.html";
+
+  }, 2000);
 }
 
 function toggleVisablity(id) {
   if (document.getElementById(id).style.visibility == "visible") {
     document.getElementById(id).style.visibility = "hidden";
+    alert("Felicidades");
   } else {
     document.getElementById(id).style.visibility = "visible";
   }
@@ -634,7 +641,6 @@ function makeMaze() {
     document.getElementById("mazeContainer").style.opacity = "100";
   }
 }
-
 
 
 let svgObjects = document.querySelectorAll(".classSvgContainer");
