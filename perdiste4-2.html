@@ -58,10 +58,22 @@
                 <object id="idSvgPegunta" class="classSvgPregunta classBtnInformativo" data="assets/svg/Universales/BotonesAyuda/Pregunta/2-pregunta_morado.svg" type="image/svg+xml" width="100%" height="100%" ></object>
             </div>
             <div class="classBtns">
-                <object id="idSvgJugar" data-src="juego4-2-2.html" class="classSvgJugar classBtnMorado classSvgContainer" data="assets/svg/retos/mision1/Perdio/volver_a_jugar.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+                <object id="idSvgJugar" data-src="juego4-2-1.html" class="classSvgJugar classBtnMorado classSvgContainer" data="assets/svg/retos/mision1/Perdio/volver_a_jugar.svg" type="image/svg+xml" width="100%" height="100%" ></object>
             </div>
         </div>
     </main>
+    <script>
+        window.addEventListener('load', function() {      
+          // Agregar un retraso de 3 segundos antes de ejecutar más código
+          if (document.readyState === 'complete') {
+                // Todos los recursos y elementos de la página se han cargado
+                console.log("Se cargaron todos los recursos y elementos.");
+            } else {
+                // La página todavía se está cargando
+                console.log("La página todavía se está cargando.");
+            }
+        });
+    </script>
     <script src="js/logicaPopup.js"></script>
     <script src="js/sonidoExplicacion.js"></script>
     <script src="js/cargarOtrasPaginas.js"></script>

@@ -58,11 +58,20 @@
         </div>
          
     </main>
+    
     <script>
-        window.addEventListener('load', function() {      
-          document.getElementById("idContainerImg").addEventListener("click", function(){
-            window.location.href = "juego4-1-1.html";  
-          });
+        window.addEventListener('load', function() {   
+            if (document.readyState === 'complete') {
+                // Todos los recursos y elementos de la página se han cargado
+                console.log("Se cargaron todos los recursos y elementos.");
+                document.getElementById("idContainerImg").addEventListener("click", function(){
+                    window.location.href = "juego4-1-1.html";  
+                });
+            } else {
+                // La página todavía se está cargando
+                console.log("La página todavía se está cargando.");
+            }   
+          
         });
     </script>
     <script src="js/logicaPopup.js"></script>

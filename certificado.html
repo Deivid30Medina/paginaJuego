@@ -14,8 +14,22 @@
         </div>
        <!--  <button id="idCertificadoDescargar" class="classDescargar" >Descargar Certificado</button> -->
        <object id="idCertificadoDescargar" class="classDescargar" data="assets/svg/certificado/descargar.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+       <object id="idSvgAtras" data-src="felicidades.html" class="classAtras classSvgContainer" data="assets/svg/Universales/paso_atras.svg" type="image/svg+xml" width="100%" height="100%" ></object>    
     </main>
+    <script>
+        window.addEventListener('load', function() {      
+          // Agregar un retraso de 3 segundos antes de ejecutar más código
+          if (document.readyState === 'complete') {
+                // Todos los recursos y elementos de la página se han cargado
+                console.log("Se cargaron todos los recursos y elementos.");
+            } else {
+                // La página todavía se está cargando
+                console.log("La página todavía se está cargando.");
+            }
+        });
+    </script>
     <script src="js/certificado.js"></script>
     <script src="js/asignarNombre.js"></script>
+    <script src="js/cargarOtrasPaginas.js"></script>
 </body>
 </html>

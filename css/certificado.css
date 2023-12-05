@@ -51,3 +51,12 @@ main{
     margin: auto;
     z-index: 3;
 }
+
+.classAtras{
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    margin: auto;
+    height: auto;
+    width: 8%;
+}

@@ -31,10 +31,10 @@ function generarYDescargarPDF(elementoParaConvertir) {
 }
 
 
-let svgObjects = document.querySelectorAll(".classDescargar");
+let objectsDescargar = document.querySelectorAll(".classDescargar");
     
 // Para cada elemento SVG seleccionado, agrega un evento de carga
-svgObjects.forEach(function (svgObject) {
+objectsDescargar.forEach(function (svgObject) {
   svgObject.addEventListener("load", function () {
     // Obtiene el documento SVG cargado dentro del objeto <object>
     let svgDocument = svgObject.contentDocument;

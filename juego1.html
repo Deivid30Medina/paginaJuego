@@ -107,23 +107,29 @@
     <label style="display: none;" for="LabelPaginaPerdio">perdiste1.html</label>
     <script>
         window.addEventListener('load', function() {
-          console.log('El documento HTML se ha cargado completamente.');
+            if (document.readyState === "complete") {
+                // Todos los recursos y elementos de la página se han cargado
+                console.log("Se cargaron todos los recursos y elementos.");
+                // Agregar un retraso de 3 segundos antes de ejecutar más código
+                setTimeout(function() {      
+                    // Coloca aquí el resto de tu código que quieres ejecutar después del retraso.
+                    // Estilos relacionados con la lógica del juego
+                    var styles = [
+                    'css/temporizador-mision1.css'
+                    ];
+            
+                    styles.forEach(function(styleSrc) {
+                    var link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.href = styleSrc;
+                    document.head.appendChild(link);
+                    });
+                }, 2000);
+            } else {
+            // La página todavía se está cargando
+            console.log("La página todavía se está cargando.");
+            }
       
-          // Agregar un retraso de 3 segundos antes de ejecutar más código
-          setTimeout(function() {      
-            // Coloca aquí el resto de tu código que quieres ejecutar después del retraso.
-            // Estilos relacionados con la lógica del juego
-            var styles = [
-              'css/temporizador-mision1.css'
-            ];
-      
-            styles.forEach(function(styleSrc) {
-              var link = document.createElement('link');
-              link.rel = 'stylesheet';
-              link.href = styleSrc;
-              document.head.appendChild(link);
-            });
-          }, 2000);
         });
     </script>
       

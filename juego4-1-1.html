@@ -92,22 +92,27 @@
 
     <script>
         window.addEventListener('load', function() {      
-           // Agregar un retraso de 3 segundos antes de ejecutar más código
-          setTimeout(function() {      
-            // Coloca aquí el resto de tu código que quieres ejecutar después del retraso.
-            // Estilos relacionados con la lógica del juego
-            var styles = [
-              'css/temporizador-mision4-1.css'
-            ];
-      
-            styles.forEach(function(styleSrc) {
-              var link = document.createElement('link');
-              link.rel = 'stylesheet';
-              link.href = styleSrc;
-              document.head.appendChild(link);
-            });
+            if (document.readyState === "complete") {
+                 // Agregar un retraso de 3 segundos antes de ejecutar más código
+                setTimeout(function() {      
+                    // Coloca aquí el resto de tu código que quieres ejecutar después del retraso.
+                    // Estilos relacionados con la lógica del juego
+                    var styles = [
+                    'css/temporizador-mision4-1.css'
+                    ];
+            
+                    styles.forEach(function(styleSrc) {
+                    var link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.href = styleSrc;
+                    document.head.appendChild(link);
+                    });
 
-          }, 2000);
+                }, 2000);
+            }else{
+                // La página todavía se está cargando
+                console.log("La página todavía se está cargando.");
+            }
         });
     </script>
     <script src="js/logicaPopup.js"></script>
