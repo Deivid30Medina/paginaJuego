@@ -37,7 +37,7 @@ function displayVictoryMess(moves) {
   //toggleVisablity("Message-Container");  
   setTimeout(function() {      
     
-    window.location.href = "juego4-3-1.html";
+    window.location.href = "ganaste4.html";
 
   }, 2000);
 }

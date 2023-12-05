@@ -171,6 +171,12 @@ main{
     right: 0%;
 }
 
+.classSvgContinuar{
+    width: 15%;
+    height: 45vh;
+    position: absolute;
+    right: 0%;
+}
 
 .classBordonyMisiones{
     width: 100%;
