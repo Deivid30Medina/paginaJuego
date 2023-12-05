@@ -58,7 +58,7 @@ main{
 
 .classBtnsMovimeinto{
     position: absolute;
-    width: 100%;
+    width: 20%;
     height: 100%;
     top: 0;
     bottom: 0;
@@ -66,11 +66,13 @@ main{
     margin: auto;
     border: 1px solid red;
     display: flex;
-    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
 }
 
 .classContainerArribaAbajo{
-    width: 5%;
+    width: 30%;
     height: auto;
     margin: 0;
     display: flex;
@@ -80,7 +82,7 @@ main{
 }
 
 .classBtns{
-    width: 5%;
+    width: 30%;
     height: 100%;
     margin: 0; 
     display: flex;
@@ -89,7 +91,7 @@ main{
 }
 
 .classIzquierda{
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 .classDerecha{
