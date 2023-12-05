@@ -24,6 +24,7 @@
     <script>
         window.addEventListener('load', function() {      
           // Agregar un retraso de 3 segundos antes de ejecutar más código
+          localStorage.setItem('primeraVez', true);
           if (document.readyState === 'complete') {
                 // Todos los recursos y elementos de la página se han cargado
                 console.log("Se cargaron todos los recursos y elementos.");
@@ -34,6 +35,7 @@
         });
     </script>
     <footer></footer>
+    <script src="js/recargarPagina.js"></script>
     <script src="js/pantallaCompleta.js"></script>
     <script src="js/cargarPaginasIndex.js"></script>
     <script>
