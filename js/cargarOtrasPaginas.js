@@ -68,6 +68,7 @@ svgObjects.forEach(function (svgObject) {
 
     // Selecciona todos los elementos con la clase '.elemento-svg' dentro del documento SVG
     let elementsSVG = svgDocument.querySelectorAll(".elemento-svg");
+    console.log(elementsSVG);
     // Para cada elemento con la clase '.elemento-svg', agrega un evento de clic
     elementsSVG.forEach(function (elementoSVG) {
       elementoSVG.onclick = function () {

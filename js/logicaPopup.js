@@ -35,7 +35,6 @@ async function validarPopupAbrir(){
         // Para cada elemento con la clase '.classsSonido', agrega un evento de clic
         elementsSonido.forEach(function (elementoSVG) {
             elementoSVG.onclick = function () {
-                console.log("AbrioPregunta");
                 mostrarPopup();
             };
         });

@@ -37,9 +37,9 @@
       <stop offset="1" stop-color="#6f00d6"/>
     </linearGradient>
   </defs>
-  <g id="Capa_3" data-name="Capa 3">
-    <path class="cls-1 elemento-svg" d="m37.34.88l240.82.06c9.2.05,17.35,5.96,20.26,14.69l14.42,42.15c4.64,13.94-5.79,28.31-20.48,28.24l-270.04.18c-14.69-.08-24.97-14.56-20.18-28.45L16.94,13.69C19.93,4.99,28.13.83,37.34.88Z"/>
-    <text  x="60" y="60" class="classText elemento-svg">
+  <g id="Capa_3" class="elemento-svg" data-name="Capa 3">
+    <path class="cls-1 " d="m37.34.88l240.82.06c9.2.05,17.35,5.96,20.26,14.69l14.42,42.15c4.64,13.94-5.79,28.31-20.48,28.24l-270.04.18c-14.69-.08-24.97-14.56-20.18-28.45L16.94,13.69C19.93,4.99,28.13.83,37.34.88Z"/>
+    <text  x="60" y="60" class="classText">
       ¡A jugar!
     </text>
   </g>
