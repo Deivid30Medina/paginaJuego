@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/video.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="classHeaderMiison1">
+        <div class="classCOntainerHeader">
+            <object id="idSvgMarcador" class="classMarcador" data="assets/svg/retos/apoyo/marcador-1.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            <object id="idSvgTitulo" class="classTitle" data="assets/svg/retos/apoyo/titulo.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+        </div>
+    </header>
+    <main>
+        <object id="idSvgReproducir" class="classSvgReproducir classSvgVideo" data="assets/svg/videosJuego/play.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+        <div class="classContenedorInformacion">
+            <video id="idVideo" class="classVideoInformativo" autoplay>
+                <!-- Fuentes de video en diferentes formatos -->
+                <source src="assets/video/Informativos/mision1.mp4" type="video/mp4">
+                <source src="video.webm" type="video/webm">
+                <source src="video.ogv" type="video/ogg">
+                <!-- Mensaje en caso de que el navegador no soporte ninguno de los formatos -->
+                Tu navegador no soporta el elemento de video.
+            </video>
+            
+        </div>
+        <div class="classBtsnsAbajo">
+            <div class="classOmiter">
+                <object id="idSvgOmitir" data-src="mision1.html" class="classSvgOmitir classSvgContainer" data="assets/svg/videosJuego/Omitor.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            </div>
+        </div>
+    </main>
+    <script>
+        window.addEventListener('load', function() {      
+          // Agregar un retraso de 3 segundos antes de ejecutar más código
+          if (document.readyState === 'complete') {
+                // Todos los recursos y elementos de la página se han cargado
+                console.log("Se cargaron todos los recursos y elementos.");
+            } else {
+                // La página todavía se está cargando
+                console.log("La página todavía se está cargando.");
+            }
+        });
+    </script>
+    <script src="js/cargarOtrasPaginas.js"></script>
+    <script>
+        localStorage.setItem('entro', "true");
+    </script>
+    <script src="js/logicaVideo.js"></script>
+</body>
+</html>
