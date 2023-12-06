@@ -1,5 +1,5 @@
 const palabraUbicacion = [,,,];
-const palabras = ['PRESTAMO', 'PLATAFORMAS', 'DISTRIBUCIÓN', 'VENTA', 'ALQUILER', 'AUTOR'];
+const palabras = ['DISTRIBUCIÓN', 'PLATAFORMAS', 'PRESTAMO', 'ALQUILER', 'VENTA', 'AUTOR'];
 const filas = 8;
 const columnas = 12;
 const sopa = colocarPalabrasEnSopa(palabras, filas, columnas);

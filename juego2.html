@@ -64,11 +64,11 @@
 
             <!-- NO borrar, hace aprte d ela logica dle juego -->
             <div class="classPalabrasBuscar">
-                <p id="idPRESTAMO" class = "classPalabra">PRESTAMO</p>
+                <p id="idPRESTAMO" class = "classPalabra">DISTRIBUCIÓN</p>
                 <p id="idPLATAFORMAS" class = "classPalabra">PLATAFORMAS</p>
-                <p id="idDISTRIBUCIÓN" class = "classPalabra">DISTRIBUCIÓN</p>
-                <p id="idVENTA" class = "classPalabra">VENTA</p>
-                <p id="idALQUILER" class = "classPalabra">ALQUILER</p>
+                <p id="idDISTRIBUCIÓN" class = "classPalabra">PRESTAMO</p>
+                <p id="idVENTA" class = "classPalabra">ALQUILER</p>
+                <p id="idALQUILER" class = "classPalabra">VENTA</p>
                 <p id="idAUTOR" class = "classPalabra">AUTOR</p>
                 <button id="idNewGame" class="classNewGame">Nuevo Juego</button>
             </div>
@@ -100,20 +100,20 @@
                 // Todos los recursos y elementos de la página se han cargado
                 console.log("Se cargaron todos los recursos y elementos.");
                 // Archivos JS relacionados con la lógica del juego
-                let scripts = [
-                    'juegos/sopaLetrasGame/js/crearEstructuraSopaLetras.js',
-                    'juegos/sopaLetrasGame/js/pintarPalabraSopaLetras.js',
-                    'juegos/sopaLetrasGame/js/guardarPalabraPintada.js',
-                    'juegos/sopaLetrasGame/js/validarEstadoGanar.js',
-                    'juegos/sopaLetrasGame/js/AcomodarLetrasSopa.js'
+                // let scripts = [
+                //     'juegos/sopaLetrasGame/js/crearEstructuraSopaLetras.js',
+                //     'juegos/sopaLetrasGame/js/pintarPalabraSopaLetras.js',
+                //     'juegos/sopaLetrasGame/js/guardarPalabraPintada.js',
+                //     'juegos/sopaLetrasGame/js/validarEstadoGanar.js',
+                //     'juegos/sopaLetrasGame/js/AcomodarLetrasSopa.js'
 
-                ];
+                // ];
 
-                scripts.forEach(function(scriptSrc) {
-                    let script = document.createElement('script');
-                    script.src = scriptSrc;
-                    document.body.appendChild(script);
-                });
+                // scripts.forEach(function(scriptSrc) {
+                //     let script = document.createElement('script');
+                //     script.src = scriptSrc;
+                //     document.body.appendChild(script);
+                // });
                 // Agregar un retraso de 3 segundos antes de ejecutar más código
                 setTimeout(function() {      
                     // Coloca aquí el resto de tu código que quieres ejecutar después del retraso.
@@ -137,7 +137,13 @@
     </script>
       
     <script src="juegos/sopaLetrasGame/js/temporizador.js" type="module"></script>
- 
+    
+    <!-- Archivos JS relacionados con la lógica del juego -->
+    <script src="juegos/sopaLetrasGame/js/crearEstructuraSopaLetras.js" type="module"></script>
+    <script src="juegos/sopaLetrasGame/js/pintarPalabraSopaLetras.js" type="module"></script>
+    <script src="juegos/sopaLetrasGame/js/guardarPalabraPintada.js" type="module"></script>
+    <script src="juegos/sopaLetrasGame/js/validarEstadoGanar.js" type="module"></script>
+    <script src="juegos/sopaLetrasGame/js/AcomodarLetrasSopa.js" type="module"></script>
 
  <!-- <script>
 alert("La resolución de tu pantalla es: " + screen.width + " x " + screen.height) 
