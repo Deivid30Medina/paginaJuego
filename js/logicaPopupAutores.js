@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("AbrioAutores");
     validarPopupAbrir2();
     validarPopupCierre2();
 });
