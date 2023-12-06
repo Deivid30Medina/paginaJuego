@@ -90,25 +90,20 @@ main{
 .classSvgReproducir{
     position: absolute;
     height: auto;
-    width: 5%;
+    width: 10%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+    opacity: 0;
+    z-index: -1;
 }
 
-.classSvgPausar{
-    position: absolute;
-    height: auto;
-    width: 5%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+.show{
+    opacity: 1 !important;
+    z-index: 2 !important;
 }
-
 
 .classBtsnsAbajo{
     width: 100%;
@@ -120,7 +115,6 @@ main{
 }
 
 .classOmiter{
-    margin-top: 2%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -131,6 +125,7 @@ main{
 
 .classSvgOmitir{
     width: 15%;
+    margin-top: 2%;
 }
 
 /*=====================Fin Main=========================*/
