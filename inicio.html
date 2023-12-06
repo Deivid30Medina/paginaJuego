@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/inicio.css">
     <link rel="stylesheet" href="css/estilosPopup.css">
+    <link rel="stylesheet" href="css/estilosPopupAutores.css">
     <title>LIRA-Y-BONGÓ-JUEGO</title>
 </head>
 <body class="classBodyIndex">
@@ -22,17 +23,16 @@
                 </div>
                 <div class="classColumnaInformacion">
                     <div class="classEncabezadoPopup">
-                        <h1 class="classTituloPoppup">¡Bienvenidos a la aventura!</h1>
+                        <h1 class="classTituloPoppup">¡La aventura!</h1>
                     </div>
                     <div class="classContenidoTexto">
                         <p class="classPPopPup">
-                            Ha llegado el último cataclismo de la villana 
-                            Piratería quien ha robado las 4 gemas del bordón 
-                            de los derechos patrimoniales, atacando a los 
-                            AuArts de las diversas regiones de Colombia 
-                            con sus 4 lacayos. Su objetivo es infringir el 
-                            derecho de autor de las obras artísticas, literarias, 
-                            musicales, audiovisuales y el software.
+                            Ha llegado el último cataclismo de la villana Piratería 
+                            quién ha robado las 4 gemas del bordón de los derechos 
+                            patrimoniales, atacando a los AuArts de las diversas 
+                            regiones de Colombia con sus 4 lacayos. Su objetivo es 
+                            infringir el derecho de autor de las obras artísticas, 
+                            literarias, musicales, audiovisuales y el software.
                             <br>
                             ¡No lo debemos permitir!
                         </p>
@@ -43,12 +43,29 @@
         </div>
          <!--============Fin Popup============-->
 
+        <!--============Inicio Popup Autores============-->
+        <div class="classContenedorPrincipalPopup2" id="idPopupVentana2">
+            <div class="classContenedorBlanco2">
+                <img class="classAutores" src="assets/imagenes/Inicio/Autores/Autores.png" alt="Imagen Autores">
+                <object id="idPopupClose2" class="classBtnAtrasPoppup2" data="assets/svg/inicio/btn/volver.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            </div>
+        </div>
+         <!--============Fin Popup Autores============-->
 
-        <!-- Agrega la etiqueta de audio con el atributo "autoplay" y "data-src" -->
-        <audio id="idAudiopExplicacion" autoplay>
+
+     
+        <audio id="idAudiopExplicacion">
             <!-- Fuentes de audio en diferentes formatos -->
             <source src="assets/audios/explicacion/mision1/mision1.mp3" type="audio/mp3">
-            <source src="https://github.com/Deivid30Medina/paginaJuego/tree/main/assets/audios/explicacion/inicio/inicio.mp3" type="audio/mp3">
+            <source src="ruta/al/archivo/de/audio1.ogg" type="audio/ogg">
+            <source src="ruta/al/archivo/de/audio1.wav" type="audio/wav">
+            <!-- Mensaje en caso de que el navegador no soporte ninguno de los formatos -->
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <!-- Agrega la etiqueta de audio con el atributo "autoplay" -->
+        <audio id="idAudioBandaSonora" autoplay>
+            <!-- Fuentes de audio en diferentes formatos -->
+            <source src="assets/audios/escenas/inicio/BandaSonora.mp3" type="audio/mp3">
             <source src="ruta/al/archivo/de/audio1.ogg" type="audio/ogg">
             <source src="ruta/al/archivo/de/audio1.wav" type="audio/wav">
             <!-- Mensaje en caso de que el navegador no soporte ninguno de los formatos -->
@@ -57,10 +74,11 @@
         <div class="classCOntainerBtnsAyuda">
             <object id="idSvgMusica" class="classSvgMusica classBtnMusica" data="assets/svg/Universales/BotonesAyuda/Audios/1-audio-izquierdo.svg" type="image/svg+xml" width="100%" height="100%" ></object>
             <object id="idSvgPegunta" class="classSvgPregunta classBtnPregunta" data="assets/svg/Universales/BotonesAyuda/Pregunta/2-pregunta_morado.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            <object id="idSvgAutores" class="classSvgAutores classBtnAutores" data="assets/svg/Universales/informacion_autores.svg" type="image/svg+xml" width="100%" height="100%" ></object>
         </div>
         <form class="classFormIndex" action="">
-            <label class="classNombreLabel" for="">Dime tu nombre:</label>
-            <input id="idNombreINput" class="classNombreInput" type="text">
+            <label class="classNombreLabel" for="">Escribe tu nombre y apellido</label>
+            <input id="idNombreINput" class="classNombreInput" type="text" maxlength="15">
             <div class="classContainerBtns">
                 <object id="svgObjectJugar" data-src="mision1.html"  class="classSvgContainer classBtnInicio" data="assets/svg/inicio/btn/jugar.svg" type="image/svg+xml" width="100%" height="100%" ></object>
                 <object id="svgObjectHome"  class="classBtnInicio" data="assets/svg/inicio/btn/Home.svg" type="image/svg+xml" width="100%" height="100%" ></object>
@@ -80,11 +98,12 @@
             }
         });
     </script>
-    <script src="js/sonidoExplicacion.js"></script>
+    <script src="js/sonidoExplicacionInicio.js"></script>
     <script src="js/mayusculas.js"></script>
     <script src="js/cargarOtrasPaginas.js" ></script>
     <script src="js/capturarNombre.js" ></script>
     <script src="js/home.js"></script>
     <script src="js/logicaPopup.js"></script>
+    <script src="js/logicaPopupAutores.js"></script>
 </body>
 </html>
