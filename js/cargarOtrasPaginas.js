@@ -1,3 +1,4 @@
+
 function cargarContenidoDesdeSVG(archivo) {
   setTimeout(function () {
     // Cargar el nuevo contenido
@@ -68,12 +69,10 @@ svgObjects.forEach(function (svgObject) {
     // Selecciona todos los elementos con la clase '.elemento-svg' dentro del documento SVG
     let elementsSVG = svgDocument.querySelectorAll(".elemento-svg");
     // Para cada elemento con la clase '.elemento-svg', agrega un evento de clic
-    console.log(elementsSVG);
     elementsSVG.forEach(function (elementoSVG) {
       elementoSVG.onclick = function () {
         // Obtiene el atributo 'data-src' del objeto <object> que contiene el SVG
         let archivoHTML = svgObject.getAttribute("data-src");
-        console.log("Se dio un clic");
         if (archivoHTML != null) {
           cargarContenidoDesdeSVG(archivoHTML); // Llama a la función cargarContenido con el archivo HTML como argumento
         } else {
