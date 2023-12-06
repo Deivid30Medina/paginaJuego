@@ -12,3 +12,7 @@ function validarOpcionGanar(){
           }, 2000);
     }
 }
+
+export {
+    validarOpcionGanar
+};

@@ -1,3 +1,5 @@
+import { agregarLetraPintada, obtenerPalabraFormada,validarPalabraObtenida,limpiarLetrasPintadas } from "../js/guardarPalabraPintada.js";
+
 /**
  * Inicializa el comportamiento de pintura de letras en los botones de la sopa de letras.
  * @param {NodeList} botones - Lista de nodos de botones donde se aplicará la pintura de letras.

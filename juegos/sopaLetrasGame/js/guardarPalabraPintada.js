@@ -1,3 +1,5 @@
+import { validarOpcionGanar } from "../js/validarEstadoGanar.js";
+
 // Esta variable almacenará las letras pintadas
 let letrasPintadas = [];
 
@@ -37,7 +39,7 @@ function validarPalabraObtenida(palabraObtenida){
 function pintarPalabraVerde(indice){
     // Recuperar desde el almacenamiento en sesión
     const arrayDesdeSesion = JSON.parse(sessionStorage.getItem('arrayPrincipal'));
-    ubicacionesPalabra = arrayDesdeSesion[indice];
+    let ubicacionesPalabra = arrayDesdeSesion[indice];
     ubicacionesPalabra.forEach(ubicaciones => {
         const idButton = `${ubicaciones[0]}-${ubicaciones[1]}`;
         const letraBoton = document.getElementById(idButton);
@@ -53,3 +55,9 @@ function limpiarLetrasPintadas() {
     letrasPintadas = [];
 }
 
+export {
+    agregarLetraPintada,
+    obtenerPalabraFormada,
+    validarPalabraObtenida,
+    limpiarLetrasPintadas
+};
