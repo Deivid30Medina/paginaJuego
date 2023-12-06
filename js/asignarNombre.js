@@ -6,7 +6,7 @@ function actualizarLabel() {
     var labelNombre = document.getElementById('idNombre');
   
     // Asignar el valor al contenido del label 
-    labelNombre.textContent = nombreUsuario || "Anonimo"; // Usar un valor predeterminado si nombreUsuario es nulo o indefinido
+    labelNombre.textContent = nombreUsuario || "Anónimo"; // Usar un valor predeterminado si nombreUsuario es nulo o indefinido
   }
   
 // Llamar a la función para actualizar el label cuando se carga la página

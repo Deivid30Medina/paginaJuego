@@ -27,7 +27,7 @@ function guardarNombreUsuario() {
     // Guardar el valor en localStorage
     if (respuesta) {
       if (nombreUsuario === "") {
-        localStorage.setItem("nombreUsuario", "Anonimo");
+        localStorage.setItem("nombreUsuario", "Anónimo");
       } else {
         localStorage.setItem("nombreUsuario", nombreUsuario);
       }
