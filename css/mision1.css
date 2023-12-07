@@ -102,11 +102,6 @@ body {
     margin-right: 4%;
 }
 
-.classImgRefrescar{
-    object-fit: scale-down;
-    width: 25%;
-    cursor: pointer;
-}
 
 /*=====================Estilos Main=========================*/
 
@@ -327,6 +322,12 @@ main{
     }
   }
   
+  .classImgRefrescar{
+    object-fit: scale-down;
+    width: 25%;
+    cursor: pointer;
+}
+
   .pulsate-bck {
     animation: pulsate-bck 0.5s ease-in-out 5 forwards;
     -webkit-animation: pulsate-bck 0.5s ease-in-out 5 forwards;
