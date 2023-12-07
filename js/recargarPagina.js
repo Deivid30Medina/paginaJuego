@@ -1,15 +1,17 @@
-function reiniciarDocumento() {
-    // Verificar si ya se ha solicitado la recarga del documento
-    if (!sessionStorage.getItem('yaRecargado')) {
-        console.log("entro");
-      // Establecer la bandera en el sessionStorage para indicar que ya se solicitó la recarga
-      sessionStorage.setItem('yaRecargado', true);
-  
-      // Recargar la página actual
-      location.reload();
+window.addEventListener('load', function() {      
+  // Agregar un retraso de 3 segundos antes de ejecutar más código
+    if (document.readyState === 'complete') {
+        let btnRecargar = this.document.getElementById("idImgRecargar");
+        btnRecargar.addEventListener("click", function(){
+          recargarPaginaClcik();
+          
+        });
+    } else {
+        // La página todavía se está cargando
+        console.log("La página todavía se está cargando.");
     }
-  }
-  
-  // Llama a la función para reiniciar el documento
-  reiniciarDocumento();
-  
+});
+
+function recargarPaginaClcik(){
+  window.location.reload();
+}

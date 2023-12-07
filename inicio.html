@@ -11,7 +11,7 @@
 <body class="classBodyIndex">
     <header>
         <h1 class="classImgIndex">
-            <img class="classImgTitle" src="assets/imagenes/Inicio/Titulos/1-titulo.png" alt="">
+            <object class=" classSvgTitle bounce-in-fwd classInfinito" data="assets/svg/inicio/titulos/titulo.svg" type="image/svg+xml" width="100%" height="100%" ></object>
         </h1>
     </header>
     <main>
@@ -74,6 +74,7 @@
         <div class="classCOntainerBtnsAyuda">
             <object id="idSvgMusica" class="classSvgMusica classBtnMusica" data="assets/svg/Universales/BotonesAyuda/Audios/1-audio-izquierdo.svg" type="image/svg+xml" width="100%" height="100%" ></object>
             <object id="idSvgPegunta" class="classSvgPregunta classBtnPregunta" data="assets/svg/Universales/BotonesAyuda/Pregunta/2-pregunta_morado.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            <img id="idImgRecargar" class="classImgRefrescar pulsate-bck" src="assets/imagenes/universales/refrescar.png" alt="Refrescar Pagina">
             <object id="idSvgAutores" class="classSvgAutores classBtnAutores" data="assets/svg/Universales/informacion_autores.svg" type="image/svg+xml" width="100%" height="100%" ></object>
         </div>
         <form class="classFormIndex" action="">
@@ -105,6 +106,7 @@
     <script src="js/home.js"></script>
     <script src="js/logicaPopup.js"></script>
     <script src="js/logicaPopupAutores.js"></script>
+    <script src="js/recargarPagina.js"></script>
     <script>
         localStorage.removeItem("entro");
     </script>
