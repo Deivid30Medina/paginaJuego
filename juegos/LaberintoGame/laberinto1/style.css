@@ -90,12 +90,16 @@ main{
     justify-content: center;
 }
 
+.classSvgBtn{
+    object-fit: scale-down;
+    cursor: pointer;
+}
+
 .classIzquierda{
     margin-left: 10%;
 }
 
 .classDerecha{
-
 }
 
 .classArriba{

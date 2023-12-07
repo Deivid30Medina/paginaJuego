@@ -643,22 +643,11 @@ function makeMaze() {
 }
 
 
-let svgObjects = document.querySelectorAll(".classSvgContainer");
+let svgObjects = document.querySelectorAll(".classSvgBtn");
 // Para cada elemento SVG seleccionado, agrega un evento de carga
 svgObjects.forEach(function (svgObject) {
-  svgObject.addEventListener("load", function () {
-    // Obtiene el documento SVG cargado dentro del objeto <object>
-    let svgDocument = svgObject.contentDocument;
-    
-    // Selecciona todos los elementos con la clase '.elemento-svg' dentro del documento SVG
-    let elementsSVG = svgDocument.querySelectorAll(".movimiento");
-    // Para cada elemento con la clase '.elemento-svg', agrega un evento de clic
-    elementsSVG.forEach(function (elementoSVG) {
-      elementoSVG.onclick = function () {
-        // Obtiene el atributo 'data-src' del objeto <object> que contiene el SVG
-        let movimeinto = svgObject.getAttribute("data-src");
-        player.checkBtns(movimeinto);
-      };
-    });
+  svgObject.addEventListener("click", function () {
+    let movimeinto = svgObject.getAttribute("data-src");
+    player.checkBtns(movimeinto);
   });
 });

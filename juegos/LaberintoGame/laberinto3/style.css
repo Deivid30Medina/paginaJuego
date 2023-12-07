@@ -90,12 +90,16 @@ main{
     justify-content: center;
 }
 
+.classSvgBtn{
+    object-fit: scale-down;
+    cursor: pointer;
+}
+
 .classIzquierda{
     margin-left: 10%;
 }
 
 .classDerecha{
-
 }
 
 .classArriba{
@@ -247,7 +251,6 @@ input:focus, select:focus {
 	    width: 120px;
 	}
 }
-
 .classImgRefrescar{
     position: absolute;
     object-fit: scale-down;
