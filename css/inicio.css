@@ -115,8 +115,10 @@ header{
 
 .classImgRefrescar{
     object-fit: scale-down;
-    width: 100%;
+    width: 90%;
     cursor: pointer;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .classImgRefrescar{

@@ -200,10 +200,15 @@ main{
 }
 
 .classImgRefrescar{
+    position: absolute;
     object-fit: scale-down;
-    width: 8%;
+    width: 6%;
     cursor: pointer;
     margin-top: 2vh;
+    top: -4vh;
+    left: 20vw;
+    right: 0;
+    margin: auto;
   }
   
   .pulsate-bck {

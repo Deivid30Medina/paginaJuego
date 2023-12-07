@@ -94,8 +94,9 @@ main{
 
 .classImgRefrescar{
     object-fit: scale-down;
-    width: 10%;
+    width: 8%;
     cursor: pointer;
+    margin-right: 1%;
   }
 
 .pulsate-bck {

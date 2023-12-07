@@ -325,8 +325,9 @@ main{
   
   .classImgRefrescar{
     object-fit: scale-down;
-    width: 25%;
+    width: 22%;
     cursor: pointer;
+    margin-left: 5%;
 }
 
   .pulsate-bck {
