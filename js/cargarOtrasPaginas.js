@@ -7,7 +7,7 @@ function cargarContenidoDesdeSVG(archivo) {
       .then((data) => {
         //Actualizar el contenido del div con el nuevo html
         let entro = localStorage.getItem("entro");
-        if (archivo !== "audio1.html" || entro === "true") {
+        if (archivo !== "video-inicio.html" || entro === "true") {
           mostrarContenido(archivo);
           cambiarTituloPagina(archivo);
         } else {
@@ -21,7 +21,7 @@ function cargarContenidoDesdeSVG(archivo) {
 }
 
 function validarFuncionesAdicionales(archivo) {
-  if (archivo === "audio1.html") {
+  if (archivo === "video-inicio.html") {
     return guardarNombreUsuario();
   }
 }

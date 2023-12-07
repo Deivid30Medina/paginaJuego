@@ -3,41 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilosPopup.css">
-    <link rel="stylesheet" href="css/ganaste.css">
+    <link rel="stylesheet" href="css/ganaste2.css">
     <title>Document</title>
 </head>
 <body>
     <main>
-        <!--============Inicio Popup============-->
-        <div class="classContenedorPrincipalPopup" id="idPopupVentana">
-            <div class="classContenedorBlanco">
-                <div class="classColumnaImagen">
-                    <img class="classImgPopPup" src="assets/imagenes/Poppup/popupInicio.png" alt="Imagen Popup">
-                </div>
-                <div class="classColumnaInformacion">
-                    <div class="classEncabezadoPopup">
-                        <h1 class="classTituloPoppup">¡Bienvenidos a la aventura!</h1>
-                    </div>
-                    <div class="classContenidoTexto">
-                        <p class="classPPopPup">
-                            Ha llegado el último cataclismo de la villana 
-                            Piratería quien ha robado las 4 gemas del bordón 
-                            de los derechos patrimoniales, atacando a los 
-                            AuArts de las diversas regiones de Colombia 
-                            con sus 4 lacayos. Su objetivo es infringir el 
-                            derecho de autor de las obras artísticas, literarias, 
-                            musicales, audiovisuales y el software.
-                            <br>
-                            ¡No lo debemos permitir!
-                        </p>
-                    </div>
-                </div>
-                <object id="idPopupClose" class="classBtnAtrasPoppup" data="assets/svg/inicio/btn/volver.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            </div>
-        </div>
-         <!--============Fin Popup============-->
-
          <audio id="idAudiopExplicacion" autoplay>
             <!-- Fuentes de audio en diferentes formatos -->
             <source src="assets/audios/explicacion/mision1/mision1.mp3" type="audio/mp3">
@@ -53,7 +23,6 @@
             </div>
             <div class="classCOntainerBtnsAyuda">
                 <object id="idSvgMusica" class="classSvgMusica classBtnInformativo" data="assets/svg/Universales/BotonesAyuda/Audios/4-audio_verde-derecho.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-                <object id="idSvgPegunta" class="classSvgPregunta classBtnInformativo" data="assets/svg/Universales/BotonesAyuda/Pregunta/3-pregunta_verde-izquierdo.svg" type="image/svg+xml" width="100%" height="100%" ></object>
             </div>
             <img class="classMiguel" src="assets/imagenes/retos/Mision1/Gano/miguel.png" alt="Personaje Miguel">
             <div class="classContainerGema">
@@ -63,7 +32,8 @@
                 <object id="idSvgTexto" class="classSvgTexto" data="assets/svg/retos/mision1/Gano/explicacion_derecho-66.svg" type="image/svg+xml" width="100%" height="100%" ></object>
             </div>
             <div class="classContainerbtn">
-                <object id="idSvgMision2" data-src="mision3.html" class="classSvgMision2 classSvgContainer" data="assets/svg/retos/mision1/Gano/siguiente_mision.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+                <object id="idSvgMison2" data-src="mision3.html" class="classSvgMision2 classSvgContainer" data="assets/svg/Universales/menu_principal.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+                <object id="idSvgVideo2" data-src="video-mision3.html" class="classSvgVideo2 classSvgContainer" data="assets/svg/Universales/siguiente_mision.svg" type="image/svg+xml" width="100%" height="100%" ></object>
             </div>
             
         </div>
@@ -80,7 +50,6 @@
             }
         });
     </script>
-    <script src="js/logicaPopup.js"></script>
     <script src="js/cargarOtrasPaginas.js"></script>
     <script src="js/sonidoExplicacion.js"></script>
 </body>

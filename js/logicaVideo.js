@@ -10,6 +10,12 @@ window.addEventListener("load", function () {
 
     // Llama a capturarBtn después de que todos los elementos se han cargado
     capturarBtn(video);
+
+    // Agrega un evento al video para redirigir a otro HTML al finalizar
+    video.addEventListener("ended", function () {
+      let pagina = video.getAttribute("data-src");
+      window.location.href = pagina;
+    });
   }
 });
 

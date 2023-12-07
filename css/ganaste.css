@@ -1,141 +1,147 @@
-html{
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
-    margin: 0;
-    padding: 0;
+html {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: url("../assets/Fondos/img/fondo_verde.jpg");
-    background-repeat: no-repeat; /* Evita la repetición del fondo */
-    background-attachment: fixed;
-    background-position: center;
-    max-width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
-    background-size: 100% 100%; /* Ajusta al 100% de ancho y alto */
+  background-image: url("../assets/Fondos/img/fondo_verde.jpg");
+  background-repeat: no-repeat; /* Evita la repetición del fondo */
+  background-attachment: fixed;
+  background-position: center;
+  max-width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  background-size: 100% 100%; /* Ajusta al 100% de ancho y alto */
 }
 
-.classCOntainerMarcador{
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
+.classCOntainerMarcador {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
-.classMarcador{
-    position: absolute;
-    width: 80%;
-    height: auto;
-    padding-top: 10%;
-    z-index: 1;
+.classMarcador {
+  position: absolute;
+  width: 80%;
+  height: auto;
+  padding-top: 10%;
+  z-index: 1;
 }
 
-.classCOntainerBtnsAyuda{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1;
+.classCOntainerBtnsAyuda {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
 }
 
-.classBtnInformativo{
-    width: 10%;
-    height: auto;
+.classBtnInformativo {
+  width: 10%;
+  height: auto;
 }
 
-main{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.classContainerMain{
-
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 78%;
-    height: 73%;
-    background-color: white;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
+.classContainerMain {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 78%;
+  height: 73%;
+  background-color: white;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
-.classMiguel{
-    position: absolute;
-    bottom: 0;
-    right: 5%;
-    width: 30%;
-    height: auto;
-    z-index: 0;
+.classMiguel {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 30%;
+  height: auto;
+  z-index: 0;
 }
 
-.classContainerbtn{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+.classContainerbtn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.classSvgMision2{
-    height: auto;
-    width: 25%;
-    margin-bottom: 2%;
-    z-index: 1;
+.classSvgMision2 {
+  height: auto;
+  width: 23%;
+  margin-bottom: 2%;
+  z-index: 1;
+  margin-right: 2%;
 }
 
-.classContainerGema{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
+.classSvgVideo2 {
+  height: auto;
+  width: 25%;
+  margin-bottom: 2%;
+  z-index: 1;
 }
 
-.classSvgGema{
-    height: auto;
-    width: 40%;
-    position: absolute;
-    bottom: -15vh;
-    left: -10vw;
-    z-index: 1;
+.classContainerGema {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
-.classContainerTexto{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    z-index: 0;
+.classSvgGema {
+  height: auto;
+  width: 40%;
+  position: absolute;
+  bottom: -15vh;
+  left: -10vw;
+  z-index: 1;
 }
 
-.classSvgTexto{
-    width: 45%;
-    z-index: 0;
-    padding-right: 15%;
-    padding-bottom: 2%;
+.classContainerTexto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 0;
+}
+
+.classSvgTexto {
+  width: 45%;
+  z-index: 0;
+  padding-right: 15%;
+  padding-bottom: 2%;
 }
 
 .bounce-in-fwd {
-	-webkit-animation: bounce-in-fwd 1s both;
-	        animation: bounce-in-fwd 1s both;
+  -webkit-animation: bounce-in-fwd 1s both;
+  animation: bounce-in-fwd 1s both;
 }
-
 
 /* ----------------------------------------------
  * Generated by Animista on 2023-11-30 9:25:28
@@ -149,109 +155,107 @@ main{
  * animation bounce-in-fwd
  * ----------------------------------------
  */
- @-webkit-keyframes bounce-in-fwd {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-      opacity: 0;
-    }
-    38% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-      opacity: 1;
-    }
-    55% {
-      -webkit-transform: scale(0.7);
-              transform: scale(0.7);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    72% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    81% {
-      -webkit-transform: scale(0.84);
-              transform: scale(0.84);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    89% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    95% {
-      -webkit-transform: scale(0.95);
-              transform: scale(0.95);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
+@-webkit-keyframes bounce-in-fwd {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
   }
-  @keyframes bounce-in-fwd {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-      opacity: 0;
-    }
-    38% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-      opacity: 1;
-    }
-    55% {
-      -webkit-transform: scale(0.7);
-              transform: scale(0.7);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    72% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    81% {
-      -webkit-transform: scale(0.84);
-              transform: scale(0.84);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    89% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    95% {
-      -webkit-transform: scale(0.95);
-              transform: scale(0.95);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
+  38% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
   }
-   
-
+  55% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: scale(0.84);
+    transform: scale(0.84);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  89% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-in-fwd {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: scale(0.84);
+    transform: scale(0.84);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  89% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
