@@ -32,23 +32,25 @@ main{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    position: relative;
 }
 
 .classNombre{
     font-size: 3vw;
     color: #002f70;
     font-weight: bolder;
-    
+    position: absolute;
+    margin-right: 25vw;
 }
 
 .classDescargar{
-    height: auto;
-    width: 5%;
     position: absolute;
-    bottom: 2%;
-    right: 15%;
+    top: 1%;
+    left: 10%;
     margin: auto;
+    height: auto;
+    width: 8%;
     z-index: 3;
 }
 
