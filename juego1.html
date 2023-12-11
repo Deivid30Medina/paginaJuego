@@ -47,7 +47,7 @@
         </div>
          <!--============Fin Popup Juego============-->
 
-         <audio id="idAudiopExplicacion" autoplay>
+         <audio id="idAudiopExplicacion">
             <!-- Fuentes de audio en diferentes formatos -->
             <source src="assets/audios/explicacion/mision1/mision1.mp3" type="audio/mp3">
             <source src="ruta/al/archivo/de/audio1.ogg" type="audio/ogg">
@@ -57,9 +57,9 @@
         </audio>
 
         <div class="classContainerAudioQuestion">
-            <object id="idSvgAudio1" class="classSvgAudio audio1" data="assets/svg/Universales/BotonesAyuda/Audios/3-audio_horizontal.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            <object id="idSvgAudio2" class="classSvgAudio audio2" data="assets/svg/Universales/BotonesAyuda/Audios/3-audio_horizontal.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            <object id="idSvgAudio3" class="classSvgAudio audio3" data="assets/svg/Universales/BotonesAyuda/Audios/3-audio_horizontal.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            <object id="idobjectAudio1" data-src="idAudio1" class="classSvgAudio audio1" data="assets/svg/Universales/BotonesAyuda/Audios/3-audio_horizontal1.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            <object id="idobjectAudio2" data-src="idAudio2" class="classSvgAudio audio2" data="assets/svg/Universales/BotonesAyuda/Audios/3-audio_horizontal2.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+            <object id="idobjectAudio3" data-src="idAudio3" class="classSvgAudio audio3" data="assets/svg/Universales/BotonesAyuda/Audios/3-audio_horizontal3.svg" type="image/svg+xml" width="100%" height="100%" ></object>
         </div>
         <div class="classContainerMain">
             <img id="idImgRecargar" class="classImgRefrescar pulsate-bck" src="assets/imagenes/universales/refrescar.png" alt="Refrescar Pagina">
@@ -72,6 +72,7 @@
             </p>
             <object id="idSvgTitulo" class="classTitulo" data="assets/svg/retos/mision1/Titulos/1-titulo.svg" type="image/svg+xml" width="100%" height="100%" ></object>
             <div class="classContainerQuetion question1">
+                <audio id="idAudio1" class="classAudioQuestion" data-text-number="0"></audio>
                 <img class="classLapiz" src="assets/svg/retos/mision1/Apoyo/lapiz_1.svg" alt="Lapiz 1">
                 <div class="classCOntenidoPregunta">
                     <button class="classBtnQuestion btn1" data-text-number="0"></button>
@@ -79,6 +80,7 @@
                 </div>
             </div>
             <div class="classContainerQuetion">
+                <audio id="idAudio2" class="classAudioQuestion" data-text-number="1"></audio>
                 <img class="classLapiz" src="assets/svg/retos/mision1/Apoyo/lapiz_2.svg" alt="Lapiz 2">
                 <div class="classCOntenidoPregunta">
                     <button class="classBtnQuestion" data-text-number="1"></button>
@@ -86,6 +88,7 @@
                 </div>
             </div>
             <div class="classContainerQuetion">
+                <audio id="idAudio3" class="classAudioQuestion" data-text-number="2"></audio>
                 <img class="classLapiz" src="assets/svg/retos/mision1/Apoyo/lapiz_3.svg" alt="Lapiz 3">
                 <div class="classCOntenidoPregunta">
                     <button class="classBtnQuestion" data-text-number="2"></button>
@@ -142,5 +145,6 @@
     <script src="js/sonidoExplicacion.js"></script>
     <script src="js/cargarOtrasPaginas.js"></script>
     <script src="js/recargarPagina.js"></script>
+    <script src="juegos/OpcionMultiple/js/reproducirAudioJuego1.js"></script>
 </body>
 </html>

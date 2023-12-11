@@ -33,7 +33,7 @@ function sacarPalabra(){
     indice = ( Math.floor( Math.random() * (opcionIncorrecta.length) ) );
     answerIncorrectar = opcionIncorrecta[indice];
     deleteItemArray(indice);
-    return answerIncorrectar;
+    return [answerIncorrectar, indice];
 }
 
 function randomQuestion(){
