@@ -57,11 +57,12 @@ objectsDescargar.forEach(function (svgObject) {
         let elementoParaConvertir = document.body; // Puedes elegir cualquier elemento del DOM
         // Crear una copia del elemento
         let copiaElemento = elementoParaConvertir.cloneNode(true);
-        copiaElemento.style.width = "1045px";
-        copiaElemento.style.height = "700px";
         let screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        if (screenWidth < 890) {
+        if (screenWidth < 900) {
           format2 = "a6";
+        }else{
+          copiaElemento.style.width = "1045px";
+          copiaElemento.style.height = "700px";
         }
         generarYDescargarPDF(copiaElemento);
       };
