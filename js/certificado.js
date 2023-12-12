@@ -44,9 +44,12 @@ objectsDescargar.forEach(function (svgObject) {
     // Para cada elemento con la clase '.elemento-svg', agrega un evento de clic
     elementsSVG.forEach(function (elementoSVG) {
       elementoSVG.onclick = function () {
-        const elementoParaConvertir = document.body; // Puedes elegir cualquier elemento del DOM
-        console.log(elementoParaConvertir);
-        generarYDescargarPDF(elementoParaConvertir);
+        let elementoParaConvertir = document.body; // Puedes elegir cualquier elemento del DOM
+        // Crear una copia del elemento
+        let copiaElemento = elementoParaConvertir.cloneNode(true);
+        copiaElemento.style.width = "1045px";
+        copiaElemento.style.height = "700px";
+        generarYDescargarPDF(copiaElemento);
       };
     });
   });
