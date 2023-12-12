@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('resize', checkScreenWidth);
 });
 
+/**
+ * Función para valdiar si se dio un click, se valida si se hace fullScreen o exitFullScreen
+ */
 function validarEventoClic(){
   if (isFullScreen) {
     exitFullScreen();
@@ -21,6 +24,10 @@ function validarEventoClic(){
   }
 }
 
+/**
+ * Función para validar que cuando el ancho de la pantalla sea menor que 890px se bloquea 
+ * la horientación verticual con el fin de permitir mejor jugabilidad en dispositivos moviles 
+ */
 function checkScreenWidth() {
   var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   
@@ -32,15 +39,21 @@ function checkScreenWidth() {
   }
 }
 
+/**
+ * Funcón que bloque la orientación en horizontal
+ */
 function lockOrientation() {
   // Bloquear la orientación en landscape
   if (screen.orientation && screen.orientation.lock) {
     screen.orientation.lock('landscape');
   } else if (screen.lockOrientation) {
     screen.lockOrientation('landscape');
-  } // Puedes agregar más casos según sea necesario para otros navegadores
+  } 
 }
 
+/**
+ * Función que valida si se salio del fullScreen y me desboquea la horientación horizontal
+ */
 function unlockOrientation() {
   // Desbloquear la orientación
   if (screen.orientation && screen.orientation.unlock) {
@@ -50,6 +63,10 @@ function unlockOrientation() {
   } // Puedes agregar más casos según sea necesario para otros navegadores
 }
 
+/**
+ * Función que pemrite hacer el fullScreen dependiendo del navegador, 
+ * para mayor información puede consultar la documentación de cada navegador.,
+ */
 function requestFullScreen() {
   var elem = document.documentElement;
 
@@ -68,7 +85,9 @@ function requestFullScreen() {
   isFullScreen = true; // Actualizar el estado a pantalla completa
 }
 
-
+/**
+ * Función que me permite salir del FullScrren dependiendo del navegador.
+ */
 function exitFullScreen() {
   if (document.exitFullscreen) {
     document.exitFullscreen();

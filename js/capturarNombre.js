@@ -1,4 +1,8 @@
-const palabrasProhibidas = ["HPT", "GONORREA", "GROSERIA3"];
+//Diccionario de groserias
+const palabrasProhibidas = [
+`HPT`
+,`GONORREA`
+,`GROSERIA3`];
 
 document.addEventListener("DOMContentLoaded", function () {
   // Llamar a la función después de que se ha cargado completamente el documento
@@ -6,6 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
   
 });
 
+/**
+ * Función que me valida si el nombre ingresado por el usuario contiene alguna groseria
+ * @param {string} nombreUsuario - Nombre con el cual se desea jugar
+ * @returns - False si contiene alguna groseria y true si no contiene groseria
+ */
 function validarGroseria(nombreUsuario) {
   if (palabrasProhibidas.some((palabra) => nombreUsuario.includes(palabra))) {
     alert(
@@ -17,6 +26,10 @@ function validarGroseria(nombreUsuario) {
   }
 }
 
+/**
+ * Función que me permite guardar el nombre del usaurio en localStorage, en caso de no a ver nombre se guarda anónimo
+ * @returns - Retorna el resulktado de validar si el nombre contiene una groseria, puede ser false o true.
+ */
 function guardarNombreUsuario() {
   // Capturar el valor del input
   let inputNombre = document.getElementById("idNombreINput");

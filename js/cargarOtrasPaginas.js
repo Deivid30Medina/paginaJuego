@@ -1,4 +1,7 @@
-
+/**
+ * Funcion que me permite cargar otras paginas del jeugo, de acorde al svg que se le de click.
+ * @param {string} archivo - Archivo que contiene el nombre de la apgina que se va a recargar.
+ */
 function cargarContenidoDesdeSVG(archivo) {
   setTimeout(function () {
     // Cargar el nuevo contenido
@@ -20,12 +23,21 @@ function cargarContenidoDesdeSVG(archivo) {
   }, 500); // Ajustar el tiempo de carga HTML
 }
 
+/**
+ * Función para valdiar el nombre del usuario cuando este coloque un nomnbre de usuario
+ * @param {string} archivo - Contiene el html que se desea validar solo sii es igual a video-inicio.html
+ * @returns False en caso de que contenga una groseria y true en caso de que el nombre no contenga una groseria.
+ */
 function validarFuncionesAdicionales(archivo) {
   if (archivo === "video-inicio.html") {
     return guardarNombreUsuario();
   }
 }
 
+/**
+ * 
+ * @param {*} archivo 
+ */
 function cambiarTituloPagina(archivo) {
   let ubicacion = archivo.split(".html");
   let tituloActual = document.title.split("-");
@@ -44,6 +56,9 @@ function mostrarContenido(data) {
   window.location.href = data;
 }
 
+/**
+ * Funcion que me esconde los elementos del index y muestra los elemntos del inicio para dar comienzo al jeugo
+ */
 function mostarrOcultarElementos() {
   let btnInicialSVg = document.getElementById("idImgJugar");
   btnInicialSVg.style.display = "none";
@@ -57,7 +72,7 @@ function mostarrOcultarElementos() {
   objectCargarhtmls.style.display = "block";
 }
 
-//Metodo por  AXIOS   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 let svgObjects = document.querySelectorAll(".classSvgContainer");
 
 // Para cada elemento SVG seleccionado, agrega un evento de carga

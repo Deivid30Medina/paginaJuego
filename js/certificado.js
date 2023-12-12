@@ -17,7 +17,7 @@ function configurarHtml2Pdf() {
         jsPDF: {
             unit: "cm", // mm: Milímetros., cm: Centímetros., in: Pulgadas., px: Píxeles.
             format: "a4", // Formato del documento (a3, a4, etc.)
-            orientation: 'landscape' // Orientación del documento (landscape o portrait)
+            orientation: 'landscape' // Orientación del documento (landscape(horizontal) o portrait(vertical))
         }
     });
 }

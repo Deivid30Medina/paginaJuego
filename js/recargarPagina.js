@@ -12,6 +12,10 @@ window.addEventListener('load', function() {
     }
 });
 
+/**
+ * Función para recargar la apgina en caso tal de que sea necesario llamarlo.
+ * 
+ */
 function recargarPaginaClcik(){
   window.location.reload();
 }

@@ -2,6 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
     validarHome();
 });
 
+/**
+ * Funcion para dirigir al home de derechos de autor cuando se le de click
+ * @param {*} idSvg 
+ * @returns 
+ */
 function cargarDocumentoSVG(idSvg) {
     return new Promise((resolve, reject) => {
         let svgBtn = document.getElementById(idSvg);

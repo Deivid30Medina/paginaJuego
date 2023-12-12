@@ -5,6 +5,9 @@ let temporizadorElemento ;
 let temporizadorId; // Almacena el ID del temporizador actual
 let contenedorTemporizador = document.getElementById('idContainerTemporizador');
 
+/**
+ * Función que va a ir restando sucesivamente el tiempo del temporizador
+ */
 function actualizarTemporizador() {
   let minutos = Math.floor(tiempoRestante / 60);
   let segundos = tiempoRestante % 60;
@@ -15,6 +18,11 @@ function actualizarTemporizador() {
   temporizadorElemento.textContent = minutos + ':' + segundos;
 }
 
+/**
+ * Función que inicia el temporizador
+ * @param {int} tiempo - tiempo con el cual se va a empezar a trabajar 
+ * @param {string} paginaMostrar - pagina que va a redireccionar en caso tal de que finalice el temporizador 
+ */
 function startTemporizador(tiempo, paginaMostrar) {
   tiempoTotal = tiempo;
   paginaPerdio = paginaMostrar;
@@ -27,6 +35,9 @@ function startTemporizador(tiempo, paginaMostrar) {
   comenzarTemporizador();
 }
 
+/**
+ * Función que eliminar el temporizador actual con el fin de ir acutalizando a medida que se va restando el tiempo
+ */
 function eliminarTemporizadorHtml(){
   let elementoTemporizador = document.getElementById('idTemproizador');
   if (elementoTemporizador) {
@@ -34,6 +45,10 @@ function eliminarTemporizadorHtml(){
   }
 }
 
+/**
+ * Función que me elimina las animaciones actuales del temporizador y agrega de nuevo en caso tal de que se actualcie o 
+ * se ingrtese por primera vez
+ */
 function eliminarAnimacionCss(){
   window.location.href = paginaPerdio;  
   let divWrapper = document.getElementById('idWrapper');
@@ -47,6 +62,9 @@ function eliminarAnimacionCss(){
   divMask.style.display = "none";
 }
 
+/**
+ * Función que me crea el temporizador
+ */
 function crearTemporizadorHtml(){
   let nuevoTemporizador = document.createElement('div');
   nuevoTemporizador.id = 'idTemproizador';
@@ -66,6 +84,9 @@ function crearTemporizadorHtml(){
   contenedorTemporizador.appendChild(nuevoTemporizador);
 }
 
+/**
+ * Función que me inicializa el temporizador la primera vez que se entra o recarga
+ */
 function comenzarTemporizador() {
   if (tiempoRestante > 0) {
     tiempoRestante--;

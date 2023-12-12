@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
   validarBtnSonido(miAudio);
 });
 
+/**
+ * Funcion para validar cuando pausar el audio
+ * @param {audio} miAudio - etiqueta html audio para validar pausar o reproducir 
+ */
 function validarPausarAudio(miAudio){
   // Reproduce el audio si no está actualmente reproduciéndose
   if (!reproduciendo) {
@@ -18,6 +22,10 @@ function validarPausarAudio(miAudio){
   }
 }
 
+/**
+ * Función apra reproducir los videos despues del click
+ * @param {audio} miAudio - Etiqueta html del audio que se desea reproducir. 
+ */
 function iniciarReproduccionDespuesDeClic2(miAudio) {
   // Agrega un evento para pausar la reproducción después de la primera reproducción
   miAudio.addEventListener("ended", function () {
@@ -28,6 +36,11 @@ function iniciarReproduccionDespuesDeClic2(miAudio) {
   
 }
 
+/**
+ * Función apra cargar el document del svg que esta en el object
+ * @param {string} idSvg - Id del object que deseamos obtener el svg 
+ * @returns retorna el document del svg
+ */
 function cargarDocumentoSVG(idSvg) {
   return new Promise((resolve, reject) => {
     let svgBtn = document.getElementById(idSvg);
@@ -42,6 +55,10 @@ function cargarDocumentoSVG(idSvg) {
   });
 }
 
+/**
+ * Validar si se dio click en el svg para activar o pausar el audio
+ * @param {*} miAudio 
+ */
 async function validarBtnSonido(miAudio) {
   try {
     let documentSvg = await cargarDocumentoSVG("idSvgMusica");
@@ -63,6 +80,10 @@ async function validarBtnSonido(miAudio) {
   }
 }
 
+/**
+ * Función para pausar el audio y reiniciar su reprodución
+ * @param {audio} audioElement elemento html audio para poder pausar el audio
+ */
 function pausarYReiniciar(audioElement) {
   // Pausa la reproducción
   audioElement.pause();
@@ -71,6 +92,10 @@ function pausarYReiniciar(audioElement) {
   audioElement.currentTime = 0;
 }
 
+/**
+ * Función para reproducir el audio cuando se de un click
+ * @param {audio} audioElement elemento html audio que me permite reproducir nuevamente su audio
+ */
 function reiniciarReproduccion(audioElement) {
   // Reinicia la reproducción al principio del audio y reproduce nuevamente
   pausarYReiniciar(audioElement);

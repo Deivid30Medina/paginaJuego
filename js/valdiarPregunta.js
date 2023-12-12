@@ -55,7 +55,7 @@ function validarRespuesta(respuesta){
 }
 
 
-//Metodo por  AXIOS   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 let svgObjects = document.querySelectorAll(".classSvgContainer");
 
 // Para cada elemento SVG seleccionado, agrega un evento de carga

@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
     validarPopupCierre();
 });
 
+/**
+ * Función para cargar el popup dado que se dio click en el svg del popup
+ * @param {string} idSvg id del svg asociado al popup 
+ * @returns retorna el contenido del svg en caso de llegar a encontrarlo en caso contrario un error.
+ */
 function cargarDocumentoSVG(idSvg) {
     return new Promise((resolve, reject) => {
         let svgBtn = document.getElementById(idSvg);
@@ -17,15 +22,24 @@ function cargarDocumentoSVG(idSvg) {
     });
 }
 
+/**
+ * Función que le agrega la clase show para mostrar el popup
+ */
 function mostrarPopup(){
     // Evento PopPup
     popup1.classList.add('show');
 }
 
+/**
+ * Función que remueve la clase show para ocultar el popup
+ */
 function ocultarPopup(){
     popup1.classList.remove('show');
 }
 
+/**
+ * Funcion async para obtener el document del object que contiene el svg0 con el fin de abrir el popup
+ */
 async function validarPopupAbrir(){
     try {
         let documentSvg = await cargarDocumentoSVG('idSvgPegunta');
@@ -42,6 +56,10 @@ async function validarPopupAbrir(){
     }
 }
 
+
+/**
+ * Funcion async para obtener el document del object que contiene el svg0 con el fin de cerrar el popup
+ */
 async function validarPopupCierre(){
     try {
         let documentSvg = await cargarDocumentoSVG('idPopupClose');
