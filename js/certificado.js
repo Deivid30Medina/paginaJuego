@@ -1,23 +1,33 @@
+let margin2 = 1;
+let filename2 = 'certificado.pdf';
+let type2 = 'jpeg';
+let quality2 = 0.98;
+let scale2 = 3;
+let unit2 = "cm";
+let format2 = "a4";
+let orientation2 = "landscape";
+
+
 // Función para configurar html2pdf con opciones personalizadas
 function configurarHtml2Pdf() {
     return html2pdf().set({
-        margin: 1,
-        filename: 'certificado.pdf', //Nombre del archivo
+        margin: margin2,
+        filename: filename2, //Nombre del archivo
         // Configuración para la generación de imágenes dentro del PDF
         image: {
-            type: 'jpeg', // Tipo de imagen a generar (jpeg, png, etc.)
-            quality: 0.98 // Calidad de la imagen (valor entre 0 y 1)
+            type: type2, // Tipo de imagen a generar (jpeg, png, etc.)
+            quality: quality2 // Calidad de la imagen (valor entre 0 y 1)
         },
         // Configuración para la generación de imágenes a partir del HTML
         html2canvas: {
-            scale: 3, // Escala del lienzo HTML2Canvas (mayor escala para mejores gráficos, pero más peso)
+            scale: scale2, // Escala del lienzo HTML2Canvas (mayor escala para mejores gráficos, pero más peso)
             letterRendering: true, // Actilet renderizado de texto mejorado (puede afectar el rendimiento)
         },
         // Configuración específica de jsPDF (la biblioteca subyacente utilizada por html2pdf)
         jsPDF: {
-            unit: "cm", // mm: Milímetros., cm: Centímetros., in: Pulgadas., px: Píxeles.
-            format: "a4", // Formato del documento (a3, a4, etc.)
-            orientation: 'landscape' // Orientación del documento (landscape(horizontal) o portrait(vertical))
+            unit: unit2, // mm: Milímetros., cm: Centímetros., in: Pulgadas., px: Píxeles.
+            format: format2, // Formato del documento (a3, a4, etc.)
+            orientation: orientation2 // Orientación del documento (landscape(horizontal) o portrait(vertical))
         }
     });
 }
@@ -49,7 +59,12 @@ objectsDescargar.forEach(function (svgObject) {
         let copiaElemento = elementoParaConvertir.cloneNode(true);
         copiaElemento.style.width = "1045px";
         copiaElemento.style.height = "700px";
-        generarYDescargarPDF(copiaElemento);
+        elementoParaConvertir.style.width = "1045px";
+        elementoParaConvertir.style.height = "700px";
+        if (screenWidth < 890) {
+          format2 = "a6";
+        }
+        generarYDescargarPDF(elementoParaConvertir);
       };
     });
   });
