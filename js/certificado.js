@@ -59,12 +59,11 @@ objectsDescargar.forEach(function (svgObject) {
         let copiaElemento = elementoParaConvertir.cloneNode(true);
         copiaElemento.style.width = "1045px";
         copiaElemento.style.height = "700px";
-        elementoParaConvertir.style.width = "1045px";
-        elementoParaConvertir.style.height = "700px";
+        let screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         if (screenWidth < 890) {
           format2 = "a6";
         }
-        generarYDescargarPDF(elementoParaConvertir);
+        generarYDescargarPDF(copiaElemento);
       };
     });
   });

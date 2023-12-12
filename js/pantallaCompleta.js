@@ -29,7 +29,7 @@ function validarEventoClic(){
  * la horientación verticual con el fin de permitir mejor jugabilidad en dispositivos moviles 
  */
 function checkScreenWidth() {
-  var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  let screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   
   // Si el ancho de la pantalla es menor que 890px, aplicar bloqueo y pantalla completa
   if (screenWidth < 890) {
