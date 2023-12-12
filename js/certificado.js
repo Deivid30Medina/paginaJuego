@@ -1,4 +1,4 @@
-let margin2 = 1;
+let margin2 = 0;
 let filename2 = 'certificado.pdf';
 let type2 = 'jpeg';
 let quality2 = 0.98;
@@ -58,12 +58,13 @@ objectsDescargar.forEach(function (svgObject) {
         // Crear una copia del elemento
         let copiaElemento = elementoParaConvertir.cloneNode(true);
         let screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        if (screenWidth < 900) {
-          copiaElemento.style.width = "2000px";
-          copiaElemento.style.height = "700px";
-        }else{
-          copiaElemento.style.width = "1045px";
-          copiaElemento.style.height = "700px";
+        let screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        console.log(screenWidth);
+        console.log(screenHeight);
+        copiaElemento.style.width = screenWidth;
+        copiaElemento.style.height = screenHeight;
+        if(screenWidth >= 1600){
+          format2 = "a3";
         }
         generarYDescargarPDF(copiaElemento);
       };

@@ -16,6 +16,7 @@ body {
     padding: 0;
     box-sizing: content-box;
     background-size: 100% 100%; /* Ajusta al 100% de ancho y alto */
+    border: 2px solid red;
 }
 
 main{
