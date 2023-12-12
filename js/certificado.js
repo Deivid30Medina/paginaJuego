@@ -60,7 +60,7 @@ objectsDescargar.forEach(function (svgObject) {
         let screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         if (screenWidth < 900) {
           format2 = "a6";
-          copiaElemento.style.height = "350px";
+          copiaElemento.style.height = "300px";
         }else{
           copiaElemento.style.width = "1045px";
           copiaElemento.style.height = "700px";
