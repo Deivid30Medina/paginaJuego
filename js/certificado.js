@@ -59,8 +59,8 @@ objectsDescargar.forEach(function (svgObject) {
         let copiaElemento = elementoParaConvertir.cloneNode(true);
         let screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         if (screenWidth < 900) {
-          copiaElemento.style.width = "1100px";
-          copiaElemento.style.height = "700px";
+          copiaElemento.style.width = "1500px";
+          copiaElemento.style.height = "100px";
         }else{
           copiaElemento.style.width = "1045px";
           copiaElemento.style.height = "700px";
