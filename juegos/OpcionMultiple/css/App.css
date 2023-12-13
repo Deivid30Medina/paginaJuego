@@ -35,7 +35,6 @@ header{
     width: 8%;
     margin-left: 1.5vw;
     margin-top: 2vh;
-    border: 1px solid green;
     z-index: 5;
 }
 
@@ -71,7 +70,6 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid red;
     height: 73%;
 }
 
@@ -119,7 +117,6 @@ main{
     align-items: flex-start;
     justify-content: space-evenly;
     position: relative;
-    border: 1px solid black;
     margin-bottom: 1%;
 }
 
@@ -152,17 +149,16 @@ main{
     position: absolute;
     height: 100%;
     width: 100%;
-    border: 1px solid red;
     cursor: pointer;
     z-index: 1;
+    border: 0;
 }
 
 .classTextQuestion{
     width: 67%;
     height: 100%;
-    border: 1px solid rgb(0, 47, 255);
     margin: 0;
-    margin-left: 8vw;
+    margin-left: 9vw;
     font-family: Arial;
     text-align: left;
     font-size: 1.3vw;

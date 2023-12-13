@@ -78,7 +78,6 @@ body {
 .classTitle{
     width: 30%;
     margin-right: 3%;
-    border: 1px solid rgb(51, 255, 0);
 }
 
 .classCOntainerBtnsAyuda{
@@ -86,7 +85,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgb(255, 0, 255);
 }
 
 .classSvgMusica{

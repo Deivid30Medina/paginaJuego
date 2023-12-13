@@ -64,7 +64,6 @@ main{
     bottom: 0;
     left: 0;
     margin: auto;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
