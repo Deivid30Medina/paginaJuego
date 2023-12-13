@@ -65,6 +65,8 @@ objectsDescargar.forEach(function (svgObject) {
         copiaElemento.style.height = screenHeight;
         if(screenWidth >= 1600){
           format2 = "a3";
+        }else if(screenWidth <= 900){
+          format2 = "a5";
         }
         generarYDescargarPDF(copiaElemento);
       };
