@@ -8,7 +8,15 @@
 </head>
 <body>
     <main>
-         <audio id="idAudiopExplicacion" autoplay>
+        <audio id="idAudioGanar" autoplay>
+            <!-- Fuentes de audio en diferentes formatos -->
+            <source src="assets/audios/positivo-y-negativo/audio-acierto.mp3" type="audio/mp3">
+            <source src="ruta/al/archivo/de/audio1.ogg" type="audio/ogg">
+            <source src="ruta/al/archivo/de/audio1.wav" type="audio/wav">
+            <!-- Mensaje en caso de que el navegador no soporte ninguno de los formatos -->
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+         <audio id="idAudiopExplicacion">
             <!-- Fuentes de audio en diferentes formatos -->
             <source src="assets/audios/explicacion/mision1/mision1.mp3" type="audio/mp3">
             <source src="ruta/al/archivo/de/audio1.ogg" type="audio/ogg">
