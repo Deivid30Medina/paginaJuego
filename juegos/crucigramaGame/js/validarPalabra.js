@@ -1,6 +1,6 @@
 // Objeto que almacenará la información de cada formulario
 const formularios = {};
-const palabrasValidar = ["ACCO","COMUICCION","DIVUGR","CORR","UTOIZAR","GESTONAR","EISRA"];
+const palabrasValidar = ["CCO","OMUICCION","IVUGR","ORR","UTOIZAR","ESTONAR","ISRA"];
 let ganaste = [false,false,false,false,false,false,false];
 
 // Función para manejar el campo de texto
@@ -75,14 +75,14 @@ function quitarClase(nombresPosiciones,indiceFormulario){
 }
 
 function validarLetraEspecificas(indiceFormulario,claseAgregar){
-    let posiciones = [5,6,8,4,2,0,3];
-    if(indiceFormulario != 5){
-        let elementoInput = document.querySelector(`.classForm.columna${indiceFormulario + 1} .classLetra:nth-child(${posiciones[indiceFormulario]})`);
+    let inputBUscar = `.classPintar${indiceFormulario}`;
+    let elementosInput = document.querySelectorAll(inputBUscar);
+    elementosInput.forEach(function (elementoInput){
         elementoInput.classList.remove("classRemover");
         elementoInput.classList.remove("classCorrecta");
         elementoInput.classList.remove("classDespintar");   
         elementoInput.classList.add(claseAgregar);
-    }
+    });
 }
 
 function validarTexto(){
