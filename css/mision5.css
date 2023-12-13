@@ -196,20 +196,11 @@ main{
     -webkit-animation: anime 1.8s infinite ease-in-out alternate;
 }
 
-.mision1, .mision2{
+.mision1, .mision2, .mision3, .mision4{
     animation: anime 1.8s infinite ease-in-out alternate;
     -webkit-animation: anime 1.8s infinite ease-in-out alternate;
 }
 
-.mision3{
-    transition: transform 0.5s ease;
-    -webkit-transition: transform 0.5s ease;
-    -moz-transition: transform 0.5s ease;
-    -ms-transition: transform 0.5s ease;
-    -o-transition: transform 0.5s ease;
-    animation: jello-horizontal 2.8s 2.2s 3 both;
-    -webkit-animation: jello-horizontal 2.8s 2.2s 3 both;
-}
 
 .classMisionesBtns{
     width: 100%;

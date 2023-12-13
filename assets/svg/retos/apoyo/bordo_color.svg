@@ -36,6 +36,62 @@
 	.st30{fill:url(#SVGID_00000016764016816421849160000009159254448555001788_);}
 	.st31{fill:url(#SVGID_00000158750388027093096760000009015850394487321753_);}
 	.st32{fill:url(#SVGID_00000075161095213619968870000013604628452988162708_);}
+	.svg-shadow{
+        animation: svg-shadow 1.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes svg-shadow {
+        from {
+          filter: drop-shadow( 0 0 5px #fff) drop-shadow( 0 0 5px #e6cf00) drop-shadow( 0 0 5px #e6cf00);
+        }
+
+        to {
+          
+          filter: drop-shadow( 0 0 4px #fff) drop-shadow( 0 0 4px #e6cf00) drop-shadow( 0 0 4px #e6cf00);
+        }
+      }
+	.svg-shadow2{
+        animation: svg-shadow2 1.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes svg-shadow2 {
+        from {
+          filter: drop-shadow( 0 0 5px #fff) drop-shadow( 0 0 5px #FFB172) drop-shadow( 0 0 5px #FFB172);
+        }
+
+        to {
+          
+          filter: drop-shadow( 0 0 4px #fff) drop-shadow( 0 0 4px #FFB172) drop-shadow( 0 0 4px #FFB172);
+        }
+      }
+	  .svg-shadow3{
+        animation: svg-shadow3 1.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes svg-shadow3 {
+        from {
+          filter: drop-shadow( 0 0 5px #fff) drop-shadow( 0 0 5px #00BDFF) drop-shadow( 0 0 5px #00BDFF);
+        }
+
+        to {
+          
+          filter: drop-shadow( 0 0 4px #fff) drop-shadow( 0 0 4px #00BDFF) drop-shadow( 0 0 4px #00BDFF);
+        }
+      }
+	  .svg-shadow4{
+        animation: svg-shadow4 1.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes svg-shadow4 {
+        from {
+          filter: drop-shadow( 0 0 5px #fff) drop-shadow( 0 0 5px #FF2089) drop-shadow( 0 0 5px #FF2089);
+        }
+
+        to {
+          
+          filter: drop-shadow( 0 0 4px #fff) drop-shadow( 0 0 4px #FF2089) drop-shadow( 0 0 4px #FF2089);
+        }
+      }
 </style>
 <g>
 	<g id="Capa_3">
@@ -47,10 +103,10 @@
 				<path class="st0" d="M1044,240.9c0,0,169-144.2-52-118.9c-148.7,17-249.3-21.1-249.3-21.1"/>
 			</g>
 			<g>
-				<path class="st0" d="M745.1,101.2c0,0-63.5,44.3-424,18C29.6,97.9,3,242.9,3,242.9"/>
-				<path class="st0" d="M346.9,238.8c0,0,9.5-92.2,152.6-87.5c277.7,9.1,243.9-50.3,243.9-50.3"/>
-				<path class="st0" d="M734.2,98.6c24.8,16.8,74.8,33.4,65.9,53.3c-11.6,25.9-81.5,25.8-81.5,25.8s-49.5,7.2-6.4,61.7"/>
-				<path class="st0" d="M1044.7,241c0,0,169-144.2-52-118.9c-148.7,17-249.3-21.1-249.3-21.1"/>
+				<path class="st0 svg-shadow" d="M745.1,101.2c0,0-63.5,44.3-424,18C29.6,97.9,3,242.9,3,242.9"/>
+				<path class="st0 svg-shadow2" d="M346.9,238.8c0,0,9.5-92.2,152.6-87.5c277.7,9.1,243.9-50.3,243.9-50.3"/>
+				<path class="st0 svg-shadow3" d="M734.2,98.6c24.8,16.8,74.8,33.4,65.9,53.3c-11.6,25.9-81.5,25.8-81.5,25.8s-49.5,7.2-6.4,61.7"/>
+				<path class="st0 svg-shadow4" d="M1044.7,241c0,0,169-144.2-52-118.9c-148.7,17-249.3-21.1-249.3-21.1"/>
 			</g>
 			<g>
 				<g>
