@@ -34,9 +34,6 @@ body {
     margin-top: 3%;
 }
 
-.classMarcador{
-    width: 30%;
-}
 
 .block{
     position: relative;
@@ -80,24 +77,20 @@ body {
 }
 
 .classCOntainerBtnsAyuda{
-    width: 30%;
+    width: 35%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 3%;
 }
 
 .classSvgMusica{
-    width: 25%;
-}
-
-.classSvgPregunta{
-    width: 25%;
-    margin-right: 4%;
+    width: 20%;
 }
 
 .classImgRefrescar{
     object-fit: scale-down;
-    width: 22%;
+    width: 17%;
     cursor: pointer;
     margin-left: 5%;
 }
@@ -134,11 +127,12 @@ main{
 .classContenedorInformacion{
     background-color: white;
     width: 70%;
-    height: 20vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
+    position: relative;
     border-radius: 25px;
     padding-left: 2%;
     -webkit-border-radius: 25px;
@@ -163,22 +157,26 @@ main{
 .classTexto{
     font-family: Arial;
     color: gray;
-    width: 45%;
+    width: 70%;
     font-size: 1.5vw;
 }
 
 .classSvgLibro{
-    width: 40%;
-    height: 45vh;
+    object-fit: scale-down;
+    width: 25%;
+    height: auto;
     position: absolute;
-    right: 0%;
+    top: -50%;
+    right: -5%;
 }
 
 .classSvgContinuar{
     width: 15%;
-    height: 45vh;
+    height: auto;
     position: absolute;
-    right: 0%;
+    right: -5%;
+    bottom: -10%;
+    z-index: 2;
 }
 
 .classBordonyMisiones{
@@ -188,6 +186,7 @@ main{
     justify-content: center;
     flex-direction: column;
     position: relative;
+    z-index: 0;
 }
 
 .classSvgBordon{
