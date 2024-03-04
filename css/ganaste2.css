@@ -29,9 +29,9 @@ body {
 
 .classMarcador {
   position: absolute;
-  width: 80%;
+  width: 60%;
   height: auto;
-  padding-top: 10%;
+  padding-top: 5%;
   z-index: 1;
 }
 
@@ -72,7 +72,7 @@ main {
   -o-border-radius: 25px;
 }
 
-.classMiguel {
+.classJulieta {
   position: absolute;
   bottom: 0;
   right: 5%;
