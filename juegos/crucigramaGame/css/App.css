@@ -101,6 +101,7 @@ main{
 }
 
 
+
 /* ======================================== Fin Main ============================================= */
 
 
@@ -136,11 +137,39 @@ main{
     flex-wrap: nowrap;
 }
 
+.classAcordeon{
+    object-fit: scale-down;
+    margin-top: 75px;
+    height: auto;
+}
+
+.acordeon1{
+    width: 10.3%;
+}
+
+.acordeon2{
+    width: 6.4%;
+    z-index: 0;
+}
+
+.classS{
+    margin-right: 25%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.classO{
+    margin-left: 25%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
 .classForm{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 2;
 }
 
 .classText{
@@ -222,6 +251,74 @@ main{
     .classTituloPregunta{
         top: 25%;
     }
+}
+
+@media (1200px <= width <= 1600px){
+    
+}
+@media (1024px <= width <= 1200px){
+    .classAcordeon{
+        margin-top: 80px;
+    }
+    
+    .acordeon1{
+        width: 17%;
+    }
+    
+    .acordeon2{
+        width: 11%;
+    }  
+}
+@media (900px <= width <= 1024px){
+    .classAcordeon{
+        margin-top: 80px;
+    }
+    
+    .acordeon1{
+        width: 19%;
+    }
+    
+    .acordeon2{
+        width: 11.5%;
+    }    
+}
+@media (768px <= width <= 900px){
+    .classAcordeon{
+        margin-top: 80px;
+    }
+    
+    .acordeon1{
+        width: 24%;
+    }
+    
+    .acordeon2{
+        width: 15%;
+    }    
+}
+@media (600px <= width <= 768px){
+    .classAcordeon{
+        margin-top: 80px;
+    }
+    
+    .acordeon1{
+        width: 26%;
+    }
+    
+    .acordeon2{
+        width: 16%;
+    }
+    
+}
+
+@media (480px <= width <= 600px){
+    
+}
+@media (320px <= width <= 480px){
+    
+}
+
+@media (0px <= width <= 320px){
+
 }
 
 .classImgRefrescar{
