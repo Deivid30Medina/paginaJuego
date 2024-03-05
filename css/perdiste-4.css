@@ -73,8 +73,8 @@ main{
 }
 
 .classContainerMain{
-    background-image: url("../assets/imagenes/retos/Mision3/Perdio/perdio3.jpg");
-    background-size: cover; /* Cubre todo el fondo sin distorsionar la relación de aspecto */
+    background-image: url("../assets/imagenes/retos/Mision4/Perdio/paisaje_puente.webp");
+    background-size:contain; /* Cubre todo el fondo sin distorsionar la relación de aspecto */
     background-repeat: no-repeat; /* Evita la repetición de la imagen */
     background-position: center; /* Centra la imagen en el fondo */    
     position: relative;
