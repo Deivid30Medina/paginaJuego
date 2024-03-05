@@ -254,6 +254,17 @@ main{
 }
 
 @media (1200px <= width <= 1600px){
+    .classAcordeon{
+        margin-top: 80px;
+    }
+    
+    .acordeon1{
+        width: 13.5%;
+    }
+    
+    .acordeon2{
+        width: 8.5%;
+    }
     
 }
 @media (1024px <= width <= 1200px){
