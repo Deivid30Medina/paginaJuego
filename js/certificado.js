@@ -40,6 +40,10 @@ function generarYDescargarPDF(elementoParaConvertir) {
         .catch(err => console.log(err));
 }
 
+function quitarAnimaciones(){
+  let liston = document.getElementById("idListon")
+  liston.classList.remove("classListonAnimacion")
+}
 
 let objectsDescargar = document.querySelectorAll(".classDescargar");
     
@@ -54,13 +58,12 @@ objectsDescargar.forEach(function (svgObject) {
     // Para cada elemento con la clase '.elemento-svg', agrega un evento de clic
     elementsSVG.forEach(function (elementoSVG) {
       elementoSVG.onclick = function () {
+        quitarAnimaciones()
         let elementoParaConvertir = document.body; // Puedes elegir cualquier elemento del DOM
         // Crear una copia del elemento
         let copiaElemento = elementoParaConvertir.cloneNode(true);
         let screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         let screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-        console.log(screenWidth);
-        console.log(screenHeight);
         copiaElemento.style.width = screenWidth;
         copiaElemento.style.height = screenHeight;
         if(screenWidth >= 1600){
