@@ -35,8 +35,8 @@ function validarFuncionesAdicionales(archivo) {
 }
 
 /**
- * 
- * @param {*} archivo 
+ *
+ * @param {*} archivo
  */
 function cambiarTituloPagina(archivo) {
   let ubicacion = archivo.split(".html");
@@ -72,28 +72,30 @@ function mostarrOcultarElementos() {
   objectCargarhtmls.style.display = "block";
 }
 
-
-let svgObjects = document.querySelectorAll(".classSvgContainer");
-
-// Para cada elemento SVG seleccionado, agrega un evento de carga
-svgObjects.forEach(function (svgObject) {
-  svgObject.addEventListener("load", function () {
-    // Obtiene el documento SVG cargado dentro del objeto <object>
-    let svgDocument = svgObject.contentDocument;
-
-    // Selecciona todos los elementos con la clase '.elemento-svg' dentro del documento SVG
-    let elementsSVG = svgDocument.querySelectorAll(".elemento-svg");
-    // Para cada elemento con la clase '.elemento-svg', agrega un evento de clic
-    elementsSVG.forEach(function (elementoSVG) {
-      elementoSVG.onclick = function () {
-        // Obtiene el atributo 'data-src' del objeto <object> que contiene el SVG
-        let archivoHTML = svgObject.getAttribute("data-src");
-        if (archivoHTML != null) {
-          cargarContenidoDesdeSVG(archivoHTML); // Llama a la función cargarContenido con el archivo HTML como argumento
-        } else {
-          mostarrOcultarElementos();
-        }
-      };
+document.addEventListener("DOMContentLoaded", function () {
+  let svgObjects = document.querySelectorAll(".classSvgContainer");
+  console.log("svgObjects");
+  console.log(svgObjects);
+  // Para cada elemento SVG seleccionado, agrega un evento de carga
+  svgObjects.forEach(function (svgObject) {
+    svgObject.addEventListener("load", function () {
+      // Obtiene el documento SVG cargado dentro del objeto <object>
+      let svgDocument = svgObject.contentDocument;
+      console.log("svgDocument");
+      console.log(svgDocument);
+      // Selecciona todos los elementos con la clase '.elemento-svg' dentro del documento SVG
+      let elementsSVG = svgDocument.querySelectorAll(".elemento-svg");
+      // Para cada elemento con la clase '.elemento-svg', agrega un evento de clic
+      elementsSVG.forEach(function (elementoSVG) {
+        elementoSVG.addEventListener("click", function () {
+          let archivoHTML = svgObject.getAttribute("data-src");
+          if (archivoHTML != null) {
+            cargarContenidoDesdeSVG(archivoHTML); // Llama a la función cargarContenido con el archivo HTML como argumento
+          } else {
+            mostarrOcultarElementos();
+          }
+        });
+      });
     });
   });
 });
