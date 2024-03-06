@@ -72,8 +72,10 @@ function mostarrOcultarElementos() {
   objectCargarhtmls.style.display = "block";
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+
   let svgObjects = document.querySelectorAll(".classSvgContainer");
+  console.log("svgObjects");
+  console.log(svgObjects);
   // Para cada elemento SVG seleccionado, agrega un evento de carga
   svgObjects.forEach(function (svgObject) {
     svgObject.addEventListener("load", function () {
@@ -96,4 +98,4 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
-});
+
