@@ -74,17 +74,15 @@ function mostarrOcultarElementos() {
 
 document.addEventListener("DOMContentLoaded", function () {
   let svgObjects = document.querySelectorAll(".classSvgContainer");
-  console.log("svgObjects");
-  console.log(svgObjects);
   // Para cada elemento SVG seleccionado, agrega un evento de carga
   svgObjects.forEach(function (svgObject) {
     svgObject.addEventListener("load", function () {
       // Obtiene el documento SVG cargado dentro del objeto <object>
       let svgDocument = svgObject.contentDocument;
-      console.log("svgDocument");
-      console.log(svgDocument);
       // Selecciona todos los elementos con la clase '.elemento-svg' dentro del documento SVG
       let elementsSVG = svgDocument.querySelectorAll(".elemento-svg");
+      console.log(elementsSVG);
+
       // Para cada elemento con la clase '.elemento-svg', agrega un evento de clic
       elementsSVG.forEach(function (elementoSVG) {
         elementoSVG.addEventListener("click", function () {
