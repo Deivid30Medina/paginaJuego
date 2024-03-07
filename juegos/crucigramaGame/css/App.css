@@ -153,7 +153,7 @@ main{
 }
 
 .classS{
-    margin-right: 25%;
+    margin-right: 10%;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
@@ -173,16 +173,16 @@ main{
 }
 
 .classText{
-    width: 15px;
+    width: 20px;
     text-align: center;
-    height: 15px;
+    height: 20px;
     border: 2px solid #7676767c;
 }
 
 .classText2{
-    width: 16px;
+    width: 21px;
     text-align: center;
-    height: 15px;
+    height: 20px;
     pointer-events: none;
 }
 
@@ -209,7 +209,7 @@ main{
 }
 
 .columnBajar{
-    margin-top: 63px; /*Se debe bajar de 21, para que quede debajo de un cuadro*/
+    margin-top: 80px; /*Se debe bajar de 21, para que quede debajo de un cuadro*/
 }
 
 
