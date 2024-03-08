@@ -2,7 +2,7 @@ var reproduciendo = false;
 
 document.addEventListener("DOMContentLoaded", function () {
   // Obtén el elemento de audio
-  var miAudio = document.getElementById("idAudiopExplicacion");
+  let miAudio = document.getElementById("idAudiopExplicacion");
   validarBtnSonido(miAudio);
 });
 
