@@ -114,7 +114,7 @@ main {
 
 .classSvgGema {
   height: auto;
-  width: 40%;
+  width: 35%;
   position: absolute;
   bottom: -15vh;
   left: -10vw;
@@ -133,10 +133,10 @@ main {
 }
 
 .classSvgTexto {
-  width: 40%;
+  width: 45%;
   z-index: 0;
-  padding-left: 5%;
   padding-top: 20%;
+  margin-right: 10%;
 }
 
 .bounce-in-fwd {
