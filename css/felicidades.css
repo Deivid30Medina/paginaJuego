@@ -74,11 +74,11 @@ main {
   -o-border-radius: 25px;
 }
 
-.classMiguel {
+.classPirateria{
   position: absolute;
   bottom: 0;
   right: 5%;
-  width: 30%;
+  width: 35%;
   height: auto;
   z-index: 0;
 }
@@ -134,10 +134,11 @@ main {
 }
 
 .classSvgTexto {
+  height: auto;
   width: 45%;
   z-index: 0;
-  padding-right: 15%;
-  padding-bottom: 2%;
+  padding-right: 16%;
+  padding-top: 5%;
 }
 
 .bounce-in-fwd {
