@@ -15,11 +15,20 @@
         </div>
     </header>
     <main>
+        <audio id="idAudiopExplicacion">
+            <!-- Fuentes de audio en diferentes formatos -->
+            <source src="assets/audios/explicacion/mision1/mision1.mp3" type="audio/mp3">
+            <source src="ruta/al/archivo/de/audio1.ogg" type="audio/ogg">
+            <source src="ruta/al/archivo/de/audio1.wav" type="audio/wav">
+            <!-- Mensaje en caso de que el navegador no soporte ninguno de los formatos -->
+            Tu navegador no soporta el elemento de audio.
+        </audio>
         <!--============Inicio Popup Juego============-->
         <div class="classContenedorPrincipalPopup" id="idPopupVentana">
             <div class="classContenedorBlanco">
                 <div class="classColumnaImagen">
                     <img class="classImgPopPup" src="assets/imagenes/Poppup/popupInicio.png" alt="Imagen Popup">
+                    <object id="idSvgMusica" class="classSvgMusica" data="assets/svg/Universales/BotonesAyuda/Audios/2-audio-derecho.svg" type="image/svg+xml" width="100%" height="100%" ></object>
                 </div>
                 <div class="classColumnaInformacion">
                     <div class="classEncabezadoPopup">
@@ -128,5 +137,6 @@
     <script src="js/valdiarPregunta.js"></script>
     <script type="module" src="js/agregarTiempoTemporizador.js"></script>
     <script src="js/recargarPagina.js"></script>
+    <script src="js/sonidoExplicacion.js"></script>
 </body>
 </html>
