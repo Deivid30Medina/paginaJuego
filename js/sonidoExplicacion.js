@@ -1,4 +1,4 @@
-var reproduciendo = true;
+var reproduciendo = false;
 
 document.addEventListener("DOMContentLoaded", function () {
   // Obtén el elemento de audio

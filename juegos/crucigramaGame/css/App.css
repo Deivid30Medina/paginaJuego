@@ -237,9 +237,24 @@ main{
     .classTituloPregunta{
         top: 25%;
     }
+
+    .classAcordeon{
+        margin-top: 90px;
+    }
+    
+    .acordeon1{
+        width: 13%;
+    }
+    
+    .acordeon2{
+        width: 8%;
+    }
 }
 
-@media (width < 1600px) { 
+
+
+@media (1200px <= width <= 1600px){
+
     .classCointainerPrincipal{
         margin-bottom: 10vh;
     }
@@ -251,25 +266,9 @@ main{
     .classTituloPregunta{
         top: 25%;
     }
-}
 
-@media (1200px <= width <= 1600px){
     .classAcordeon{
-        margin-top: 80px;
-    }
-    
-    .acordeon1{
-        width: 13.5%;
-    }
-    
-    .acordeon2{
-        width: 8.5%;
-    }
-    
-}
-@media (1024px <= width <= 1200px){
-    .classAcordeon{
-        margin-top: 80px;
+        margin-top: 95px;
     }
     
     .acordeon1{
@@ -277,47 +276,61 @@ main{
     }
     
     .acordeon2{
-        width: 11%;
+        width: 10.5%;
+    }
+    
+}
+@media (1024px <= width <= 1200px){
+    .classAcordeon{
+        margin-top: 95px;
+    }
+    
+    .acordeon1{
+        width: 21%;
+    }
+    
+    .acordeon2{
+        width: 13%;
     }  
 }
 @media (900px <= width <= 1024px){
     .classAcordeon{
-        margin-top: 80px;
+        margin-top: 95px;
     }
     
     .acordeon1{
-        width: 19%;
-    }
-    
-    .acordeon2{
-        width: 11.5%;
-    }    
-}
-@media (768px <= width <= 900px){
-    .classAcordeon{
-        margin-top: 80px;
-    }
-    
-    .acordeon1{
-        width: 24%;
+        width: 25%;
     }
     
     .acordeon2{
         width: 15%;
-    }    
+    }  
 }
-@media (600px <= width <= 768px){
+@media (768px <= width <= 900px){
     .classAcordeon{
-        margin-top: 80px;
+        margin-top: 95px;
     }
     
     .acordeon1{
-        width: 26%;
+        width: 28%;
     }
     
     .acordeon2{
-        width: 16%;
+        width: 17%;
+    }   
+}
+@media (600px <= width <= 768px){
+    .classAcordeon{
+        margin-top: 95px;
     }
+    
+    .acordeon1{
+        width: 34%;
+    }
+    
+    .acordeon2{
+        width: 21%;
+    }   
     
 }
 
