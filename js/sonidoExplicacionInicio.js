@@ -3,7 +3,7 @@ let miAudio3 = document.getElementById("idAudioBandaSonora");
 
 document.addEventListener("DOMContentLoaded", function () {
   // Obtén el elemento de audio
-  let miAudio2 = document.getElementById("idAudiopExplicacion");
+  let miAudio2 = document.getElementById("idAudioBandaSonora");
   validarBtnSonido2(miAudio2);
 });
 
@@ -62,7 +62,7 @@ function cargarDocumentoSVG2(idSvg) {
  */
 async function validarBtnSonido2(miAudio2) {
   try {
-    let documentSvg2 = await cargarDocumentoSVG2("idSvgMusica");
+    let documentSvg2 = await cargarDocumentoSVG2("idSvgMusica2");
     // Selecciona todos los elementos con la clase '.classsSonido' dentro del documento SVG
     let elementsSonido2 = documentSvg2.querySelectorAll(".classsSonido");
     // Para cada elemento con la clase '.classsSonido', agrega un evento de clic

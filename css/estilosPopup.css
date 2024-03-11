@@ -38,6 +38,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.classSvgMusica{
+    height: auto;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .classColumnaInformacion{
