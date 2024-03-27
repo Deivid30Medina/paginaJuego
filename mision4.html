@@ -1,94 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/mision4.css">
-    <link rel="stylesheet" href="css/estilosPopup.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/mision4.css" />
+    <link rel="stylesheet" href="css/estilosPopup.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="classHeaderMiison1">
-        <div class="classCOntainerHeader">
-            <object id="idSvgMarcador" class="classMarcador" data="assets/svg/retos/apoyo/marcador-mision-4.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            <object id="idSvgTitulo" class="classTitle" data="assets/svg/retos/apoyo/titulo.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            <div class="classCOntainerBtnsAyuda">
-                <object id="idSvgPegunta" class="classSvgPregunta" data="assets/svg/Universales/BotonesAyuda/Pregunta/2-pregunta_morado.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-                <object id="idSvgMusica" class="classSvgMusica" data="assets/svg/Universales/BotonesAyuda/Audios/1-audio-izquierdo.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-                <img id="idImgRecargar" class="classImgRefrescar pulsate-bck" src="assets/imagenes/universales/refrescar.png" alt="Refrescar Pagina">
-            </div>
+      <div class="classCOntainerHeader">
+        <object
+          id="idSvgMarcador"
+          class="classMarcador"
+          data="assets/svg/retos/apoyo/marcador-mision-4.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+        <object
+          id="idSvgTitulo"
+          class="classTitle"
+          data="assets/svg/retos/apoyo/titulo.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+        <div class="classCOntainerBtnsAyuda">
+          <object
+            id="idSvgPegunta"
+            class="classSvgPregunta"
+            data="assets/svg/Universales/BotonesAyuda/Pregunta/2-pregunta_morado.svg"
+            type="image/svg+xml"
+            width="100%"
+            height="100%"
+          ></object>
+          <object
+            id="idSvgMusica2"
+            class="classSvgMusica"
+            data="assets/svg/Universales/BotonesAyuda/Audios/1-audio-izquierdo.svg"
+            type="image/svg+xml"
+            width="100%"
+            height="100%"
+          ></object>
+          <img
+            id="idImgRecargar"
+            class="classImgRefrescar pulsate-bck"
+            src="assets/imagenes/universales/refrescar.png"
+            alt="Refrescar Pagina"
+          />
         </div>
+      </div>
     </header>
     <main>
-        <!--============Inicio Popup============-->
-        <div class="classContenedorPrincipalPopup" id="idPopupVentana">
-            <div class="classContenedorBlanco">
-                <div class="classColumnaImagen">
-                    <img class="classImgPopPup" src="assets/imagenes/Poppup/popupMision4.png" alt="Imagen Popup">
-                </div>
-                <div class="classColumnaInformacion">
-                    <div class="classEncabezadoPopup">
-                        <h1 class="classTituloPoppup">¡Bienvenidos a la aventura!</h1>
-                    </div>
-                    <div class="classContenidoTexto">
-                        <p class="classPPopPup">
-                            Ha llegado el último cataclismo de la villana 
-                            Piratería quien ha robado las 4 gemas del bordón 
-                            de los derechos patrimoniales, atacando a los 
-                            AuArts de las diversas regiones de Colombia 
-                            con sus 4 lacayos. Su objetivo es infringir el 
-                            derecho de autor de las obras artísticas, literarias, 
-                            musicales, audiovisuales y el software.
-                            <br>
-                            ¡No lo debemos permitir!
-                        </p>
-                    </div>
-                </div>
-                <object id="idPopupClose" class="classBtnAtrasPoppup" data="assets/svg/Universales/volver.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+      <!--============Inicio Popup============-->
+      <div class="classContenedorPrincipalPopup" id="idPopupVentana">
+        <div class="classContenedorBlanco">
+          <div class="classColumnaImagen">
+            <img
+              class="classImgPopPup"
+              src="assets/imagenes/Poppup/popupInicio.png"
+              alt="Imagen Popup"
+            />
+            <object
+              id="idSvgMusica"
+              class="classSvgMusica3"
+              data="assets/svg/Universales/BotonesAyuda/Audios/2-audio-derecho.svg"
+              type="image/svg+xml"
+              width="100%"
+              height="100%"
+            ></object>
+          </div>
+          <div class="classColumnaInformacion">
+            <div class="classEncabezadoPopup">
+              <h1 class="classTituloPoppup">¡La aventura!</h1>
             </div>
-        </div>
-         <!--============Fin Popup============-->
-        <audio id="idAudiopExplicacion" >
-            <!-- Fuentes de audio en diferentes formatos -->
-            <source src="assets/audios/explicacion/mision4/mision4.mp3" type="audio/mp3">
-            <source src="ruta/al/archivo/de/audio1.ogg" type="audio/ogg">
-            <source src="ruta/al/archivo/de/audio1.wav" type="audio/wav">
-            <!-- Mensaje en caso de que el navegador no soporte ninguno de los formatos -->
-            Tu navegador no soporta el elemento de audio.
-        </audio>
-        <object id="idFelicidades" class="clasFelicidades" data="assets/svg/Universales/titulos-Felicidades.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-        <div class="classContaineNombreySvg">
-            <div class="classContenedorInformacion">
-                <label id="idNombre" class="classNameUser" for=""></label>
-                <p class="classTexto">
-                    Elige que misión  quieres jugar para
-                    recueprar cada gema del bordón de los derechos
-                    patrimoniales.
-                </p>
+            <div class="classContenidoTexto">
+              <p class="classPPopPup">
+                ¡Esto es grave! R14 ha atacado a dos creadores de la región
+                pacífico y amazonía, Lira y Bongó lo están deteniendo, pues ha
+                atacado su derecho de transformación.
+                <br />
+                Debemos recuperar esta última gema y derrotar a Piratería. Da
+                clic en la “misión 4”
+              </p>
             </div>
-            <object id="idSvgLibro" class="classSvgLibro" data="assets/svg/Universales/libro.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+          </div>
+          <object
+            id="idPopupClose"
+            class="classBtnAtrasPoppup"
+            data="assets/svg/Universales/volver.svg"
+            type="image/svg+xml"
+            width="100%"
+            height="100%"
+          ></object>
         </div>
-        <div class="classBordonyMisiones">
-            <object id="idSvgBordonGris" class="classSvgBordon" data="assets/svg/retos/apoyo/Bordon_mision3.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            <div class="classMisionesBtns">
-                <object id="idSvgMision1" class="classSvgMision mision1" data="assets/svg/retos/mision1/botones/boton_mision-1-color.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-                <object id="idSvgMision2" class="classSvgMision mision2" data="assets/svg/retos/mision2/botones/boton-mision-2-color.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-                <object id="idSvgMision3" class="classSvgMision mision3" data="assets/svg/retos/mision3/botones/boton-mision-3-color.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-                <object id="idSvgMision4" data-src="video-mision4.html" class="classSvgMision mision4 classSvgContainer" data="assets/svg/retos/mision4/botones/boton-mision-4-morado.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            </div>
+      </div>
+      <audio id="idAudiopExplicacion">
+        <!-- Fuentes de audio en diferentes formatos -->
+        <source
+          src="assets/audios/misiones/mision4/5.-dialogo-5-libro.mp3"
+          type="audio/mp3"
+        />
+        <source src="ruta/al/archivo/de/audio1.ogg" type="audio/ogg" />
+        <source src="ruta/al/archivo/de/audio1.wav" type="audio/wav" />
+        <!-- Mensaje en caso de que el navegador no soporte ninguno de los formatos -->
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+      <object
+        id="idFelicidades"
+        class="clasFelicidades"
+        data="assets/svg/Universales/titulos-Felicidades.svg"
+        type="image/svg+xml"
+        width="100%"
+        height="100%"
+      ></object>
+      <div class="classContaineNombreySvg">
+        <div class="classContenedorInformacion">
+          <label id="idNombre" class="classNameUser" for=""></label>
+          <p class="classTexto">
+            Estas a una gema de recuperar el poder de los derechos
+            patrimoniales. ¡Vamos, Piratería será derrotada!
+          </p>
         </div>
+        <object
+          id="idSvgLibro"
+          class="classSvgLibro"
+          data="assets/svg/Universales/libro.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+      </div>
+      <div class="classBordonyMisiones">
+        <object
+          id="idSvgBordonGris"
+          class="classSvgBordon"
+          data="assets/svg/retos/apoyo/Bordon_mision3.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+        <div class="classMisionesBtns">
+          <object
+            id="idSvgMision1"
+            class="classSvgMision mision1"
+            data="assets/svg/retos/mision1/botones/boton_mision-1-color.svg"
+            type="image/svg+xml"
+            width="100%"
+            height="100%"
+          ></object>
+          <object
+            id="idSvgMision2"
+            class="classSvgMision mision2"
+            data="assets/svg/retos/mision2/botones/boton-mision-2-color.svg"
+            type="image/svg+xml"
+            width="100%"
+            height="100%"
+          ></object>
+          <object
+            id="idSvgMision3"
+            class="classSvgMision mision3"
+            data="assets/svg/retos/mision3/botones/boton-mision-3-color.svg"
+            type="image/svg+xml"
+            width="100%"
+            height="100%"
+          ></object>
+          <object
+            id="idSvgMision4"
+            data-src="video-mision4.html"
+            class="classSvgMision mision4 classSvgContainer"
+            data="assets/svg/retos/mision4/botones/boton-mision-4-morado.svg"
+            type="image/svg+xml"
+            width="100%"
+            height="100%"
+          ></object>
+        </div>
+      </div>
     </main>
     <script>
-        window.addEventListener('load', function() {      
-          // Agregar un retraso de 3 segundos antes de ejecutar más código
-          if (document.readyState === 'complete') {
-                // Todos los recursos y elementos de la página se han cargado
-                console.log("Se cargaron todos los recursos y elementos.");
-            } else {
-                // La página todavía se está cargando
-                console.log("La página todavía se está cargando.");
-            }
-        });
+      window.addEventListener("load", function () {
+        // Agregar un retraso de 3 segundos antes de ejecutar más código
+        if (document.readyState === "complete") {
+          // Todos los recursos y elementos de la página se han cargado
+          console.log("Se cargaron todos los recursos y elementos.");
+        } else {
+          // La página todavía se está cargando
+          console.log("La página todavía se está cargando.");
+        }
+      });
     </script>
     <script src="js/asignarNombre.js"></script>
     <script src="js/sonidoExplicacion.js"></script>
@@ -96,7 +196,7 @@
     <script src="js/cargarOtrasPaginas.js"></script>
     <script src="js/recargarPagina.js"></script>
     <script>
-        localStorage.setItem('entro', "true");
+      localStorage.setItem("entro", "true");
     </script>
-</body>
+  </body>
 </html>
