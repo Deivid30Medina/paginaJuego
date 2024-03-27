@@ -184,3 +184,30 @@ main{
     height: auto;
     width: 8%;
 }
+
+.classContainerLoader{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    background-color: #002f70;
+    opacity: 0.8;
+    z-index: 4;
+    display: none;
+}
+
+.classSvgLoader{
+    object-fit: scale-down;
+    position: absolute;
+    height: auto;
+    width: 30%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+}
