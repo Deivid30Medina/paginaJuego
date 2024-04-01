@@ -33,10 +33,17 @@ function configurarHtml2Pdf() {
 
 // Función para generar y descargar el PDF
 function generarYDescargarPDF(elementoParaConvertir) {
-  configurarHtml2Pdf()
-    .from(elementoParaConvertir)
-    .save()
-    .catch((err) => console.log(err));
+  return new Promise((resolve, reject) => {
+    configurarHtml2Pdf()
+      .from(elementoParaConvertir)
+      .save()
+      .then(() => {
+        resolve(); // Resuelve la Promesa cuando la descarga del PDF ha finalizado correctamente
+      })
+      .catch((err) => {
+        reject(err); // Rechaza la Promesa en caso de error durante la descarga del PDF
+      });
+  });
 }
 
 function quitarAnimaciones() {
@@ -45,15 +52,15 @@ function quitarAnimaciones() {
 }
 
 function removeLoader() {
-  console.log("Entro RemoveLoader");
   let loader = document.getElementById("idLoader");
-  loader.style.display = "none";
+  loader.style.zIndex = "-1";
+  loader.style.opacity = "0";
 }
 
 function AddLoader() {
-  console.log("Entro Addlaoder");
   let loader = document.getElementById("idLoader");
-  loader.style.display = "block";
+  loader.style.opacity = "0.8";
+  loader.style.zIndex = "5";
 }
 
 let objectsDescargar = document.querySelectorAll(".classDescargar");
@@ -91,23 +98,18 @@ objectsDescargar.forEach(function (svgObject) {
         }
         // Mostrar loader al iniciar la descarga
         AddLoader();
-
-        // Generar y descargar el PDF
-        generarYDescargarPDF(copiaElemento)
-          .then(() => {
-            // Esperar 1 segundo después de descargar el PDF
-            setTimeout(() => {
-              // Ocultar loader después de 1 segundo
+        setTimeout(() => {
+          // Generar y descargar el PDF
+          generarYDescargarPDF(copiaElemento)
+            .then(() => {
               removeLoader();
-              // Llamar a otra función después de 1 segundo
-              otraFuncion();
-            }, 1000);
-          })
-          .catch((err) => {
-            console.error("Error al generar o descargar PDF:", err);
-            // En caso de error, también ocultar el loader
-            removeLoader();
-          });
+            })
+            .catch((err) => {
+              console.error("Error al generar o descargar PDF:", err);
+              // En caso de error, también ocultar el loader
+              removeLoader();
+            });
+        }, 1000);
       };
     });
   });
