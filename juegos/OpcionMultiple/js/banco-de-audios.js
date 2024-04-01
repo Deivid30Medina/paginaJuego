@@ -1,13 +1,12 @@
-const audioCorrecto = "assets/audios/juego1/correcta.mp3";
+const audioCorrecto = "assets/audios/misiones/mision1/6.-dialogo-6-libro-correcta.mp3";
 let opcionIncorrecta = [];
 function inicializarVariables(){
     opcionIncorrecta = [
-        "assets/audios/juego1/incorrecta1.mp3"
-        ,"assets/audios/juego1/incorrecta2.mp3"
-        ,"assets/audios/juego1/incorrecta3.mp3"
-        ,"assets/audios/juego1/incorrecta4.mp3"
-        ,"assets/audios/juego1/incorrecta5.mp3"
-        ,"assets/audios/juego1/incorrecta6.mp3"
+        "assets/audios/misiones/mision1/7.-dialogo-7-libro-incorrecta1.mp3"
+        ,"assets/audios/misiones/mision1/8.-dialogo-8-libro-Incorrecta2.mp3"
+        ,"assets/audios/misiones/mision1/9.-dialogo-9-libro-Incorrecta3.mp3"
+        ,"assets/audios/misiones/mision1/10.-dialogo-10-libro-Incorrecta4.mp3"
+        ,"assets/audios/misiones/mision1/11.-dialogo-11-libro-Incorrecta5.mp3"
     ];
 }
 

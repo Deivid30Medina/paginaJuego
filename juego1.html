@@ -1,152 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="juegos/OpcionMultiple/css/App.css">
-    <link rel="stylesheet" href="css/estilosPopupJuegos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="juegos/OpcionMultiple/css/App.css" />
+    <link rel="stylesheet" href="css/estilosPopupJuegos.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="classContainerHeader">
-            <object id="idSvgPegunta" class="classSvgPregunta" data="assets/svg/Universales/BotonesAyuda/Pregunta/1-pregunta_verde.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            <object id="idSvgMarcador" class="classMarcador" data="assets/svg/retos/mision1/Apoyo/marcador.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-        </div>
+      <div class="classContainerHeader">
+        <object
+          id="idSvgPegunta"
+          class="classSvgPregunta"
+          data="assets/svg/Universales/BotonesAyuda/Pregunta/1-pregunta_verde.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+        <object
+          id="idSvgMarcador"
+          class="classMarcador"
+          data="assets/svg/retos/mision1/Apoyo/marcador.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+      </div>
     </header>
     <main>
-        <!--============Inicio Popup Juego============-->
-        <div class="classContenedorPrincipalPopup" id="idPopupVentana">
-            <div class="classContenedorBlanco">
-                <div class="classColumnaImagen">
-                    <img class="classImgPopPup" src="assets/imagenes/Poppup/popupInicio.png" alt="Imagen Popup">
-                    <object id="idSvgMusica" class="classSvgMusica" data="assets/svg/Universales/BotonesAyuda/Audios/2-audio-derecho.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-                </div>
-                <div class="classColumnaInformacion">
-                    <div class="classEncabezadoPopup">
-                        <h1 class="classTituloPoppup">¡Bienvenidos a la aventura!</h1>
-                    </div>
-                    <div class="classContenidoTexto">
-                        <p class="classPPopPup">
-                            Ha llegado el último cataclismo de la villana 
-                            Piratería quien ha robado las 4 gemas del bordón 
-                            de los derechos patrimoniales, atacando a los 
-                            AuArts de las diversas regiones de Colombia 
-                            con sus 4 lacayos. Su objetivo es infringir el 
-                            derecho de autor de las obras artísticas, literarias, 
-                            musicales, audiovisuales y el software.
-                            <br>
-                            ¡No lo debemos permitir!
-                        </p>
-                    </div>
-                </div>
-                <div class="classBtnPopup">
-                    <object id="idPopupClose" class="classBtnAtrasPoppup" data="assets/svg/Universales/volver.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-                    <object id="idPoppupVideo" data-src="video-mision1.html" class="classBtnVideo classSvgContainer" data="assets/svg/Universales/ver_video.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-
-                </div>
+      <!--============Inicio Popup Juego============-->
+      <div class="classContenedorPrincipalPopup" id="idPopupVentana">
+        <div class="classContenedorBlanco">
+          <div class="classColumnaImagen">
+            <img
+              class="classImgPopPup"
+              src="assets/imagenes/Poppup/popupInicio.png"
+              alt="Imagen Popup"
+            />
+            <object
+              id="idSvgMusica"
+              class="classSvgMusica"
+              data="assets/svg/Universales/BotonesAyuda/Audios/2-audio-derecho.svg"
+              type="image/svg+xml"
+              width="100%"
+              height="100%"
+            ></object>
+          </div>
+          <div class="classColumnaInformacion">
+            <div class="classEncabezadoPopup">
+              <h1 class="classTituloPoppup">¡Bienvenidos a la aventura!</h1>
             </div>
+            <div class="classContenidoTexto">
+              <p class="classPPopPup">
+                Recuerda que reproducir o duplicar, tu obra debes autorizar, el
+                derecho de reproducción se debe manifestar. Escoge solo una
+                opción y tendrás la facultad de obtener la primera gema del
+                bordón de los derechos patrimoniales.
+              </p>
+            </div>
+          </div>
+          <div class="classBtnPopup">
+            <object
+              id="idPopupClose"
+              class="classBtnAtrasPoppup"
+              data="assets/svg/Universales/volver.svg"
+              type="image/svg+xml"
+              width="100%"
+              height="100%"
+            ></object>
+            <object
+              id="idPoppupVideo"
+              data-src="video-mision1.html"
+              class="classBtnVideo classSvgContainer"
+              data="assets/svg/Universales/ver_video.svg"
+              type="image/svg+xml"
+              width="100%"
+              height="100%"
+            ></object>
+          </div>
         </div>
-         <!--============Fin Popup Juego============-->
+      </div>
+      <!--============Fin Popup Juego============-->
 
-         <audio id="idAudiopExplicacion">
-            <!-- Fuentes de audio en diferentes formatos -->
-            <source src="assets/audios/explicacion/mision1/mision1.mp3" type="audio/mp3">
-            <source src="ruta/al/archivo/de/audio1.ogg" type="audio/ogg">
-            <source src="ruta/al/archivo/de/audio1.wav" type="audio/wav">
-            <!-- Mensaje en caso de que el navegador no soporte ninguno de los formatos -->
-            Tu navegador no soporta el elemento de audio.
-        </audio>
+      <audio id="idAudiopExplicacion">
+        <!-- Fuentes de audio en diferentes formatos -->
+        <source
+          src="assets/audios/misiones/mision1/Bongo-dialogo-1.mp3"
+          type="audio/mp3"
+        />
+        <source src="ruta/al/archivo/de/audio1.ogg" type="audio/ogg" />
+        <source src="ruta/al/archivo/de/audio1.wav" type="audio/wav" />
+        <!-- Mensaje en caso de que el navegador no soporte ninguno de los formatos -->
+        Tu navegador no soporta el elemento de audio.
+      </audio>
 
-        <div class="classContainerAudioQuestion">
-            <object id="idobjectAudio1" data-src="idAudio1" class="classSvgAudio audio1" data="assets/svg/Universales/BotonesAyuda/Audios/3-audio_horizontal1.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            <object id="idobjectAudio2" data-src="idAudio2" class="classSvgAudio audio2" data="assets/svg/Universales/BotonesAyuda/Audios/3-audio_horizontal2.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            <object id="idobjectAudio3" data-src="idAudio3" class="classSvgAudio audio3" data="assets/svg/Universales/BotonesAyuda/Audios/3-audio_horizontal3.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+      <div class="classContainerAudioQuestion">
+        <object
+          id="idobjectAudio1"
+          data-src="idAudio1"
+          class="classSvgAudio audio1"
+          data="assets/svg/Universales/BotonesAyuda/Audios/3-audio_horizontal1.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+        <object
+          id="idobjectAudio2"
+          data-src="idAudio2"
+          class="classSvgAudio audio2"
+          data="assets/svg/Universales/BotonesAyuda/Audios/3-audio_horizontal2.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+        <object
+          id="idobjectAudio3"
+          data-src="idAudio3"
+          class="classSvgAudio audio3"
+          data="assets/svg/Universales/BotonesAyuda/Audios/3-audio_horizontal3.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+      </div>
+      <div class="classContainerMain">
+        <img
+          id="idImgRecargar"
+          class="classImgRefrescar pulsate-bck"
+          src="assets/imagenes/universales/refrescar.png"
+          alt="Refrescar Pagina"
+        />
+        <p class="classTituloPregunta">
+          <strong> ¿Qué es el Derecho de reproducción? </strong>
+          (marca la opción que creas correcta)
+        </p>
+        <object
+          id="idSvgTitulo"
+          class="classTitulo"
+          data="assets/svg/retos/mision1/Titulos/1-titulo.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+        <div class="classContainerQuetion question1">
+          <audio
+            id="idAudio1"
+            class="classAudioQuestion"
+            data-text-number="0"
+          ></audio>
+          <img
+            class="classLapiz"
+            src="assets/svg/retos/mision1/Apoyo/lapiz_1.svg"
+            alt="Lapiz 1"
+          />
+          <div class="classCOntenidoPregunta">
+            <button class="classBtnQuestion btn1" data-text-number="0"></button>
+            <p class="classTextQuestion" data-text-number="0">A</p>
+          </div>
         </div>
-        <div class="classContainerMain">
-            <img id="idImgRecargar" class="classImgRefrescar pulsate-bck" src="assets/imagenes/universales/refrescar.png" alt="Refrescar Pagina">
-            <object id="idSvgMusica" class="classAudioPersonaje" data="assets/svg/Universales/BotonesAyuda/Audios/1-audio-izquierdo.svg" type="image/svg+xml" width="100%" height="100%" ></object>            
-            <p class="classTituloPregunta">
-                <strong>
-                    ¿Qué  es el Derecho de reproducción?
-                </strong>
-                (marca la opción que creas correcta)
-            </p>
-            <object id="idSvgTitulo" class="classTitulo" data="assets/svg/retos/mision1/Titulos/1-titulo.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            <div class="classContainerQuetion question1">
-                <audio id="idAudio1" class="classAudioQuestion" data-text-number="0"></audio>
-                <img class="classLapiz" src="assets/svg/retos/mision1/Apoyo/lapiz_1.svg" alt="Lapiz 1">
-                <div class="classCOntenidoPregunta">
-                    <button class="classBtnQuestion btn1" data-text-number="0"></button>
-                    <P class="classTextQuestion" data-text-number="0">A</P>
-                </div>
-            </div>
-            <div class="classContainerQuetion">
-                <audio id="idAudio2" class="classAudioQuestion" data-text-number="1"></audio>
-                <img class="classLapiz" src="assets/svg/retos/mision1/Apoyo/lapiz_2.svg" alt="Lapiz 2">
-                <div class="classCOntenidoPregunta">
-                    <button class="classBtnQuestion" data-text-number="1"></button>
-                    <P class="classTextQuestion" data-text-number="1">B</P>
-                </div>
-            </div>
-            <div class="classContainerQuetion">
-                <audio id="idAudio3" class="classAudioQuestion" data-text-number="2"></audio>
-                <img class="classLapiz" src="assets/svg/retos/mision1/Apoyo/lapiz_3.svg" alt="Lapiz 3">
-                <div class="classCOntenidoPregunta">
-                    <button class="classBtnQuestion" data-text-number="2"></button>
-                    <P class="classTextQuestion" data-text-number="2">C</P>
-                </div>
-            </div>
-            <object id="idSvgPersonaje" class="classPersonaje" data="assets/svg/retos/mision1/Personajes/miguel.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-
+        <div class="classContainerQuetion">
+          <audio
+            id="idAudio2"
+            class="classAudioQuestion"
+            data-text-number="1"
+          ></audio>
+          <img
+            class="classLapiz"
+            src="assets/svg/retos/mision1/Apoyo/lapiz_2.svg"
+            alt="Lapiz 2"
+          />
+          <div class="classCOntenidoPregunta">
+            <button class="classBtnQuestion" data-text-number="1"></button>
+            <p class="classTextQuestion" data-text-number="1">B</p>
+          </div>
         </div>
-        <div id="idContainerTemporizador" class="classTemporizadorPrincipal">
-            <object id="idSvgTemporizadosvg" class="classTemporizadorsvg" data="assets/svg/Universales/temporizdor.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            <p class="classPTemporizador" id="timer"></p>
-            <div id="idTemproizador" class="classTemporizador">
-                <div id="idWrapper" class="wrapper">
-                    <div id="idSpinner" class="pie spinner"></div>
-                    <div id="idFiller" class="pie filler"></div>
-                    <div id="idMask" class="mask"></div>
-                </div>
-            </div>
+        <div class="classContainerQuetion">
+          <audio
+            id="idAudio3"
+            class="classAudioQuestion"
+            data-text-number="2"
+          ></audio>
+          <img
+            class="classLapiz"
+            src="assets/svg/retos/mision1/Apoyo/lapiz_3.svg"
+            alt="Lapiz 3"
+          />
+          <div class="classCOntenidoPregunta">
+            <button class="classBtnQuestion" data-text-number="2"></button>
+            <p class="classTextQuestion" data-text-number="2">C</p>
+          </div>
         </div>
+        <object
+          id="idSvgPersonaje"
+          class="classPersonaje"
+          data="assets/svg/retos/mision1/Personajes/miguel.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+      </div>
+      <div id="idContainerTemporizador" class="classTemporizadorPrincipal">
+        <object
+          id="idSvgTemporizadosvg"
+          class="classTemporizadorsvg"
+          data="assets/svg/Universales/temporizdor.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+        <p class="classPTemporizador" id="timer"></p>
+        <div id="idTemproizador" class="classTemporizador">
+          <div id="idWrapper" class="wrapper">
+            <div id="idSpinner" class="pie spinner"></div>
+            <div id="idFiller" class="pie filler"></div>
+            <div id="idMask" class="mask"></div>
+          </div>
+        </div>
+      </div>
     </main>
-    <label style="display: none;" for="Labeltiempo">120</label>
-    <label style="display: none;" for="LabelPaginaPerdio">perdiste1.html</label>
+    <label style="display: none" for="Labeltiempo">120</label>
+    <label style="display: none" for="LabelPaginaPerdio">perdiste1.html</label>
     <script>
-        window.addEventListener('load', function() {
-            if (document.readyState === "complete") {
-                // Todos los recursos y elementos de la página se han cargado
-                console.log("Se cargaron todos los recursos y elementos.");
-                // Agregar un retraso de 3 segundos antes de ejecutar más código
-                setTimeout(function() {      
-                    // Coloca aquí el resto de tu código que quieres ejecutar después del retraso.
-                    // Estilos relacionados con la lógica del juego
-                    var styles = [
-                    'css/temporizador-mision1.css'
-                    ];
-            
-                    styles.forEach(function(styleSrc) {
-                    var link = document.createElement('link');
-                    link.rel = 'stylesheet';
-                    link.href = styleSrc;
-                    document.head.appendChild(link);
-                    });
-                }, 2000);
-            } else {
-            // La página todavía se está cargando
-            console.log("La página todavía se está cargando.");
-            }
-      
-        });
+      window.addEventListener("load", function () {
+        if (document.readyState === "complete") {
+          // Todos los recursos y elementos de la página se han cargado
+          console.log("Se cargaron todos los recursos y elementos.");
+          // Agregar un retraso de 3 segundos antes de ejecutar más código
+          setTimeout(function () {
+            // Coloca aquí el resto de tu código que quieres ejecutar después del retraso.
+            // Estilos relacionados con la lógica del juego
+            var styles = ["css/temporizador-mision1.css"];
+
+            styles.forEach(function (styleSrc) {
+              var link = document.createElement("link");
+              link.rel = "stylesheet";
+              link.href = styleSrc;
+              document.head.appendChild(link);
+            });
+          }, 2000);
+        } else {
+          // La página todavía se está cargando
+          console.log("La página todavía se está cargando.");
+        }
+      });
     </script>
-      
+
     <script src="juegos/OpcionMultiple/js/App.js" type="module"></script>
     <script src="js/logicaPopup.js"></script>
     <script src="js/sonidoExplicacion.js"></script>
     <script src="js/cargarOtrasPaginas.js"></script>
     <script src="js/recargarPagina.js"></script>
     <script src="juegos/OpcionMultiple/js/reproducirAudioJuego1.js"></script>
-</body>
+  </body>
 </html>
