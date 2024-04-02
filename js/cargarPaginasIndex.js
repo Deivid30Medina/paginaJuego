@@ -29,17 +29,17 @@ function cargarContenidoDesdeSVG(archivo) {
  * @param {bienvenidos.html, creandoConLira_y_Bongo.html,registraTuObra.html,universo.html} archivo archivo html que se esta llamando, no todos los html tiene html sino solo los de la lista.
  */
 function validarObejectHtml(){
-    var miObjeto = document.getElementById('idObjeto');
+    let miObjeto = document.getElementById('idObjeto');
 
     // Esperar a que el contenido se cargue completamente
     miObjeto.onload = function() {
       // Obtener el documento dentro del objeto
-      var contenidoDoc = miObjeto.contentDocument;
+      let contenidoDoc = miObjeto.contentDocument;
       
       // Obtener el elemento raíz dentro del documento del objeto
-      var contenidoBody = contenidoDoc.body;
+      let contenidoBody = contenidoDoc.body;
       // Obtener la altura del contenido
-      var alturaContenido = contenidoBody.clientHeight;
+      let alturaContenido = contenidoBody.clientHeight;
       // Asignar la altura del contenido al objeto
       //miBodyIndex.style.height = (alturaContenido) + 'px';
     };
@@ -80,22 +80,22 @@ function validarObejectHtml(){
   
   
   //Metodo por  AXIOS   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  var svgObjects = document.querySelectorAll(".classSvgContainer");
+  let svgObjects = document.querySelectorAll(".classSvgContainer");
   
   // Para cada elemento SVG seleccionado, agrega un evento de carga
   svgObjects.forEach(function (svgObject) {
     svgObject.addEventListener("load", function () {
       // Obtiene el documento SVG cargado dentro del objeto <object>
-      var svgDocument = svgObject.contentDocument;
+      let svgDocument = svgObject.contentDocument;
   
       // Selecciona todos los elementos con la clase '.elemento-svg' dentro del documento SVG
-      var elementsSVG = svgDocument.querySelectorAll(".elemento-svg");
+      let elementsSVG = svgDocument.querySelectorAll(".elemento-svg");
   
       // Para cada elemento con la clase '.elemento-svg', agrega un evento de clic
       elementsSVG.forEach(function (elementoSVG) {
         elementoSVG.onclick = function () {
           // Obtiene el atributo 'data-src' del objeto <object> que contiene el SVG
-        var archivoHTML = svgObject.getAttribute("data-src");
+        let archivoHTML = svgObject.getAttribute("data-src");
         validarEventoClic(); //Funcion de pantalla completa en patnallacompleta.js
           if(archivoHTML != null){
             cargarContenidoDesdeSVG(archivoHTML);// Llama a la función cargarContenido con el archivo HTML como argumento 

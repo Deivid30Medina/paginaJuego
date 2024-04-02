@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/inicio.css">
     <link rel="stylesheet" href="css/estilosPopup.css">
     <link rel="stylesheet" href="css/estilosPopupAutores.css">
-    <title>LIRA-Y-BONGÓ-JUEGO</title>
+    <title>LIRA-Y-BONGÓ-JUEGO-INICIO</title>
 </head>
 <body class="classBodyIndex">
     <header>
@@ -82,7 +82,9 @@
             <label class="classMaxCaracter" for="">(*Recuerda que debe ser de 30 caracteres)</label>
             <input id="idNombreINput" class="classNombreInput" type="text" maxlength="30">
             <div class="classContainerBtns">
-                <object id="svgObjectJugar" data-src="video-inicio.html"  class="classSvgContainer classBtnInicio" data="assets/svg/inicio/btn/jugar.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+                <a id="idEnlaceJugar" class="classEnlaceBtn" href="video-inicio.html">
+                    <img class="classSvgBtn" src="assets/svg/inicio/btn/jugar.svg" alt="Boton omitir video">
+                </a>
                 <object id="svgObjectHome"  class="classBtnInicio" data="assets/svg/inicio/btn/Home.svg" type="image/svg+xml" width="100%" height="100%" ></object>
             </div>
         </form>
@@ -90,7 +92,6 @@
     <footer></footer>
     <script src="js/sonidoExplicacionInicio.js"></script>
     <script src="js/mayusculas.js"></script>
-    <script src="js/cargarOtrasPaginas.js" ></script>
     <script src="js/capturarNombre.js" ></script>
     <script src="js/home.js"></script>
     <script src="js/logicaPopup.js"></script>

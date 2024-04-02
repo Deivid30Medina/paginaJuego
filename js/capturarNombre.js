@@ -6,8 +6,10 @@ const palabrasProhibidas = [
 
 document.addEventListener("DOMContentLoaded", function () {
   // Llamar a la función después de que se ha cargado completamente el documento
-  guardarNombreUsuario();
-  
+  let enlaceClic = document.getElementById("idEnlaceJugar");
+  enlaceClic.addEventListener("click",guardarNombreUsuario);
+  let tituloActual = document.title;
+  console.log(tituloActual);
 });
 
 /**

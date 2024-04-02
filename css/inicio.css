@@ -102,6 +102,17 @@ header{
     margin-top: 2%;
 }
 
+.classEnlaceBtn{
+  width: auto;
+  height: auto;
+}
+
+.classSvgBtn{
+  object-fit: scale-down;
+  height: auto;
+  width: 100%;
+}
+
 .classBtnInicio{
     width: 20%;
 }
