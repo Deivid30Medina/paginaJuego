@@ -123,6 +123,23 @@ main{
     flex-wrap: nowrap;
 }
 
+.classEnlaceOmitir{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 2%;
+}
+
+.classBtnOmitirVideo{
+    object-fit: scale-down;
+    height: auto;
+    width: 90%;
+}
+
 .classSvgOmitir{
     width: 15%;
     margin-top: 2%;
