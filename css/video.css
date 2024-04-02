@@ -137,7 +137,7 @@ main{
 .classBtnOmitirVideo{
     object-fit: scale-down;
     height: auto;
-    width: 90%;
+    width: 20vw;
 }
 
 .classSvgOmitir{

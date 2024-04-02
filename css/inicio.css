@@ -110,7 +110,7 @@ header{
 .classSvgBtn{
   object-fit: scale-down;
   height: auto;
-  width: 100%;
+  width: 20vw;
 }
 
 .classBtnInicio{
