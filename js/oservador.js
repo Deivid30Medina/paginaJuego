@@ -18,6 +18,9 @@ function ejecutarDespuesDeCargar() {
 function ActualizarTitulo(tituloDocumento){
     let tituloActual = document.title.split("_");
     document.title = `${tituloActual[0]}_${tituloDocumento}`
+    // Cambiar la URL a una versión más amigable
+    // history.pushState(null, null, "mi-url-amigable");
+
 }
 
 // Agregar evento 'load' al objeto para llamar a la función después de cargar
