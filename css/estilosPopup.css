@@ -99,12 +99,12 @@
 }
 
 .classBtnAtrasPoppup{
-    border-radius: 5px;
-    height: 40px;
+    object-fit: scale-down;
+    height: auto;
+    width: 20%;
     position: absolute;
     bottom: 2%;
     cursor: pointer;
-    border: none;
 }
 
 .show{

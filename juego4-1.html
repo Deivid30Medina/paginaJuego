@@ -1,88 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilosPopupJuegos.css">
-    <link rel="stylesheet" href="css/laberinto-1.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilosPopupJuegos.css" />
+    <link rel="stylesheet" href="css/laberinto-1.css" />
     <title>PANEL-JUEGO4</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="classContainerHeader">
-            <object id="idSvgPegunta" class="classSvgPregunta" data="assets/svg/Universales/BotonesAyuda/Pregunta/1-pregunta_verde.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            <object id="idSvgMarcador" class="classMarcador" data="assets/svg/retos/mision4/apoyo/marcador.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-        </div>
+      <div class="classContainerHeader">
+        <object
+          id="idSvgPegunta"
+          class="classSvgPregunta"
+          data="assets/svg/Universales/BotonesAyuda/Pregunta/1-pregunta_verde.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+        <object
+          id="idSvgMarcador"
+          class="classMarcador"
+          data="assets/svg/retos/mision4/apoyo/marcador.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+      </div>
     </header>
     <main>
-        <audio id="idAudiopExplicacion">
-            <!-- Fuentes de audio en diferentes formatos -->
-            <source src="assets/audios/misiones/mision4/Audio-de-Lira-y-Bongo.MP3" type="audio/mp3">
-            <source src="ruta/al/archivo/de/audio1.ogg" type="audio/ogg">
-            <source src="ruta/al/archivo/de/audio1.wav" type="audio/wav">
-            <!-- Mensaje en caso de que el navegador no soporte ninguno de los formatos -->
-            Tu navegador no soporta el elemento de audio.
-        </audio>
-        <!--============Inicio Popup Juego============-->
-        <div class="classContenedorPrincipalPopup" id="idPopupVentana">
-            <div class="classContenedorBlanco">
-                <div class="classColumnaImagen">
-                    <img class="classImgPopPup" src="assets/imagenes/Poppup/popupInicio.png" alt="Imagen Popup">
-                    <object id="idSvgMusica" class="classSvgMusica" data="assets/svg/Universales/BotonesAyuda/Audios/2-audio-derecho.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-                </div>
-                <div class="classColumnaInformacion">
-                    <div class="classEncabezadoPopup">
-                        <h1 class="classTituloPoppup">¡Bienvenidos a la aventura!</h1>
-                    </div>
-                    <div class="classContenidoTexto">
-                        <p class="classPPopPup">
-                            Traducir, compilar o adaptar, es un derecho que solo como autor puedes autorizar.
-                            <br>
-                            <br>
-                            Descifra las obras transformadas y completa los laberintos. Estos van subiendo de dificultad.
-                        </p>
-                    </div>
-                </div>
-                <div class="classBtnPopup">
-                    <object id="idPopupClose" class="classBtnAtrasPoppup" data="assets/svg/Universales/volver.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-                    <object id="idPoppupVideo" data-src="video-mision4.html" class="classBtnVideo classSvgContainer" data="assets/svg/Universales/ver_video.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-                </div>
+      <audio id="idAudiopExplicacion">
+        <!-- Fuentes de audio en diferentes formatos -->
+        <source
+          src="assets/audios/misiones/mision4/Audio-de-Lira-y-Bongo.MP3"
+          type="audio/mp3"
+        />
+        <source src="ruta/al/archivo/de/audio1.ogg" type="audio/ogg" />
+        <source src="ruta/al/archivo/de/audio1.wav" type="audio/wav" />
+        <!-- Mensaje en caso de que el navegador no soporte ninguno de los formatos -->
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+      <!--============Inicio Popup Juego============-->
+      <div class="classContenedorPrincipalPopup" id="idPopupVentana">
+        <div class="classContenedorBlanco">
+          <div class="classColumnaImagen">
+            <img
+              class="classImgPopPup"
+              src="assets/imagenes/Poppup/popupInicio.png"
+              alt="Imagen Popup"
+            />
+            <object
+              id="idSvgMusica"
+              class="classSvgMusica"
+              data="assets/svg/Universales/BotonesAyuda/Audios/2-audio-derecho.svg"
+              type="image/svg+xml"
+              width="100%"
+              height="100%"
+            ></object>
+          </div>
+          <div class="classColumnaInformacion">
+            <div class="classEncabezadoPopup">
+              <h1 class="classTituloPoppup">¡Bienvenidos a la aventura!</h1>
             </div>
-        </div>
-         <!--============Fin Popup Juego============-->
-
-        <div class="classContainerMain">
-
-            <p class="classTituloPregunta">
-                Da clic en cada una de las opciones y responde las preguntas para completar el laberinto.
-            </p>
-            <object id="idSvgTitulo" class="classTitulo" data="assets/svg/retos/mision4/titulos/titulo.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-
-            <div id="idContainerImg" class="clasContainerLaberinto">
-
+            <div class="classContenidoTexto">
+              <p class="classPPopPup">
+                Traducir, compilar o adaptar, es un derecho que solo como autor
+                puedes autorizar.
+                <br />
+                <br />
+                Descifra las obras transformadas y completa los laberintos.
+                Estos van subiendo de dificultad.
+              </p>
             </div>
-        
+          </div>
+          <div class="classBtnPopup">
+            <img
+              id="idPopupClose"
+              class="classBtnAtrasPoppup"
+              src="assets/svg/Universales/volver.svg"
+              alt="Boton Cerrar popup"
+            />
+            <a href="video-mision4.html" class="classEnlaceBtnVideo"
+              ><img
+                id="idPoppupVideo"
+                class="classBtnVideo"
+                src="assets/svg/Universales/ver_video.svg"
+                alt="Boton ver video"
+            /></a>
+          </div>
         </div>
-         
+      </div>
+      <!--============Fin Popup Juego============-->
+
+      <div class="classContainerMain">
+        <p class="classTituloPregunta">
+          Da clic en cada una de las opciones y responde las preguntas para
+          completar el laberinto.
+        </p>
+        <object
+          id="idSvgTitulo"
+          class="classTitulo"
+          data="assets/svg/retos/mision4/titulos/titulo.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+
+        <div id="idContainerImg" class="clasContainerLaberinto"></div>
+      </div>
     </main>
-    
+
     <script>
-        window.addEventListener('load', function() {   
-            if (document.readyState === 'complete') {
-                // Todos los recursos y elementos de la página se han cargado
-                console.log("Se cargaron todos los recursos y elementos.");
-                document.getElementById("idContainerImg").addEventListener("click", function(){
-                    window.location.href = "juego4-1-1.html";  
-                });
-            } else {
-                // La página todavía se está cargando
-                console.log("La página todavía se está cargando.");
-            }   
-          
-        });
+      window.addEventListener("load", function () {
+        if (document.readyState === "complete") {
+          // Todos los recursos y elementos de la página se han cargado
+          console.log("Se cargaron todos los recursos y elementos.");
+          document
+            .getElementById("idContainerImg")
+            .addEventListener("click", function () {
+              window.location.href = "juego4-1-1.html";
+            });
+        } else {
+          // La página todavía se está cargando
+          console.log("La página todavía se está cargando.");
+        }
+      });
     </script>
     <script src="js/logicaPopup.js"></script>
     <script src="js/cargarOtrasPaginas.js"></script>
     <script src="js/sonidoExplicacion.js"></script>
-</body>
+  </body>
 </html>
