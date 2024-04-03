@@ -110,11 +110,21 @@
 
 
 .classBtnAtrasPoppup{
+    object-fit: scale-down;
+    height: auto;
+    width: 20%;
+    cursor: pointer;
+}
+
+.classEnlaceBtnVideo{
+    height: auto;
     width: 20%;
 }
 
 .classBtnVideo{
-    width: 20%;
+    object-fit: scale-down;
+    height: auto;
+    width: 100%;
 }
 
 .show{
