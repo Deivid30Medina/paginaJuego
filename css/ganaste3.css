@@ -89,15 +89,28 @@ main {
   justify-content: center;
 }
 
-.classSvgMision2 {
+.classBtnEnlaceMenuPrincipal{
   height: auto;
   width: 23%;
-  margin-bottom: 2%;
+  margin-bottom: 2.5%;
   z-index: 1;
-  margin-right: 2%;
+  margin-right: 0%;
 }
 
-.classSvgVideo2 {
+.classSvg {
+  object-fit: scale-down;
+  height: auto;
+  width: 100%;
+}
+
+.classSvg2 {
+  object-fit: scale-down;
+  height: auto;
+  width: 80%;
+}
+
+
+.classBtnEnlaceSiguienteMision{
   height: auto;
   width: 25%;
   margin-bottom: 2%;
