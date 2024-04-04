@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/perdiste-4.css">
-    <link rel="stylesheet" href="css/estilosPopup.css">
     <title>PERDISTE-JUEGO4-PREGUNTA1</title>
 </head>
 <body>
@@ -19,35 +18,6 @@
             <!-- Mensaje en caso de que el navegador no soporte ninguno de los formatos -->
             Tu navegador no soporta el elemento de audio.
         </audio>
-        <!--============Inicio Popup============-->
-        <div class="classContenedorPrincipalPopup" id="idPopupVentana">
-            <div class="classContenedorBlanco">
-                <div class="classColumnaImagen">
-                    <img class="classImgPopPup" src="assets/imagenes/Poppup/popupInicio.png" alt="Imagen Popup">
-                </div>
-                <div class="classColumnaInformacion">
-                    <div class="classEncabezadoPopup">
-                        <h1 class="classTituloPoppup">¡Bienvenidos a la aventura!</h1>
-                    </div>
-                    <div class="classContenidoTexto">
-                        <p class="classPPopPup">
-                            Ha llegado el último cataclismo de la villana 
-                            Piratería quien ha robado las 4 gemas del bordón 
-                            de los derechos patrimoniales, atacando a los 
-                            AuArts de las diversas regiones de Colombia 
-                            con sus 4 lacayos. Su objetivo es infringir el 
-                            derecho de autor de las obras artísticas, literarias, 
-                            musicales, audiovisuales y el software.
-                            <br>
-                            ¡No lo debemos permitir!
-                        </p>
-                    </div>
-                </div>
-                <object id="idPopupClose" class="classBtnAtrasPoppup" data="assets/svg/inicio/btn/volver.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-            </div>
-        </div>
-         <!--============Fin Popup============-->
-
          <audio id="idAudiopExplicacion">
             <!-- Fuentes de audio en diferentes formatos -->
             <source src="assets/audios/perdiste/perdiste4.mp3" type="audio/mp3">
@@ -66,8 +36,8 @@
                 <img id="idImgRecargar" class="classImgRefrescar pulsate-bck" src="assets/imagenes/universales/refrescar.png" alt="Refrescar Pagina">
             </div>
             <div class="classBtns">
-                <object id="idSvgJugar" data-src="juego4-1-1.html" class="classSvgJugar classBtnMorado classSvgContainer" data="assets/svg/retos/mision1/Perdio/volver_a_jugar.svg" type="image/svg+xml" width="100%" height="100%" ></object>
-                <object id="idSvgMenu" data-src="mision4.html" class="classSvgMenu classBtnMorado classSvgContainer" data="assets/svg/retos/mision1/Perdio/menu_principal.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+                <a href="juego4-1-1.html" class="classBtnMoradoEnlace"><img class="classSVG" src="assets/svg/retos/mision1/Perdio/volver_a_jugar.svg" alt="Boton Volver a Jugar"></a>
+                <a href="mision4.html" class="classBtnMoradoEnlace"><img class="classSVG" src="assets/svg/retos/mision1/Perdio/menu_principal.svg" alt="Boton Menu Principal"></a>
             </div>
         </div>
     </main>

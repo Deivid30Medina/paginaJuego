@@ -59,9 +59,16 @@ header{
     margin-bottom: 1%;
 }
 
-.classBtnMorado{
+.classBtnMoradoEnlace{
     height: auto;
     width: 20%;
+    margin-right: 2%;
+}
+
+.classSVG{
+    object-fit: scale-down;
+    height: auto;
+    width: 100%;
 }
 
 main{
